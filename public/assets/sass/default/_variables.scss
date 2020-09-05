@@ -13,9 +13,9 @@
     --base-3: "";
     --primary: #941cb9;
     --primary: #239df0;
-    --primary: #f6931c;
     --primary: darkslateblue;
     --primary: #5b70f9;
+    --primary: #f6931c;
     --primary-1: #384cce;
     --primary-3: #0e0b2b;
     --secondary: #f64f1c;
@@ -59,8 +59,10 @@ $warning: orange;
 $danger: #f56c6c;
 
 // Font Family
-$font-family-1: "Poppins", sans-serif;
-$font-family-2: "Poppins", sans-serif;
+$font-family-1: 'Spectral', serif;
+$font-family-1: 'Cairo', sans-serif;
+$font-family-2: 'Cairo', sans-serif;
+$font-family-3: 'Spectral', serif;
 
 // Grid
 $sm: 576px;
