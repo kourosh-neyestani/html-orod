@@ -7,6 +7,18 @@
         console.log("Worked!");
     };
 
+    /*====== Preloader ======*/
+    var preloader = $(".preloader");
+    $(window).on("load", function () {
+        var preloaderFadeOutTime = 500;
+
+        function hidePreloader() {
+            preloader.fadeOut(preloaderFadeOutTime);
+        }
+
+        hidePreloader();
+    });
+
     /*====== Owl Carousel Setting ======*/
     AFRA.Carousel = function () {
         var x = document.getElementsByClassName("el-slider");
@@ -39,6 +51,12 @@
             loop: false,
             spaceBetween: 18,
             slidesPerView: 4,
+        });
+
+        var mySwiper = new Swiper(".el-swiper-blog-3", {
+            loop: false,
+            spaceBetween: 18,
+            slidesPerView: 3,
         });
     };
 
