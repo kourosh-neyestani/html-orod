@@ -55,14 +55,13 @@ $color-4: var(--color-4);
 $color-5: var(--color-5);
 $color-6: var(--color-6);
 $success: green;
-$warning: orange;
-$danger: #f56c6c;
+$warning: #f6931c;
+$danger: red;
 
 // Font Family
-$font-family-1: 'Spectral', serif;
 $font-family-1: 'Cairo', sans-serif;
 $font-family-2: 'Cairo', sans-serif;
-$font-family-3: 'Spectral', serif;
+$font-family-3: 'Cairo', sans-serif;
 
 // Grid
 $sm: 576px;
