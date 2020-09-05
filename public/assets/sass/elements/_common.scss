@@ -3,6 +3,20 @@
 ------------------------------------*/
 
 /*------------------------------------
+    Element: Stars 
+------------------------------------*/
+
+.el-stars {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+        font-size: 11px;
+        display: inline-block;
+    }
+}
+
+/*------------------------------------
     Element: Heading 
 ------------------------------------*/
 
@@ -21,6 +35,118 @@
     }
 }
 
+/*------------------------------------
+    Element: Card
+------------------------------------*/
+
+.el-card {
+    overflow: hidden;
+    position: relative;
+    border-radius: $default-br;
+}
+
+// Card-Product
+.el-card-product {
+    &.el-card-product-1 {
+        border: 1px solid $gray;
+        background-color: $base-0;
+        .image {
+            width: 60%;
+            padding-top: 60%;
+            text-align: center;
+            position: relative;
+            margin: 30px auto 0;
+            img {
+                top: 0;
+                left: 0;
+                width: 100%;
+                margin: auto;
+                position: absolute;
+            }
+        }
+        .details {
+            padding: 30px 20px;
+            h3 {
+                font-size: 16px;
+                line-height: 1.5;
+                text-align: left;
+                margin-bottom: 20px;
+            }
+            .price {
+                left: 20px;
+                bottom: 15px;
+                display: block;
+                font-weight: 600;
+                position: absolute;
+                margin-bottom: 0;
+                .old-price {
+                    opacity: 0.6;
+                    margin-right: 9px;
+                    text-decoration: line-through;
+                }
+                .new-price {
+                    color: $danger;
+                }
+            }
+            .el-stars {
+                right: 20px;
+                bottom: 15px;
+                color: $text-color;
+                position: absolute;
+            }
+        }
+        .labels {
+            top: 12px;
+            list-style: none;
+            position: absolute;
+            padding: 0;
+            margin: 0;
+            li {
+                display: block;
+                .label {
+                    display: block;
+                    color: $base-0;
+                    font-size: 12px;
+                    font-weight: 600;
+                    text-align: center;
+                    position: relative;
+                    &.label-off {
+                        width: 30px;
+                        height: 30px;
+                        line-height: 30px;
+                        border-radius: 50%;
+                        &:after {
+                            content: "%";
+                            font-size: 10px;
+                            padding-left: 1px;
+                        }
+                    }
+                    &.label-text {
+                        min-width: 39px;                        
+                        padding: 0 6px 1px;
+                        border-radius: 6px;
+                    }
+                    &.label-icon {
+                        color: $text-color;
+                        font-size: 16px;
+                        font-weight: 300;
+                        padding-right: 4px;
+                        &:hover {
+                            color: $base-1;
+                        }
+                    }
+                }
+            }
+            &.labels-left {
+                left: 12px;
+            }
+            &.labels-right {
+                top: 10px;
+                right: 12px;
+            }
+        }
+    }
+}
 /*------------------------------------
     Element: Slider
 ------------------------------------*/
