@@ -34,6 +34,13 @@
             slidesPerView: 3,
             slidesPerColumn: 2,
         });
+
+        var mySwiper = new Swiper(".el-swiper-products-3", {
+            loop: false,
+            spaceBetween: 24,
+            slidesPerView: 4,
+            slidesPerColumn: 2,
+        });
     };
 
     // Windows.On.Load
