@@ -14,5 +14,10 @@
     &.section-hero-1 {
         height: 100vh;
         background-color: $primary;
+        .hero-content {
+            h1 {
+                color: $base-0;
+            }
+        }
     }
 }
