@@ -1,3 +1,40 @@
 /*------------------------------------
     Element: Button
 ------------------------------------*/
+
+.button {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    &.button-icon {
+        height: 30px;
+        .text {
+            font-weight: 700;
+        }
+        .icon {
+            width: 21px;
+            height: 21px;
+            z-index: 3;
+            position: relative;
+            margin-right: 6px;
+        }
+        .count {
+            top: -2px;
+            left: 16px;
+            width: 27px;
+            height: 27px;
+            color: $base-1;
+            font-size: 14px;
+            font-weight: 700;
+            text-align: center;
+            line-height: 27px;
+            position: absolute;
+            display: inline-block;
+            border-radius: 50%;
+            background-color: $gray;
+        }
+        &.button-icon-cart {
+            padding-right: 18px;
+        }
+    }
+}
