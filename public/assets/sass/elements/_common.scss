@@ -40,6 +40,8 @@
 ------------------------------------*/
 
 .el-card {
+    width: 100%;
+    display: block;
     overflow: hidden;
     position: relative;
     border-radius: $default-br;
@@ -157,9 +159,8 @@
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    .el-swiper-3 {
+    .el-swiper-multirow {
         width: 100%;
-        height: 300px;
         .swiper-slide {
             text-align: center;
             font-size: 18px;
@@ -177,6 +178,9 @@
             -ms-flex-align: center;
             -webkit-align-items: center;
             align-items: center;
+        }
+        &.el-swiper-features-3 {
+            height: 290px;
         }
     }
     // Navigation

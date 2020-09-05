@@ -28,18 +28,17 @@
             });
         }
 
-        var mySwiper = new Swiper(".el-swiper-3", {
+        var mySwiper = new Swiper(".el-swiper-features-3", {
             loop: false,
-            spaceBetween: 24,
+            spaceBetween: 18,
             slidesPerView: 3,
             slidesPerColumn: 2,
         });
 
         var mySwiper = new Swiper(".el-swiper-products-3", {
             loop: false,
-            spaceBetween: 24,
+            spaceBetween: 18,
             slidesPerView: 4,
-            slidesPerColumn: 2,
         });
     };
 
