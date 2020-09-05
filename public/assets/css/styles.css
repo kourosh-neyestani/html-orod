@@ -668,6 +668,15 @@ a:active {
   outline: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Cairo", sans-serif;
+}
+
 p,
 h1,
 h2,
@@ -1486,6 +1495,12 @@ h6,
 /*
 * Text Colors
 */
+.text-line {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .text-dark {
   color: var(--black) !important;
 }
@@ -1531,7 +1546,7 @@ h6,
 }
 
 .text-danger {
-  color: #f56c6c;
+  color: red;
 }
 
 .text-success {
@@ -1539,11 +1554,11 @@ h6,
 }
 
 .text-warning {
-  color: orange;
+  color: #f6931c;
 }
 
 .text-primary {
-  color: var(--primary) !important;
+  color: var(--primary);
 }
 
 .text-secondary {
@@ -1757,7 +1772,7 @@ h6,
 }
 
 .bg-danger {
-  background-color: #f56c6c !important;
+  background-color: red !important;
 }
 
 .bg-success {
@@ -1765,7 +1780,7 @@ h6,
 }
 
 .bg-warning {
-  background-color: bisque !important;
+  background-color: #f6931c !important;
 }
 
 .bg-primary {
@@ -2222,6 +2237,20 @@ h6,
     Elements
 ------------------------------------*/
 /*------------------------------------
+    Element: Stars 
+------------------------------------*/
+.el-stars {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.el-stars li {
+  font-size: 11px;
+  display: inline-block;
+}
+
+/*------------------------------------
     Element: Heading 
 ------------------------------------*/
 .el-heading.el-heading-3 {
@@ -2239,17 +2268,141 @@ h6,
 }
 
 /*------------------------------------
-    Element: Slider
+    Element: Card
 ------------------------------------*/
-.swiper-container {
-  width: 100%;
-  height: 100%;
-  margin-left: auto;
-  margin-right: auto;
+.el-card {
+  overflow: hidden;
+  position: relative;
+  border-radius: 9px;
 }
 
-.el-slider {
+.el-card-product.el-card-product-1 {
+  border: 1px solid var(--gray);
+  background-color: var(--base-0);
+}
+
+.el-card-product.el-card-product-1 .image {
+  width: 60%;
+  padding-top: 60%;
+  text-align: center;
   position: relative;
+  margin: 30px auto 0;
+}
+
+.el-card-product.el-card-product-1 .image img {
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: auto;
+  position: absolute;
+}
+
+.el-card-product.el-card-product-1 .details {
+  padding: 30px 20px;
+}
+
+.el-card-product.el-card-product-1 .details h3 {
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.el-card-product.el-card-product-1 .details .price {
+  left: 20px;
+  bottom: 15px;
+  display: block;
+  font-weight: 600;
+  position: absolute;
+  margin-bottom: 0;
+}
+
+.el-card-product.el-card-product-1 .details .price .old-price {
+  opacity: 0.6;
+  margin-right: 9px;
+  text-decoration: line-through;
+}
+
+.el-card-product.el-card-product-1 .details .price .new-price {
+  color: red;
+}
+
+.el-card-product.el-card-product-1 .details .el-stars {
+  right: 20px;
+  bottom: 15px;
+  color: var(--text-color);
+  position: absolute;
+}
+
+.el-card-product.el-card-product-1 .labels {
+  top: 12px;
+  list-style: none;
+  position: absolute;
+  padding: 0;
+  margin: 0;
+}
+
+.el-card-product.el-card-product-1 .labels li {
+  display: block;
+}
+
+.el-card-product.el-card-product-1 .labels li .label {
+  display: block;
+  color: var(--base-0);
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+  position: relative;
+}
+
+.el-card-product.el-card-product-1 .labels li .label.label-off {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+}
+
+.el-card-product.el-card-product-1 .labels li .label.label-off:after {
+  content: "%";
+  font-size: 10px;
+  padding-left: 1px;
+}
+
+.el-card-product.el-card-product-1 .labels li .label.label-text {
+  min-width: 39px;
+  padding: 0 6px 1px;
+  border-radius: 6px;
+}
+
+.el-card-product.el-card-product-1 .labels li .label.label-icon {
+  color: var(--text-color);
+  font-size: 16px;
+  font-weight: 300;
+  padding-right: 4px;
+}
+
+.el-card-product.el-card-product-1 .labels li .label.label-icon:hover {
+  color: var(--base-1);
+}
+
+.el-card-product.el-card-product-1 .labels.labels-left {
+  left: 12px;
+}
+
+.el-card-product.el-card-product-1 .labels.labels-right {
+  top: 10px;
+  right: 12px;
+}
+
+/*------------------------------------
+    Element: Slider
+------------------------------------*/
+.el-slider {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .el-slider .el-swiper-3 {
@@ -2262,7 +2415,6 @@ h6,
   font-size: 18px;
   background: #fff;
   height: calc((100% - 30px) / 2);
-  /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2377,13 +2529,6 @@ h6,
   content: "";
   position: absolute;
   background: repeat-x url("../images/shapes/wave-6.png") bottom center/contain;
-}
-
-/*------------------------------------
-    Section: Features
-------------------------------------*/
-.section-features.section-features-1 .item {
-  background-color: var(--primary);
 }
 
 /*------------------------------------
