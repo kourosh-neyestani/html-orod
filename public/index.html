@@ -20,6 +20,8 @@
     Copyright (c) 2020 - AfraCode
     ========================================================================
     -->
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,600;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="assets/favicon.ico" />
     <link rel="stylesheet" href="assets/css/plugins.min.css" />
     <link rel="stylesheet" href="assets/css/styles.css" />
@@ -44,12 +46,17 @@
     </div>
     <!--/-->
     <!--Header-->
-    <header class="app-header app-header-1 ${props.class}">
+    <header class="app-header app-header-1 ">
         <div class="container">
             <div class="header-wrap">
                 <button class="button button-menu button-open-sidenav">
                     <span></span>
                 </button>
+                <div class="header-logo">
+                    <a href="home.html">
+                        <span class="text">OR</span><span class="text">WELL</span>
+                    </a>
+                </div>
                 <div class="header-menu">
                     <ul>
                         <li>
@@ -57,12 +64,54 @@
                                 <span class="text">Home</span>
                             </a>
                         </li>
+                        <li>
+                            <a href="#">
+                                <span class="text">Fruits</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="text">Salads</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="home.html">
+                                <span class="text">Pages</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="text">Products</span>
+                            </a>
+                        </li>
                     </ul>
                 </div>
                 <div class="header-links">
+                    <a href="#" class="button button-icon">
+                        <img class="icon" src="assets/images/icons/user.svg" alt="--Alternative--"/>
+                        <span class="text">Register</span>
+                    </a>
+                    <!-- <a href="#" class="button button-icon">
+                        <img class="icon" src="assets/images/icons/search.svg" alt="--Alternative--"/>
+                        <span class="text">Search</span>
+                    </a> -->
+                    <a href="#" class="button button-icon button-icon-cart">
+                        <img class="icon" src="assets/images/icons/shopping-cart.svg" alt="--Alternative--"/>
+                        <span class="count">3</span>
+                    </a>
+                </div>
             </div>
         </div>
     </header>
+    <!--/-->
+    <!--Hero-->
+    <section class="section section-hero section-hero-1">
+        <div class="display-center">
+            <div class="hero-content text-center">
+                <h1>Organic Fresh Fruits For Your Health</h1>
+            </div>
+        </div>
+    </section>
     <!--/-->
     <!--Footer-->
     <footer class="app-footer app-footer-1"></footer>
