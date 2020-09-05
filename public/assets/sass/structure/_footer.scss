@@ -1,0 +1,29 @@
+/*------------------------------------
+    Footer
+------------------------------------*/
+
+.app-footer {
+    &.app-footer-1 {
+        height: 87px;
+        &,
+        p {
+            color: #333;
+        }
+        ul {
+            list-style: none;
+            margin: 0;
+        }
+        p {
+            text-align: right;
+            padding-top: 32px;
+        }
+        .el-menu {
+            a {
+                font-weight: 400;
+            }
+        }
+        .el-select-languages {
+            padding-top: 27px;
+        }
+    }
+}
