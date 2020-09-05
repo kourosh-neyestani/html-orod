@@ -119,6 +119,18 @@
 .mb-space {
     margin-bottom: $space;
 }
+.pt-space-half {
+    padding-top: $space / 2;
+}
+.pb-space-half {
+    padding-bottom: $space / 2;
+}
+.mt-space-half {
+    margin-top: $space / 2;
+}
+.mb-space-half {
+    margin-bottom: $space / 2;
+}
 @each $i in (5, 10, 15, 20, 25, 30, 35, 40, 45, 50) {
     .pt-#{$i} {
         padding-top: unquote( ($i) + 'px' );
