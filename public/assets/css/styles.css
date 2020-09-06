@@ -2478,7 +2478,7 @@ h6,
 
 .el-card-product.el-card-product-1 .details .el-stars {
   right: 20px;
-  bottom: 15px;
+  bottom: 12px;
   color: var(--text-color);
   position: absolute;
 }
