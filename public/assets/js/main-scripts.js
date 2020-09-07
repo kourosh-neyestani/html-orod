@@ -40,7 +40,7 @@
             });
         }
 
-        var mySwiper = new Swiper(".el-swiper-features-3", {
+        var mySwiper = new Swiper(".el-swiper-category-3", {
             loop: false,
             spaceBetween: 18,
             slidesPerView: 3,

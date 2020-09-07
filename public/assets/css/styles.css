@@ -2574,8 +2574,9 @@ h6,
   align-items: center;
 }
 
-.el-slider .el-swiper-multirow.el-swiper-features-3 {
-  height: 290px;
+.el-slider .el-swiper-multirow.el-swiper-category-3 {
+  height: 300px;
+  margin-bottom: -12px;
 }
 
 .el-slider .el-slider-prev,
