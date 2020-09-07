@@ -3106,6 +3106,11 @@ Preloader
   background-color: var(--primary);
 }
 
+.section-cta.section-cta-4 {
+  height: 100px;
+  background-color: var(--primary);
+}
+
 /*------------------------------------
     Section: Search
 ------------------------------------*/
