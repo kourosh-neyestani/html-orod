@@ -3147,4 +3147,19 @@ Preloader
 /*------------------------------------
     Element: Theme Preview
 ------------------------------------*/
+.section-theme-preview .el-item {
+  padding: 30px;
+  text-align: center;
+  border-radius: 0;
+  border: 1px solid var(--gray);
+}
+
+.section-theme-preview .el-item h3 {
+  line-height: 1;
+  margin-bottom: 0;
+}
+
+.section-theme-preview .el-item h3 a {
+  display: block;
+}
 /*# sourceMappingURL=styles.css.map */
