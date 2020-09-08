@@ -3,9 +3,13 @@
 ------------------------------------*/
 
 .row-0 {
-    margin-left: 0;
-    margin-right: 0;
-    margin-bottom: 0;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    margin-bottom: 0 !important;
+    & > * {
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 .row-xs {
     margin-left: -6px;
@@ -107,6 +111,12 @@
     Spacing
 ------------------------------------*/
 
+.pt-50pe {
+    padding-top: 50%;
+}
+.pt-100pe {
+    padding-top: 100%;
+}
 .pt-space {
     padding-top: $space;
 }
@@ -133,15 +143,15 @@
 }
 @each $i in (5, 10, 15, 20, 25, 30, 35, 40, 45, 50) {
     .pt-#{$i} {
-        padding-top: unquote( ($i) + 'px' );
+        padding-top: unquote( ($i) + 'px' ) !important;
     }
     .pb-#{$i} {
-        padding-bottom: unquote( ($i) + 'px' );
+        padding-bottom: unquote( ($i) + 'px' ) !important;
     }
     .mt-#{$i} {
-        margin-top: unquote( ($i) + 'px' );
+        margin-top: unquote( ($i) + 'px' ) !important;
     }
     .mb-#{$i} {
-        margin-bottom: unquote( ($i) + 'px' );
+        margin-bottom: unquote( ($i) + 'px' ) !important;
     }
 }
