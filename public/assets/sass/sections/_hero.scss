@@ -29,4 +29,19 @@
             }
         }
     }
+    &.section-hero-3 {
+        height: 100vh;
+        .hero-content {
+            h1 {
+                color: $base-1;
+            }
+        }
+    }
+    &.section-hero-6 {
+        padding-top: 140px;
+        .el-item {
+            padding-top: 390px;
+            background-color: $gray;
+        }
+    }
 }

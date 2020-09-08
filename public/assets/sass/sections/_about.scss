@@ -1,3 +1,13 @@
 /*------------------------------------
     Section: About
 ------------------------------------*/
+
+.section-about {
+    &.section-about-2 {
+        .image {
+            height: 100%;
+            position: relative;
+            background-color: $gray;
+        }
+    }
+}

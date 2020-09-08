@@ -45,6 +45,45 @@
 ------------------------------------*/
 
 .el-heading {
+    &.el-heading-2 {
+        display: block;
+        @extend .mb-space-half;
+        p {
+            font-size: 16px;
+            margin: 0;
+            &.side {
+                padding: 9px 0;
+                padding-left: 39px;
+                margin-top: 40px;
+                margin-left: -3px;
+                border-left: 6px solid $primary;
+            }
+        }
+        h2 {
+            max-width: 550px;
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 1.4;
+            margin: 0 0 18px;
+        }
+        .label {
+            color: $primary;
+            display: block;
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 9px;
+            text-transform: uppercase;
+        }
+        &.center {
+            text-align: center;
+            p {
+                text-align: center;
+            }
+            h2 {
+                margin: auto;
+            }
+        }
+    }
     &.el-heading-3 {
         display: block;
         @extend .mb-space-half;
@@ -129,7 +168,7 @@
                 height: 100%;
                 z-index: 1;
                 content: "";
-                opacity: .1;
+                opacity: 0.1;
                 position: absolute;
                 background: -webkit-linear-gradient(30deg, #151515, transparent);
                 background: linear-gradient(30deg, #151515, transparent);
@@ -323,6 +362,41 @@
 }
 
 /*------------------------------------
+    Element: Progress Bar
+------------------------------------*/
+
+.el-progress-item {
+    overflow: hidden;
+    &:not(:last-child) {
+        margin-bottom: 20px;
+    }
+    span {
+        color: $base-1;
+        display: inline-block;
+        font-size: 15px;
+        font-weight: 700;
+        position: relative;
+        margin: 0 0 12px;
+        &.progress-count {
+            float: right;
+        }
+    }
+    .progress {
+        height: 1rem;
+        display: -ms-flexbox;
+        display: flex;
+        overflow: hidden;
+        font-size: 0.75rem;
+        border-radius: $default-br;
+        background-color: $gray;
+        div {
+            background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+            background-size: 1rem 1rem;
+        }
+    }
+}
+
+/*------------------------------------
     Element: Languages 
 ------------------------------------*/
 
@@ -345,10 +419,10 @@
     }
 }
 
-
 /*------------------------------------
 Preloader
 ------------------------------------*/
+
 .preloader {
     top: 0;
     left: 0;
