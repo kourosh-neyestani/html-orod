@@ -1,3 +1,23 @@
 /*------------------------------------
     Section: Features
 ------------------------------------*/
+
+.section-features {
+    .item {
+        position: relative;
+    }
+}
+/*------------------------------------
+    Section: Category
+------------------------------------*/
+
+.section-category {
+    .item {
+        position: relative;
+    }
+    .test {
+        padding-top: 100%;
+        background-color: $gray;
+        margin-bottom: 24px;
+    }
+}

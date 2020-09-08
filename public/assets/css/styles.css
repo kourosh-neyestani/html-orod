@@ -3008,6 +3008,15 @@ Preloader
   color: var(--base-0);
 }
 
+.section-hero.section-hero-2 {
+  height: 100vh;
+  background-color: var(--primary);
+}
+
+.section-hero.section-hero-2 .hero-content h1 {
+  color: var(--base-0);
+}
+
 /*------------------------------------
     Section: About
 ------------------------------------*/
@@ -3061,9 +3070,9 @@ Preloader
 
 .section.section-wave.section-wave-1:after {
   right: 0;
-  bottom: -1px;
+  bottom: -54px;
   width: 100%;
-  height: 20%;
+  height: 100%;
   content: "";
   position: absolute;
   background: no-repeat url("../images/shapes/wave-1.png") bottom center/cover;
@@ -3083,10 +3092,30 @@ Preloader
   right: 0;
   bottom: 0;
   width: 100%;
-  height: 300px;
+  height: 45%;
   content: "";
   position: absolute;
   background: no-repeat url("../images/shapes/wave-3.png") bottom center/cover;
+}
+
+.section.section-wave.section-wave-4:after {
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 45%;
+  content: "";
+  position: absolute;
+  background: no-repeat url("../images/shapes/wave-4.png") bottom center/cover;
+}
+
+.section.section-wave.section-wave-5:after {
+  right: 0;
+  bottom: -45px;
+  width: 100%;
+  height: 45%;
+  content: "";
+  position: absolute;
+  background: no-repeat url("../images/shapes/wave-5.png") bottom center/cover;
 }
 
 .section.section-wave.section-wave-6:after {
@@ -3097,6 +3126,57 @@ Preloader
   content: "";
   position: absolute;
   background: repeat-x url("../images/shapes/wave-6.png") bottom center/contain;
+}
+
+.section.section-wave.section-wave-7:after {
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  height: 15px;
+  content: "";
+  position: absolute;
+  background: repeat-x url("../images/shapes/wave-7.png") bottom center/contain;
+}
+
+.section.section-wave.section-wave-8:after {
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  background: repeat-x url("../images/shapes/wave-8.png") bottom center/contain;
+}
+
+.section.section-wave.section-wave-9:after {
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  background: no-repeat url("../images/shapes/wave-9.svg") bottom center/contain;
+}
+
+.section.section-wave.section-wave-10:after {
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  background: repeat-x url("../images/shapes/wave-10.png") bottom center/contain;
+}
+
+.section.section-wave.section-wave-11:after {
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  content: "";
+  position: absolute;
+  background: repeat-x url("../images/shapes/wave-11.png") bottom center/contain;
 }
 
 /*------------------------------------
@@ -3121,6 +3201,23 @@ Preloader
 /*------------------------------------
     Section: Features
 ------------------------------------*/
+.section-features .item {
+  position: relative;
+}
+
+/*------------------------------------
+    Section: Category
+------------------------------------*/
+.section-category .item {
+  position: relative;
+}
+
+.section-category .test {
+  padding-top: 100%;
+  background-color: var(--gray);
+  margin-bottom: 24px;
+}
+
 /*------------------------------------
     Section: Services
 ------------------------------------*/
