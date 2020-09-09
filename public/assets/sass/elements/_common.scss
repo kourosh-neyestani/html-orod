@@ -45,56 +45,30 @@
 ------------------------------------*/
 
 .el-heading {
-    &.el-heading-2 {
-        display: block;
-        @extend .mb-space-half;
-        p {
-            font-size: 16px;
-            margin: 0;
-            &.side {
-                padding: 9px 0;
-                padding-left: 39px;
-                margin-top: 40px;
-                margin-left: -3px;
-                border-left: 6px solid $primary;
-            }
-        }
-        h2 {
-            max-width: 550px;
-            font-size: 36px;
-            font-weight: 700;
-            line-height: 1.4;
-            margin: 0 0 18px;
-        }
-        .label {
-            color: $primary;
-            display: block;
-            font-size: 16px;
-            font-weight: 600;
-            margin-bottom: 9px;
-            text-transform: uppercase;
-        }
-        &.center {
-            text-align: center;
-            p {
-                text-align: center;
-            }
-            h2 {
-                margin: auto;
-            }
-        }
+    @extend .mb-space-half;
+    p {
+        font-size: 16px;
+        margin: 15px 0 0;
     }
-    &.el-heading-3 {
+    h2,
+    h3 {
+        font-size: 27px;
+        font-weight: 600;
+        line-height: 1;
+        margin: 0;
+    }
+    .label {
         display: block;
-        @extend .mb-space-half;
+        color: $primary;
+        font-size: 15px;
+        font-weight: 400;
+        margin-bottom: 9px;
+    }
+
+    &.center {
+        &,
         p {
-            font-size: 16px;
-            margin: 0;
-        }
-        h2 {
-            line-height: 1;
-            font-size: 24px;
-            margin: 0 0 9px;
+            text-align: center;
         }
     }
 }
