@@ -74,6 +74,45 @@
 }
 
 /*------------------------------------
+    Element: Tabs
+------------------------------------*/
+
+.el-data-filters {
+    overflow: hidden;
+    position: relative;
+    .el-data-filters-links {
+        ul {
+            list-style: none;
+            user-select: none;
+            text-align: center;
+            white-space: nowrap;
+            padding: 0;
+            margin: 0 0 30px;
+            li {
+                color: $text-color;
+                cursor: pointer;
+                font-weight: 600;
+                display: inline-block;
+                position: relative;
+                padding: 9px 15px;
+                &.active {
+                    color: var(--primary);
+                    cursor: inherit;
+                    border-color: var(--primary);
+                }
+            }
+        }
+    }
+    .el-data-filters-content {
+        min-height: 300px;
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+    }
+}
+
+/*------------------------------------
     Element: Card
 ------------------------------------*/
 

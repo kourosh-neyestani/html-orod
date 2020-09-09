@@ -19,6 +19,30 @@
         hidePreloader();
     });
 
+    /*====== Data Filters Setting ======*/
+    AFRA.DataFilters = function () {
+        var className = "active";
+        var link = $(".el-data-filters .el-data-filters-links ul");
+
+        link.on("click", "li", function () {
+            var links = $(this).siblings("li");
+            var filter = $(this).attr("data-filter");
+            var items = $(this).parent().parent().siblings(".el-data-filters-content").children("ul").children("li");
+
+            console.log($(this).parent().parent())
+
+            links.removeClass(className);
+            $(this).addClass(className);
+
+            if (filter == "all") {
+                items.show(600);
+            } else {
+                items.hide();
+                $("li[data-filter=" + filter + "]").show(600);
+            }
+        });
+    };
+
     /*====== Owl Carousel Setting ======*/
     AFRA.Carousel = function () {
         var x = document.getElementsByClassName("el-slider");
@@ -65,6 +89,6 @@
 
     // Document.Ready
     $(document).ready(function () {
-        AFRA.Test(), AFRA.Carousel();
+        AFRA.Test(), AFRA.Carousel(), AFRA.DataFilters();
     });
 })(jQuery);
