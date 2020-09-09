@@ -94,6 +94,12 @@
                     background-color: $primary;
                 }
             }
+            &.pt-50pe {
+                margin-bottom: -24px;
+            }
+            &.pt-100pe {
+                padding-top: calc(100% - 9px);
+            }
         }   
     }
 }
