@@ -8,13 +8,20 @@
 .section-hero {
     .hero-content {
         width: 576px;
-        margin: auto;
+        p {
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+    }
+    .display-center {
+        z-index: 12;
     }
 
     &.section-hero-1 {
         height: 100vh;
         background-color: $primary;
         .hero-content {
+            margin: auto;
             h1 {
                 color: $base-0;
             }
@@ -24,6 +31,7 @@
         height: 100vh;
         background-color: $primary;
         .hero-content {
+            margin: auto;
             h1 {
                 color: $base-0;
             }
@@ -31,6 +39,98 @@
     }
     &.section-hero-3 {
         height: 100vh;
+        overflow: initial;
+        background-color: #f8f8f8;
+        .hero-content {
+            padding-top: 75px;
+        }
+        .hero-shapes {
+            left: 0;
+            bottom: 9%;
+            width: 100%;
+            height: 90%;
+            position: absolute;
+            .shape {
+                z-index: 3;
+                position: absolute;
+                border-radius: 50%;
+                box-shadow: $default-bs;
+                &.shape-1 {
+                    right: 12%;
+                    bottom: -15%;
+                    width: 36%;
+                    box-shadow: none;
+                    padding-top: 36%;
+                    background-color: red;
+                }
+                &.shape-2 {
+                    right: 51%;
+                    bottom: -12%;
+                    width: 9%;
+                    padding-top: 9%;
+                }
+                &.shape-3 {
+                    top: 27%;
+                    right: 36%;
+                    width: 6%;
+                    padding-top: 6%;
+                    &:before,
+                    &:after {
+                        width: 30px;
+                        height: 30px;
+                        display: block;
+                        content: "";
+                        position: absolute;
+                        border-radius: 50%;
+                        background-color: lightblue;
+                    }
+                    &:before {
+                        top: -60px;
+                        right: -180px;
+                        width: 12px;
+                        height: 12px;
+                    }
+                    &:after {
+                        left: -60px;
+                        bottom: -60px;
+                        opacity: .6;
+                    }
+                }
+                &.shape-4 {
+                    bottom: 3%;
+                    right: -2%;
+                    width: 8%;
+                    padding-top: 8%;
+                    &:before,
+                    &:after {
+                        width: 27px;
+                        height: 27px;
+                        display: block;
+                        content: "";
+                        position: absolute;
+                        border-radius: 50%;
+                        background-color: lightblue;
+                    }
+                    &:before {
+                        top: -60px;
+                        left: -60px;
+                        width: 15px;
+                        height: 15px;
+                    }
+                    &:after {
+                        left: -135px;
+                        bottom: -6px;
+                    }
+                }
+                &.shape-5 {
+                    right: 14%;
+                    bottom: 36%;
+                    width: 12%;
+                    padding-top: 12%;
+                    background-color: lightblue;
+                }
+            }
+        }
         .hero-content {
             h1 {
                 color: $base-1;
