@@ -50,26 +50,27 @@
             }
         }
     }
-    &.section-features-line-1 {
-        .el-box {
-            padding: 30px 25px;
-            border: $default-br;
-            box-shadow: $default-bs;
+}
+.section-features-line {
+    overflow: initial;
+    .el-box {
+        padding: 30px 25px;
+        border: $default-br;
+        box-shadow: $default-bs;
+    }
+    .item {
+        p {
+            margin-bottom: 0;
         }
-        .item {
-            p {
-                margin-bottom: 0;
-            }
-            h2 {
-                font-size: 16px;
-                line-height: 1;
-                margin-bottom: 7px;
-            }
-            img {
-                width: 45px;
-                float: left;
-                margin-right: 20px;
-            }
+        h2 {
+            font-size: 16px;
+            line-height: 1;
+            margin-bottom: 7px;
+        }
+        img {
+            width: 45px;
+            float: left;
+            margin-right: 20px;
         }
     }
 }
