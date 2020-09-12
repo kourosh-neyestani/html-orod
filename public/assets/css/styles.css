@@ -2355,31 +2355,51 @@ Forms
   border: 1px solid #e3e3e3;
 }
 
-.form-3 .form-item select:focus,
+.form-3 .form-item select:focus, .form-3 .form-item select.active,
 .form-3 .form-item textarea:focus,
+.form-3 .form-item textarea.active,
 .form-3 .form-item .input-select:focus,
+.form-3 .form-item .input-select.active,
 .form-3 .form-item input[type="tel"]:focus,
+.form-3 .form-item input[type="tel"].active,
 .form-3 .form-item input[type="text"]:focus,
+.form-3 .form-item input[type="text"].active,
 .form-3 .form-item input[type="date"]:focus,
+.form-3 .form-item input[type="date"].active,
 .form-3 .form-item input[type="email"]:focus,
+.form-3 .form-item input[type="email"].active,
 .form-3 .form-item input[type="number"]:focus,
+.form-3 .form-item input[type="number"].active,
 .form-3 .form-item input[type="search"]:focus,
+.form-3 .form-item input[type="search"].active,
 .form-3 .form-item input[type="password"]:focus,
-.form-3 .form-item .input-default-style:focus {
+.form-3 .form-item input[type="password"].active,
+.form-3 .form-item .input-default-style:focus,
+.form-3 .form-item .input-default-style.active {
   border-color: var(--primary);
 }
 
-.form-3 .form-item select:focus + label,
+.form-3 .form-item select:focus + label, .form-3 .form-item select.active + label,
 .form-3 .form-item textarea:focus + label,
+.form-3 .form-item textarea.active + label,
 .form-3 .form-item .input-select:focus + label,
+.form-3 .form-item .input-select.active + label,
 .form-3 .form-item input[type="tel"]:focus + label,
+.form-3 .form-item input[type="tel"].active + label,
 .form-3 .form-item input[type="text"]:focus + label,
+.form-3 .form-item input[type="text"].active + label,
 .form-3 .form-item input[type="date"]:focus + label,
+.form-3 .form-item input[type="date"].active + label,
 .form-3 .form-item input[type="email"]:focus + label,
+.form-3 .form-item input[type="email"].active + label,
 .form-3 .form-item input[type="number"]:focus + label,
+.form-3 .form-item input[type="number"].active + label,
 .form-3 .form-item input[type="search"]:focus + label,
+.form-3 .form-item input[type="search"].active + label,
 .form-3 .form-item input[type="password"]:focus + label,
-.form-3 .form-item .input-default-style:focus + label {
+.form-3 .form-item input[type="password"].active + label,
+.form-3 .form-item .input-default-style:focus + label,
+.form-3 .form-item .input-default-style.active + label {
   top: -12px;
   left: 15px;
   color: var(--primary);
