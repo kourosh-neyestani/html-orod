@@ -690,3 +690,47 @@ Preloader
     top: 56px;
     left: 12px;
 }
+
+/*------------------------------------
+    Table
+------------------------------------*/
+
+.el-table-order {
+    margin: 0 0 24px;
+    span {
+        &.cnt {
+            font-weight: 700;
+            margin-right: 6px;
+        }
+        &.var {
+            white-space: nowrap;
+        }   
+        &.val {
+            display: block;
+            text-align: right;
+        }
+    }
+    & > ul {
+        list-style: none;
+        padding: 0;
+        & > li {
+            display: block;
+            padding: 9px 0;
+            & > ul {
+                opacity: .6;
+                list-style: none;
+                padding-top: 15px;
+                padding-left: 15px; 
+                padding-bottom: 15px;
+                margin: 0;
+            }
+            &:not(:last-child) {
+                border-bottom: 1px solid $gray;
+            }
+        }
+    }
+    &.el-table-order-1  {
+        padding: 12px 25px;
+        background-color: #f6f6f6;
+    }
+}

@@ -209,3 +209,30 @@
         height: 600px;
     }
 }
+
+/*------------------------------------
+    Section: Default Page
+------------------------------------*/
+
+.section-page {
+    .page-head {
+        height: 354px;
+        overflow: hidden;
+        position: relative;
+        padding-top: 114px;
+        background-color: $gray;
+        .page-head-inner {
+            height: 100%;
+            position: relative;
+            .page-head-content {
+                @extend .text-center;
+                @extend .display-center;
+                h1 {
+                    line-height: 1.5;
+                    padding: 0 0 9px;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
