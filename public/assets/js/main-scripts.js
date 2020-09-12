@@ -29,7 +29,7 @@
             var filter = $(this).attr("data-filter");
             var items = $(this).parent().parent().siblings(".el-data-filters-content").children("ul").children("li");
 
-            console.log($(this).parent().parent())
+            console.log($(this).parent().parent());
 
             links.removeClass(className);
             $(this).addClass(className);
@@ -84,11 +84,76 @@
         });
     };
 
+    /*====== Counter ======*/
+    AFRA.Counter = function () {
+        var plus = $(".el-counter").find(".button-plus");
+        var minus = $(".el-counter").find(".button-minus");
+
+        plus.on("click", function () {
+            var input = $(this).siblings("input");
+            var value = parseInt(input.attr("value"));
+            var max = parseInt(input.attr("max"));
+            if (value < max) {
+                input.attr("value", ++value);
+                AFRA.MathProductsPrice($(this));
+            } else {
+                value = max;
+            }
+        });
+
+        minus.on("click", function () {
+            var input = $(this).siblings("input");
+            var value = parseInt(input.attr("value"));
+            var min = parseInt(input.attr("min"));
+            if (value > min) {
+                input.attr("value", --value);
+                AFRA.MathProductsPrice($(this));
+            } else {
+                value = min;
+            }
+        });
+    };
+
+    /*====== Math Products Price ======*/
+    AFRA.MathProductsPrice = function (t) {
+        if (typeof t === "undefined") {
+            return;
+        }
+
+        var value = $(t).siblings("input").val();
+        var price = $(t).parent().parent().siblings(".item-price").attr("data-price");
+        var total = $(t).parent().parent().siblings(".item-total").children(".val");
+
+        total.text("$" + parseInt(value * price).toFixed(2));
+
+        var product = $(".el-math-product-price");
+        var input = product.children(".item-quantity").children(".el-counter").children("input");
+
+        // total.text("$" + parseInt(price * quantity).toFixed(2));
+
+        input.on("change", function (e) {
+            var newValue = e.target.value;
+            var newTotal = $(this).parent().parent().siblings(".item-total");
+            var newPrice = $(this).parent().parent().siblings(".item-price").attr("data-price");
+            newTotal.text("$" + parseInt(newPrice * newValue).toFixed(2));
+        });
+    };
+
+    /*====== Math Products Price ======*/
+    AFRA.RemoveItemFromShoppingCart = function () {
+        var button = $(".shopping-cart-item .item-trash");
+
+        button.on("click", function () {
+            $(this).parent(".shopping-cart-item").remove();
+            alert("Product deleted successfully.");
+        });
+    };
+
     // Windows.On.Load
     $(window).on("load", function () {});
 
     // Document.Ready
     $(document).ready(function () {
-        AFRA.Test(), AFRA.Carousel(), AFRA.DataFilters();
+        AFRA.Test(), AFRA.Counter(), AFRA.Carousel(), AFRA.DataFilters(), AFRA.MathProductsPrice(), AFRA.RemoveItemFromShoppingCart();
     });
 })(jQuery);

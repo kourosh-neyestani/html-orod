@@ -5,6 +5,7 @@
 .button {
     cursor: pointer;
     position: relative;
+    text-align: center;
     display: inline-block;
     &.button-icon {
         height: 30px;
@@ -63,7 +64,7 @@
     white-space: nowrap;
     display: inline-block;
     margin-right: 2px;
-    border-radius: 6px;
+    border-radius: $default-br;
     transition: all 0.3s;
     &.button-block {
         width: 100%;
