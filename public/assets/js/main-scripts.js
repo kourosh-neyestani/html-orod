@@ -19,6 +19,26 @@
         hidePreloader();
     });
 
+    /*====== Default Tabs ======*/
+    AFRA.DefaultTabs = function () {
+        var className = "active";
+        var link = $(".el-tabs .el-tabs-links ul li");
+
+        link.on("click", function (e) {
+            e.preventDefault();
+
+            var data = $(this).data("tab-link");
+            var links = $(this).siblings("li");
+            var item = $("[data-tab-content=" + data + "]");
+            var items = $(this).parent().parent().siblings(".el-tabs-content").children("ul").children("li");
+
+            links.removeClass(className);
+            items.removeClass(className);
+            item.addClass(className);
+            $(this).addClass(className);
+        });
+    };
+
     /*====== Data Filters Setting ======*/
     AFRA.DataFilters = function () {
         var className = "active";
@@ -45,42 +65,54 @@
 
     /*====== Owl Carousel Setting ======*/
     AFRA.Carousel = function () {
-        var x = document.getElementsByClassName("el-slider");
+        // var x = document.getElementsByClassName("el-slider");
 
-        for (var i = 0; i < x.length; i++) {
-            var el = x[i];
+        // for (var i = 0; i < x.length; i++) {
+        //     var el = x[i];
 
-            var swiper = el.getElementsByClassName("swiper-container")[0];
-            var nx = el.getElementsByClassName("el-slider-next")[0];
-            var pr = el.getElementsByClassName("el-slider-prev")[0];
+        //     var swiper = el.getElementsByClassName("swiper-container")[0];
+        //     var nx = el.getElementsByClassName("el-slider-next")[0];
+        //     var pr = el.getElementsByClassName("el-slider-prev")[0];
 
-            new Swiper(swiper, {
-                slidesPerView: 2,
-                spaceBetween: 10,
-                navigation: {
-                    nextEl: nx,
-                    prevEl: pr,
+        //     new Swiper(swiper, {
+        //         slidesPerView: 2,
+        //         spaceBetween: 10,
+        //         navigation: {
+        //             nextEl: nx,
+        //             prevEl: pr,
+        //         },
+        //     });
+        // }
+
+        // var mySwiper = new Swiper(".el-swiper-category-3", {
+        //     loop: false,
+        //     spaceBetween: 18,
+        //     slidesPerView: 3,
+        //     slidesPerColumn: 2,
+        // });
+
+        // var mySwiper = new Swiper(".el-swiper-products-3", {
+        //     loop: false,
+        //     spaceBetween: 18,
+        //     slidesPerView: 4,
+        // });
+
+        // var mySwiper = new Swiper(".el-swiper-blog-3", {
+        //     loop: false,
+        //     spaceBetween: 18,
+        //     slidesPerView: 3,
+        // });
+
+        var mySwiper = new Swiper(".el-swiper-product-images-1", {
+            pagination: {
+                el: ".el-swiper-dots",
+                loop: true,
+                clickable: true,
+                slidesPerView: 1,
+                renderBullet: function (index, className) {
+                    return '<div class="el-swiper-pagination-image ' + className + '">' + "<img src='assets/images/product/" + (index + 1) + ".jpg' alt='alternative'/>" + "</div>";
                 },
-            });
-        }
-
-        var mySwiper = new Swiper(".el-swiper-category-3", {
-            loop: false,
-            spaceBetween: 18,
-            slidesPerView: 3,
-            slidesPerColumn: 2,
-        });
-
-        var mySwiper = new Swiper(".el-swiper-products-3", {
-            loop: false,
-            spaceBetween: 18,
-            slidesPerView: 4,
-        });
-
-        var mySwiper = new Swiper(".el-swiper-blog-3", {
-            loop: false,
-            spaceBetween: 18,
-            slidesPerView: 3,
+            },
         });
     };
 
@@ -111,6 +143,22 @@
             } else {
                 value = min;
             }
+        });
+    };
+
+    /*====== Produnt Images ======*/
+    AFRA.ProductImages = function () {};
+
+    /*====== Produnt Image Zoom ======*/
+    AFRA.ProductImageZoom = function () {
+        var image = $(".el-image-zoom");
+
+        image.ezPlus({
+            easing: true,       
+            zoomType: "lens",
+            lensShape: "round",
+            lensSize: 180,
+            scrollZoom: true,
         });
     };
 
@@ -154,6 +202,6 @@
 
     // Document.Ready
     $(document).ready(function () {
-        AFRA.Test(), AFRA.Counter(), AFRA.Carousel(), AFRA.DataFilters(), AFRA.MathProductsPrice(), AFRA.RemoveItemFromShoppingCart();
+        AFRA.Test(), AFRA.Counter(), AFRA.Carousel(), AFRA.DefaultTabs(), AFRA.DataFilters(), AFRA.ProductImageZoom(), AFRA.MathProductsPrice(), AFRA.RemoveItemFromShoppingCart();
     });
 })(jQuery);

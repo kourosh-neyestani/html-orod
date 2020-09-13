@@ -8,10 +8,10 @@
 
 .el-stars {
     list-style: none;
+    display: inline-block;
     padding: 0;
     margin: 0;
     li {
-        font-size: 11px;
         display: inline-block;
     }
 }
@@ -374,6 +374,32 @@
     }
 }
 
+.el-slider-product-image-1 {
+    position: relative;
+    .el-swiper-dots {
+        left: 0;
+        bottom: 0;
+        z-index: 99999;
+        text-align: center;
+        position: absolute;
+        padding-bottom: 15px;
+        .el-swiper-pagination-image {
+            width: 60px;
+            height: 60px;
+            margin: 0 3px;
+            opacity: .9;
+            overflow: hidden;
+            box-shadow: 0 3px 12px 0 rgba(0,0,0,.6);
+            border: 3px solid #ccc;
+            border-radius: $default-br;
+            &.swiper-pagination-bullet-active {
+                opacity: 1;
+                border-color: $primary;
+            }
+        }
+    }
+}
+
 /*------------------------------------
     Element: Progress Bar
 ------------------------------------*/
@@ -692,8 +718,157 @@ Preloader
 }
 
 /*------------------------------------
+    Element: Tabs
+------------------------------------*/
+
+.el-tabs {
+    overflow: hidden;
+    position: relative;
+    .el-tabs-links {
+        ul {
+            list-style: none;
+            user-select: none;
+            white-space: nowrap;
+            border-bottom: 1px solid #ccc;
+            padding: 0;
+            margin: 0;
+            li {
+                bottom: -4px;
+                height: 60px;
+                color: $text-color;
+                cursor: pointer;
+                display: inline-block;
+                font-weight: 700;
+                position: relative;
+                padding: 0 30px;
+                line-height: 60px;
+                border-bottom: 4px solid transparent;
+                &.active {
+                    color: $primary;
+                    cursor: inherit;
+                    border-color: $primary;
+                }
+            }
+        }
+    }
+    .el-tabs-content {
+        & > ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            & > li {
+                padding: 30px;
+                padding-top: 45px;
+                h2,
+                h3,
+                h4 {
+                    font-size: 24px;
+                    margin-bottom: 39px;
+                }
+                img {
+                    width: 100%;
+                }
+                form {
+                    padding-left: 15px;
+                }
+                &:not(.active) {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .el-tabs {
+        .el-tabs-links {
+            ul {
+                li {
+                    font-size: 12px;
+                    padding: 0 15px;
+                }
+            }
+        }
+        .el-tabs-content {
+            & > ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                & > li {
+                    padding-left: 15px;
+                    padding-right: 15px;
+                    h2,
+                    h3,
+                    h4 {
+                        font-size: 14px;
+                    }
+                }
+            }
+            form {
+                margin-bottom: 45px;
+            }
+        }
+    }
+}
+
+/*------------------------------------
     Table
 ------------------------------------*/
+
+.el-table {
+    width: 100%;
+    display: block;
+    margin: 0;
+    tbody {
+        width: 100%;
+        display: block;
+        margin: 0;
+        tr {
+            width: 100%;
+            height: 45px;
+            display: block;
+            margin-bottom: 6px;
+            td {
+                color: #333;
+                display: inline-block;
+                overflow: hidden;
+                line-height: 45px;
+                white-space: nowrap;
+                &.specname {
+                    width: 20%;
+                    padding: 0 15px;
+                    margin-left: 1%;
+                }
+                &.specvalue {
+                    width: 78%;
+                    padding: 0 15px;
+                }
+            }
+            &:nth-child(odd) {
+                td {
+                    background: #f7f7f7;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .el-table {
+        tbody {
+            tr {
+                height: 90px;
+                td {
+                    width: 100% !important;
+                    display: block;
+                    &.specvalue {
+                        color: $primary;
+                    }
+                }
+            }
+        }
+    }
+}
 
 .el-table-order {
     margin: 0 0 24px;
@@ -824,10 +999,50 @@ Preloader
 .el-counter {
     overflow: hidden;
     position: relative;
+    &.el-counter-3 {
+        float: left;
+        width: 160px;
+        height: 45px;
+        line-height: 45px;
+        text-align: center;
+        margin-right: 6px;
+        border-radius: $default-br;
+        background-color: $gray;
+        input {
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+            outline: 0;
+            position: absolute;
+            text-align: center;
+        }
+        .button {
+            top: 1px;
+            width: 30px;
+            height: 30px;
+            color: #aaa;
+            z-index: 3;
+            font-size: 9px;
+            line-height: 30px;
+            text-align: center;
+            position: absolute;
+            border-radius: 50%;
+            border: 0;
+            background-color: #fff;
+            margin: 7px 1px 0;
+            &.button-plus {
+                right: 15px;
+            }
+            &.button-minus {
+                left: 15px;
+            }
+        }
+    }
     &.el-counter-6 {
         width: 96px;
         height: 36px;
-        margin-left: 15px;
         padding-right: 6px;
         border-radius: 36px;
         background-color: $gray;
@@ -861,6 +1076,94 @@ Preloader
 }
 
 /*------------------------------------
+    Element: Comments
+------------------------------------*/
+
+.el-comments {
+    color: $text-color;
+    overflow: hidden;
+    position: relative;
+    & > ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        & > li {
+            display: block;
+            position: relative;
+            margin-bottom: 30px;
+            .el-comments-avatar {
+                top: 6px;
+                left: 6px;
+                width: 90px;
+                height: 90px;
+                overflow: hidden;
+                position: absolute;
+                border-radius: 50%;
+                margin-bottom: 9px;
+                img {
+                    width: 100%;
+                }
+                span {
+                    color: $base-1;
+                    text-align: center;
+                    white-space: nowrap;
+                    margin: auto;
+                }
+            }
+            .el-comments-content {
+                padding-right: 15px;
+                padding-left: 114px;
+                p {
+                    text-align: justify;
+                    margin-bottom: 12px;
+                }
+                .reply {
+                    right: 15px;
+                    bottom: 15px;
+                    position: absolute;
+                    &:hover {
+                        color: $primary;
+                    }
+                }
+                .el-comments-info {
+                    margin-bottom: 15px;
+                    .el-comments-author {
+                        color: $base-1;
+                        font-size: 16px;
+                    }
+                }
+            }
+            &:not(:last-child) {
+                padding-bottom: 15px;
+                border-bottom: 1px solid $gray;
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .el-comments {
+        & > ul {
+            & > li {
+                .el-comments-avatar {
+                    width: 45px;
+                    height: 45px;
+                }
+                .el-comments-author {
+                    top: 15px;
+                    right: 75px;
+                    position: absolute;
+                }
+                .el-comments-date,
+                .el-comments-content {
+                    padding: 0;
+                }
+            }
+        }
+    }
+}
+
+/*------------------------------------
     Product Price
 ------------------------------------*/
 
@@ -869,6 +1172,13 @@ Preloader
     height: 120px;
     overflow: hidden;
     padding-top: 15px;
+    .var {
+        color: $text-color;
+        display: block;
+        font-size: 12px;
+        text-align: center;
+        margin-bottom: 36px;
+    }
     .item-price,
     .item-total {
         width: 75px;
@@ -886,12 +1196,8 @@ Preloader
     .item-quantity {
         margin-right: 12px;
     }
-    .var {
-        color: $text-color;
-        display: block;
-        font-size: 12px;
-        text-align: center;
-        margin-bottom: 36px;
+    .el-counter {
+        margin-left: 15px;
     }
 }
 

@@ -51,6 +51,22 @@
             position: relative;
         }
     }
+    &.button-with-icon {
+        padding-left: 60px;
+        padding-right: 30px;
+        i {
+            top: 8px;
+            left: 15px;
+            width: 30px;
+            height: 30px;
+            display: inline-block;
+            position: absolute;
+            text-align: center;
+            line-height: 30px;
+            border-radius: 50%;
+            background-color: rgba(204, 204, 204, .3);
+        }
+    }
 }
 
 /*------------------------------------
