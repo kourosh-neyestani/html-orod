@@ -242,61 +242,113 @@
 ------------------------------------*/
 
 .section-product-detail {
-    &.section-product-detail-1 {
-        .product-images {
+    .product-images {
+        position: relative;
+        .icons {
+            top: 15px;
+            z-index: 999;
+            list-style: none;
+            position: absolute;
+            padding: 0;
+            &.icons-left {
+                left: 15px;
+                .icon {
+                    color: $base-0;
+                    z-index: 9999;
+                    font-weight: 700;
+                    text-align: center;
+                    margin-bottom: 15px;
+                    box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.3);
+                    &.icon-1 {
+                        width: 60px;
+                        height: 60px;
+                        line-height: 57px;
+                        border-radius: 50%;
+                        background-color: $warning;
+                    }
+                }
+            }
+        }
+        .el-product-image {
+            overflow: hidden;
             position: relative;
-            .icons {
-                top: 15px;
-                z-index: 999;
-                list-style: none;
+            padding-top: 100%;
+            border-radius: $default-br;
+            img {
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: auto;
                 position: absolute;
+            }
+        }
+    }
+    .product-detail {
+        p {
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 30px;
+        }
+        .score {
+            color: $text-color;
+            margin-bottom: 12px;
+            .el-stars {
+                margin-right: 15px;
+            }
+        }
+        .price {
+            margin-bottom: 12px;
+            .title {
+                color: $text-color;
+                margin-right: 15px;
+            }
+            .old-price {
+                color: $text-color;
+                font-size: 75%;
+                margin-right: 15px;
+                text-decoration: line-through;
+            }
+        }
+        .product-table {
+            margin-bottom: 40px;
+            ul {
+                list-style: none;
                 padding: 0;
-                &.icons-left {
-                    left: 15px;
-                    .icon {
-                        color: $base-0;
-                        z-index: 9999;
-                        font-weight: 700;
-                        text-align: center;
-                        margin-bottom: 15px;
-                        box-shadow: 0 3px 12px 0 rgba(0,0,0,.3);
-                        &.icon-1 {
-                            width: 60px;
-                            height: 60px;
-                            line-height: 57px;
-                            border-radius: 50%;
-                            background-color: $warning;
+                margin: 0;
+                li {
+                    height: 45px;
+                    display: block;
+                    line-height: 45px;
+                    &:not(:last-child) {
+                        border-bottom: 1px solid $gray;
+                    }
+                    span {
+                        width: 50%;
+                        display: inline-block;
+                        &.var {
+                            float: left;
+                            font-weight: bold;
+                            &:after {
+                                content: ":";
+                                padding-right: 2px;
+                            }
+                        }
+                        &.val {
+                            float: right;
+                            color: $text-color;
+                            text-align: right;
                         }
                     }
                 }
             }
-            .el-product-image {
-                overflow: hidden;
-                position: relative;
-                padding-top: 100%;
-                border-radius: $default-br;
-                img {
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: auto;
-                    position: absolute;
-                }
-            }
         }
+    }
+    &.section-product-detail-1 {
         .product-detail {
-            p {
-                text-align: justify;
-                margin-bottom: 20px;
-            }
-            h1 {
-                font-size: 30px;
-            }
             .score {
-                color: $text-color;
-                margin-bottom: 15px;
                 .el-stars {
-                    margin-right: 15px;
                     .fa-star {
                         color: $warning;
                     }
@@ -305,49 +357,18 @@
             .price {
                 color: $primary;
                 font-size: 24px;
-                margin-bottom: 12px;
-                .title {
-                    color: $text-color;
-                    margin-right: 15px;
-                }
-                .old-price {
-                    color: $text-color;
-                    margin-right: 15px;
-                    text-decoration: line-through;
-                }
             }
-            .product-table {
-                margin-bottom: 40px;
-                ul {
-                    list-style: none;
-                    padding: 0;
-                    margin: 0;
-                    li {
-                        height: 45px;
-                        display: block;
-                        line-height: 45px;
-                        &:not(:last-child) {
-                            border-bottom: 1px solid $gray;
-                        }
-                        span {
-                            width: 50%;
-                            display: inline-block;
-                            &.var {
-                                float: left;
-                                font-weight: bold;
-                                &:after {
-                                    content: ":";
-                                    padding-right: 2px;
-                                }
-                            }
-                            &.val {
-                                float: right;
-                                color: $text-color;
-                                text-align: right;
-                            }
-                        }
-                    }
-                }
+        }
+    }
+    &.section-product-detail-2 {
+        .product-detail {
+            padding-right: 60px;
+            .shareit {
+                top: 0;
+                right: 0;
+                width: 45px;
+                z-index: 12;
+                position: absolute;
             }
         }
     }

@@ -17,6 +17,40 @@
 }
 
 /*------------------------------------
+    Element: Social 
+------------------------------------*/
+
+.el-social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+        width: 36px;
+        height: 36px;
+        color: $base-0;
+        line-height: 39px;
+        text-align: center;
+        border-radius: $default-br;
+        a {
+            display: block;
+        }
+    }
+    &.side {
+        li {
+            display: inline-block;
+            margin-left: 1px;
+            margin-right: 1px;
+        }
+    }
+    &.block {
+        li {
+            display: block;
+            margin-bottom: 6px;
+        }
+    }
+}
+
+/*------------------------------------
     Element: Menu 
 ------------------------------------*/
 
@@ -372,29 +406,69 @@
             right: 0 !important;
         }
     }
+    .swiper-slide {
+        /* Center slide text vertically */
+        // display: -webkit-box;
+        // display: -ms-flexbox;
+        // display: -webkit-flex;
+        // display: flex;
+        // -webkit-box-pack: center;
+        // -ms-flex-pack: center;
+        // -webkit-justify-content: center;
+        // justify-content: center;
+        // -webkit-box-align: center;
+        // -ms-flex-align: center;
+        // -webkit-align-items: center;
+        // align-items: center;
+
+        // background-position: center;
+        // background-size: cover;
+    }
 }
 
-.el-slider-product-image-1 {
+.el-slider-product-image {
     position: relative;
     .el-swiper-dots {
-        left: 0;
-        bottom: 0;
         z-index: 99999;
-        text-align: center;
         position: absolute;
-        padding-bottom: 15px;
         .el-swiper-pagination-image {
             width: 60px;
             height: 60px;
-            margin: 0 3px;
-            opacity: .9;
+            margin: 3px;
+            opacity: 0.9;
             overflow: hidden;
-            box-shadow: 0 3px 12px 0 rgba(0,0,0,.6);
             border: 3px solid #ccc;
             border-radius: $default-br;
             &.swiper-pagination-bullet-active {
                 opacity: 1;
                 border-color: $primary;
+            }
+        }
+    }
+    &.el-slider-product-image-1 {
+        .el-swiper-dots {
+            left: 0;
+            bottom: 0;
+            text-align: center;
+            padding-bottom: 15px;
+            .el-swiper-pagination-image {
+                box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.6);
+            }
+        }
+    }
+    &.el-slider-product-image-2 {
+        .el-product-image {
+            float: right;
+            width: calc(100% - 75px);
+            padding-top: calc(100% - 75px) !important;
+        }
+        .el-swiper-dots {
+            top: 0;
+            left: 0;
+            padding-bottom: 15px;
+            .el-swiper-pagination-image {
+                display: block;
+                margin-bottom: 9px;
             }
         }
     }
@@ -750,6 +824,32 @@ Preloader
                 }
             }
         }
+        &.el-tabs-links-1 {
+            ul {
+                li {
+                    bottom: 0;
+                    height: 45px;
+                    line-height: 45px;
+                    background-color: $gray;
+                    &.active {
+                        color: $base-0;
+                        background-color: $primary;
+                    }
+                }
+            }
+        }
+        &.el-tabs-links-2 {
+            ul {
+                li {
+                    bottom: 0;
+                    height: 36px;
+                    line-height: 1;
+                    &.active {
+                        color: $primary;
+                    }
+                }
+            }
+        }
     }
     .el-tabs-content {
         & > ul {
@@ -759,6 +859,9 @@ Preloader
             & > li {
                 padding: 30px;
                 padding-top: 45px;
+                p {
+                    text-align: justify;
+                }
                 h2,
                 h3,
                 h4 {
@@ -999,9 +1102,8 @@ Preloader
 .el-counter {
     overflow: hidden;
     position: relative;
-    &.el-counter-3 {
-        float: left;
-        width: 160px;
+    &.el-counter-3,
+    &.el-counter-4 {
         height: 45px;
         line-height: 45px;
         text-align: center;
@@ -1022,21 +1124,38 @@ Preloader
             top: 1px;
             width: 30px;
             height: 30px;
-            color: #aaa;
+            color: #666;
             z-index: 3;
             font-size: 9px;
+            font-weight: 100;
             line-height: 30px;
             text-align: center;
             position: absolute;
             border-radius: 50%;
             border: 0;
-            background-color: #fff;
+            background-color: rgba(204, 204, 204, 0.1);
             margin: 7px 1px 0;
             &.button-plus {
                 right: 15px;
             }
             &.button-minus {
                 left: 15px;
+            }
+        }
+    }
+    &.el-counter-4 {
+        background-color: $base-1 !important;
+        input {
+            color: $base-0;
+        }
+        .button {
+            color: $base-0;
+            background-color: $base-1;
+            &.button-plus {
+                right: 6px;
+            }
+            &.button-minus {
+                left: 6px;
             }
         }
     }
