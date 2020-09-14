@@ -3957,6 +3957,7 @@ form .input-select .select2-container--default .select2-selection--single .selec
 }
 
 .el-card-product.el-card-product-1 {
+  text-align: left;
   border: 1px solid var(--gray);
   background-color: var(--base-0);
 }
@@ -4983,6 +4984,7 @@ Preloader
 
 .el-counter.el-counter-1 {
   height: 30px;
+  font-size: 12px;
   border-radius: 3px;
   background-color: #f3f3f3;
 }

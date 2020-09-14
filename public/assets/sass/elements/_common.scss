@@ -273,6 +273,7 @@
         }
     }
     &.el-card-product-1 {
+        text-align: left;
         border: 1px solid $gray;
         background-color: $base-0;
         .image {
@@ -1180,6 +1181,7 @@ Preloader
     }
     &.el-counter-1 {
         height: 30px;
+        font-size: 12px;
         border-radius: $default-br;
         background-color: #f3f3f3;
         .label {

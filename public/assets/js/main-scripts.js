@@ -80,22 +80,22 @@
         //         },
         //     });
         // }
-        // var mySwiper = new Swiper(".el-swiper-category-3", {
-        //     loop: false,
-        //     spaceBetween: 18,
-        //     slidesPerView: 3,
-        //     slidesPerColumn: 2,
-        // });
-        // var mySwiper = new Swiper(".el-swiper-products-3", {
-        //     loop: false,
-        //     spaceBetween: 18,
-        //     slidesPerView: 4,
-        // });
-        // var mySwiper = new Swiper(".el-swiper-blog-3", {
-        //     loop: false,
-        //     spaceBetween: 18,
-        //     slidesPerView: 3,
-        // });
+        var mySwiper = new Swiper(".el-swiper-category-3", {
+            loop: false,
+            spaceBetween: 18,
+            slidesPerView: 3,
+            slidesPerColumn: 2,
+        });
+        var mySwiper = new Swiper(".el-swiper-products-3", {
+            loop: false,
+            spaceBetween: 18,
+            slidesPerView: 4,
+        });
+        var mySwiper = new Swiper(".el-swiper-blog-3", {
+            loop: false,
+            spaceBetween: 18,
+            slidesPerView: 3,
+        });
     };
 
     /*====== Counter ======*/
