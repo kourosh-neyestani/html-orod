@@ -344,6 +344,16 @@
                 }
             }
         }
+        &.social {
+            padding-right: 60px;
+            .shareit {
+                top: 0;
+                right: 0;
+                width: 45px;
+                z-index: 12;
+                position: absolute;
+            }
+        }
     }
     &.section-product-detail-1 {
         .product-detail {
@@ -357,18 +367,6 @@
             .price {
                 color: $primary;
                 font-size: 24px;
-            }
-        }
-    }
-    &.section-product-detail-2 {
-        .product-detail {
-            padding-right: 60px;
-            .shareit {
-                top: 0;
-                right: 0;
-                width: 45px;
-                z-index: 12;
-                position: absolute;
             }
         }
     }
