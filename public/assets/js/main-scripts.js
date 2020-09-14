@@ -100,18 +100,24 @@
 
     /*====== Counter ======*/
     AFRA.Counter = function () {
-        var plus = $(".el-counter").find(".button-plus");
-        var minus = $(".el-counter").find(".button-minus");
+        var counter = $(".el-counter");
+        var plus = counter.find(".button-plus");
+        var minus = counter.find(".button-minus");
 
         plus.on("click", function () {
             var input = $(this).siblings("input");
             var value = parseInt(input.attr("value"));
             var max = parseInt(input.attr("max"));
+
             if (value < max) {
                 input.attr("value", ++value);
                 AFRA.MathProductsPrice($(this));
             } else {
                 value = max;
+            }
+
+            if (value > 0) {
+                $(this).parent().removeClass("empty");
             }
         });
 
@@ -119,11 +125,16 @@
             var input = $(this).siblings("input");
             var value = parseInt(input.attr("value"));
             var min = parseInt(input.attr("min"));
+            
             if (value > min) {
                 input.attr("value", --value);
                 AFRA.MathProductsPrice($(this));
             } else {
                 value = min;
+            }
+
+            if (value === 0) {
+                $(this).parent().addClass("empty");
             }
         });
     };
