@@ -113,7 +113,46 @@
 <section class="section section-products section-products-1">
     <div class="display-spacing">
         <div class="container">
-            <div class="row row-sm justify-content-md-center">
+            <div class="el-shop-nav el-shop-nav-1">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="el-dropdown el-dropdown-1 mr-30">
+                            <label for="input-select-sort" class="title">SORT BY:</label>
+                            <select id="input-select-sort" placeholder="Sort by">
+                                <option value="1">Best Sellers</option>
+                                <option value="2">Name, A to Z</option>
+                                <option value="3">Name, Z to A</option>
+                                <option value="3" selected="selected">Price, low to high</option>
+                                <option value="3">Price, high to low</option>
+                            </select>
+                        </div>
+                        <div class="el-dropdown el-dropdown-1">
+                            <label for="input-select-show" class="title">SHOW:</label>
+                            <select id="input-select-show" placeholder="show">
+                                <option value="1">12</option>
+                                <option value="2" selected="selected">24</option>
+                                <option value="3">36</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-6 text-right">
+                        <div class="el-switch-grid el-switch-grid-1" data-switch-grid-id="switch-grid-1-1">
+                            <button class="button button-circle button-circle-sm" data-switch-grid-type="grid-list">
+                                <i class="ti-view-list-alt"></i>
+                            </button>
+                            <button class="button button-circle button-circle-sm" data-switch-grid-type="grid-large">
+                                <i class="ti-layout-grid2"></i>
+                            </button>
+                            <button class="button button-circle button-circle-sm active" data-switch-grid-type="grid-card">
+                                <i class="ti-layout-grid3"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row row-sm justify-content-md-center" data-switch-grid-id="switch-grid-1-1">
                 <!--Item-->
                 <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3">
                     <div class="el-card el-card-product el-card-product-1 hover-1">
@@ -959,6 +998,27 @@
                     </div>
                 </div>
                 <!--/-->
+            </div>
+            <div class="el-pagination text-center pt-space-half">
+                <ul>
+                    <li class="active">1</li>
+                    <li>
+                        <a href="#">2</a>
+                    </li>
+                    <li>
+                        <a href="#">3</a>
+                    </li>
+                    <li>...</li>
+                    <li>
+                        <a href="#">25</a>
+                    </li>
+                    <li>
+                        <a href="#">26</a>
+                    </li>
+                    <li>
+                        <a href="#">NEXT <i class="ti-control-forward"></i></a>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>

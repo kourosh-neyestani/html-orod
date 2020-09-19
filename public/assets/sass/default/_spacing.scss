@@ -2,6 +2,22 @@
     Grid
 ------------------------------------*/
 
+.row {
+    &.grid-list {
+        & > * {
+            -ms-flex: 0 0 100% !important;
+            flex: 0 0 100% !important;
+            max-width: 100% !important;
+        }
+    }
+    &.grid-large {
+        & > * {
+            -ms-flex: 0 0 50% !important;
+            flex: 0 0 50% !important;
+            max-width: 50% !important;
+        }
+    }
+}
 .row-0 {
     margin-left: 0 !important;
     margin-right: 0 !important;
@@ -146,15 +162,27 @@
 }
 @each $i in (5, 10, 15, 20, 25, 30, 35, 40, 45, 50) {
     .pt-#{$i} {
-        padding-top: unquote( ($i) + 'px' ) !important;
+        padding-top: unquote(($i) + "px") !important;
+    }
+    .pr-#{$i} {
+        padding-right: unquote(($i) + "px") !important;
     }
     .pb-#{$i} {
-        padding-bottom: unquote( ($i) + 'px' ) !important;
+        padding-bottom: unquote(($i) + "px") !important;
+    }
+    .pl-#{$i} {
+        padding-left: unquote(($i) + "px") !important;
     }
     .mt-#{$i} {
-        margin-top: unquote( ($i) + 'px' ) !important;
+        margin-top: unquote(($i) + "px") !important;
+    }
+    .mr-#{$i} {
+        margin-right: unquote(($i) + "px") !important;
     }
     .mb-#{$i} {
-        margin-bottom: unquote( ($i) + 'px' ) !important;
+        margin-bottom: unquote(($i) + "px") !important;
+    }
+    .ml-#{$i} {
+        margin-left: unquote(($i) + "px") !important;
     }
 }

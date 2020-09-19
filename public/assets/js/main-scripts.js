@@ -125,7 +125,7 @@
             var input = $(this).siblings("input");
             var value = parseInt(input.attr("value"));
             var min = parseInt(input.attr("min"));
-            
+
             if (value > min) {
                 input.attr("value", --value);
                 AFRA.MathProductsPrice($(this));
@@ -136,6 +136,30 @@
             if (value === 0) {
                 $(this).parent().addClass("empty");
             }
+        });
+    };
+
+    /*====== Switch Grid ======*/
+    AFRA.SwitchGrid = function () {
+        var grid = $(".el-switch-grid");
+        var button = grid.find(".button");
+
+        button.on("click", function (e) {
+            e.preventDefault();
+            var gridId = $(this).parent().attr("data-switch-grid-id");
+            var gridType = $(this).attr("data-switch-grid-type");
+            var row = $(".row[data-switch-grid-id='" + gridId + "']");
+
+            if (gridType === "grid-card") {
+                row.removeClass("grid-list").removeClass("grid-large").addClass("grid-card");
+            } else if (gridType === "grid-list") {
+                row.removeClass("grid-card").removeClass("grid-large").addClass("grid-list");
+            } else if (gridType === "grid-large") {
+                row.removeClass("grid-card").removeClass("grid-list").addClass("grid-large");
+            }
+
+            $(this).siblings().removeClass("active");
+            $(this).addClass("active");
         });
     };
 
@@ -210,6 +234,6 @@
 
     // Document.Ready
     $(document).ready(function () {
-        AFRA.Test(), AFRA.Counter(), AFRA.Carousel(), AFRA.DefaultTabs(), AFRA.DataFilters(), AFRA.ProductImages(), AFRA.ProductImageZoom(), AFRA.MathProductsPrice(), AFRA.RemoveItemFromShoppingCart();
+        AFRA.Test(), AFRA.Counter(), AFRA.Carousel(), AFRA.DefaultTabs(), AFRA.DataFilters(), AFRA.SwitchGrid(), AFRA.ProductImages(), AFRA.ProductImageZoom(), AFRA.MathProductsPrice(), AFRA.RemoveItemFromShoppingCart();
     });
 })(jQuery);

@@ -1487,3 +1487,87 @@ Preloader
         margin: auto;
     }
 }
+
+
+/*------------------------------------
+    Element: Pagination
+------------------------------------*/
+
+.el-pagination {
+    white-space: nowrap;
+    margin: 0 auto;
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li {
+            height: 33px;
+            min-width: 33px;
+            line-height: 33px;
+            font-size: 12px;
+            text-align: center;
+            user-select: none;
+            display: inline-block;
+            border-radius: 50%;
+            border: 1px solid transparent;
+            i {
+                top: 1px;
+                position: relative;
+                margin-left: 6px;
+            }
+            a {
+                display: block;
+            }
+            .fa {
+                top: 1px;
+                padding-left: 6px;
+                position: relative;
+                display: inline-block;
+            }
+            &:hover {
+                color: $primary;
+            }
+            &.active {
+                color: $primary;
+                border-color: $gray;
+                box-shadow: $default-bs;
+            }
+        }
+    }
+    &.text-center {
+        ul {
+            margin: auto;
+        }
+    }
+}
+
+/*------------------------------------
+    Element: Shop Navigation
+------------------------------------*/
+
+.el-shop-nav {
+    margin-bottom: 12px;
+    .title {
+        font-weight: 700;
+    }
+    select {
+        color: $text-color;
+    }
+    .el-dropdown {
+        display: inline-block;
+    }
+}
+
+/*------------------------------------
+    Element: Switch Grid
+------------------------------------*/
+
+.el-switch-grid {
+    height: 30px;
+    display: inline-block;
+    .button {
+        &.active {
+            background-color: $gray;
+        }
+    }
+}
