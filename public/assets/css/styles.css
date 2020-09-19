@@ -3746,6 +3746,45 @@ form .input-select .select2-container--default .select2-selection--single .selec
 }
 
 /*------------------------------------
+    Element: Breadcrumbs 
+------------------------------------*/
+.el-breadcrumbs {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.el-breadcrumbs li {
+  display: inline-block;
+}
+
+.el-breadcrumbs li:not(:last-child):after {
+  content: "/";
+  margin-left: 6px;
+  margin-right: 3px;
+}
+
+/*------------------------------------
+    Element: Banner 
+------------------------------------*/
+.el-banner.el-banner-1 {
+  background-color: lightblue;
+}
+
+.el-banner.el-banner-1 .content {
+  color: var(--base-1);
+  text-align: center;
+}
+
+.el-banner.el-banner-1 .content h1 {
+  color: inherit;
+}
+
+.app-header-1 + .el-banner-1 .content {
+  margin-top: 30px;
+}
+
+/*------------------------------------
     Element: Heading 
 ------------------------------------*/
 .el-heading p {
