@@ -3596,8 +3596,8 @@ form .input-select .select2-container--default .select2-selection--single .selec
 }
 
 .el-select-color li {
-  width: 24px;
-  height: 24px;
+  width: 23px;
+  height: 23px;
   display: inline-block;
   position: relative;
   overflow: hidden;
