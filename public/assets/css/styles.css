@@ -106,6 +106,7 @@
   --primary: darkslateblue;
   --primary: #5b70f9;
   --primary: #f6931c;
+  --primary: #008aff;
   --primary-1: #384cce;
   --primary-3: #0e0b2b;
   --secondary: #f64f1c;
@@ -2411,6 +2412,132 @@ h6,
 
 .app-footer.app-footer-1 .el-select-languages {
   padding-top: 27px;
+}
+
+/*------------------------------------
+    Sidebar: Widgets
+------------------------------------*/
+.widget {
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.widget .widget-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px 15px;
+}
+
+.widget .widget-head h3 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  margin: 0;
+  margin-right: 9px;
+}
+
+.widget .widget-head span {
+  top: 9px;
+  width: 100%;
+  height: 4px;
+  position: relative;
+}
+
+.widget .widget-body {
+  padding: 15px 15px;
+}
+
+.el-range-slider {
+  width: 93%;
+}
+
+.el-range-slider ul {
+  min-height: 69px;
+  list-style: none;
+  padding: 20px 0 0;
+  margin: 0;
+}
+
+.el-range-slider ul li {
+  width: 50%;
+  float: left;
+  text-align: center;
+}
+
+.el-range-slider ul li input {
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+
+.el-range-slider ul li input:before {
+  content: "$aa";
+}
+
+.el-select-color {
+  display: inline-block;
+  text-align: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.el-select-color li {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  margin: 0px 1px;
+}
+
+.el-select-color li input {
+  top: 0;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  visibility: hidden;
+}
+
+.el-select-color li label {
+  width: 18px;
+  height: 18px;
+  color: #fff;
+  cursor: pointer;
+  opacity: 1;
+  overflow: hidden;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  font-weight: bolder;
+  line-height: 1;
+  font-family: "themify";
+  margin-bottom: 0;
+  border-radius: 50%;
+}
+
+.el-select-color li label:after {
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  content: "";
+  font-size: 10px;
+  position: absolute;
+  margin-top: -4px;
+  margin-left: -6px;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.el-select-color li input:checked + label {
+  border-color: #6ca1ad;
+}
+
+.el-select-color li input:checked + label:after {
+  content: "\e64c";
+  opacity: 1;
 }
 
 /*------------------------------------
@@ -5339,7 +5466,7 @@ Preloader
   height: 30px;
   font-size: 12px;
   border-radius: 3px;
-  background-color: #f3f3f3;
+  background-color: #f7f7f7;
 }
 
 .el-counter.el-counter-1 .label {
@@ -5353,7 +5480,7 @@ Preloader
   top: 0;
   width: 30px;
   height: 30px;
-  color: #666;
+  color: var(--text-color);
   z-index: 3;
   font-size: 9px;
   font-weight: 100;
@@ -5363,7 +5490,7 @@ Preloader
   margin: 0;
   border: 0;
   border-radius: 3px;
-  background-color: var(--gray);
+  background-color: #f4f4f4;
 }
 
 .el-counter.el-counter-1 .button.button-plus {
@@ -5683,6 +5810,7 @@ Preloader
   border-color: var(--gray);
   -webkit-box-shadow: 0 3px 6px 0 rgba(140, 152, 164, 0.25);
           box-shadow: 0 3px 6px 0 rgba(140, 152, 164, 0.25);
+  background-color: var(--base-0);
 }
 
 .el-pagination.text-center ul, .section-page .page-head .page-head-inner .el-pagination.page-head-content ul {
@@ -5718,6 +5846,27 @@ Preloader
 
 .el-switch-grid .button.active {
   background-color: var(--gray);
+}
+
+/*------------------------------------
+    Element: Category
+------------------------------------*/
+.el-category {
+  list-style: none;
+  padding: 0;
+}
+
+.el-category li {
+  display: block;
+  position: relative;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.el-category li:not(:last-child) {
+  padding-bottom: 9px;
+  margin-bottom: 9px;
+  border-bottom: 1px solid #eee;
 }
 
 /*------------------------------------
@@ -6395,6 +6544,7 @@ Preloader
   border: 3px;
   -webkit-box-shadow: 0 3px 6px 0 rgba(140, 152, 164, 0.25);
           box-shadow: 0 3px 6px 0 rgba(140, 152, 164, 0.25);
+  background-color: var(--base-0);
 }
 
 .section-features-line .item p {
@@ -6538,5 +6688,9 @@ Preloader
 
 .section-theme-preview .el-item h3 a {
   display: block;
+}
+
+body {
+  background-color: #f7f7f7 !important;
 }
 /*# sourceMappingURL=styles.css.map */

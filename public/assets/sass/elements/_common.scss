@@ -1225,7 +1225,7 @@ Preloader
         height: 30px;
         font-size: 12px;
         border-radius: $default-br;
-        background-color: #f3f3f3;
+        background-color: #f7f7f7;
         .label {
             color: $text-color;
             display: none;
@@ -1236,7 +1236,7 @@ Preloader
             top: 0;
             width: 30px;
             height: 30px;
-            color: #666;
+            color: $text-color;
             z-index: 3;
             font-size: 9px;
             font-weight: 100;
@@ -1246,7 +1246,7 @@ Preloader
             margin: 0;
             border: 0;
             border-radius: $default-br;
-            background-color: $gray;
+            background-color: #f4f4f4;
             &.button-plus {
                 right: 0;
             }
@@ -1531,6 +1531,7 @@ Preloader
                 color: $primary;
                 border-color: $gray;
                 box-shadow: $default-bs;
+                background-color: $base-0;
             }
         }
     }
@@ -1568,6 +1569,26 @@ Preloader
     .button {
         &.active {
             background-color: $gray;
+        }
+    }
+}
+
+/*------------------------------------
+    Element: Category
+------------------------------------*/
+
+.el-category {
+    list-style: none;
+    padding: 0;
+    li {
+        display: block;
+        position: relative;
+        padding-left: 0;
+        padding-right: 0;
+        &:not(:last-child) {
+            padding-bottom: 9px;
+            margin-bottom: 9px;
+            border-bottom: 1px solid #eee;
         }
     }
 }
