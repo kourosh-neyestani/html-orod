@@ -6925,6 +6925,25 @@ Preloader
 }
 
 /*------------------------------------
+    Section: Sign In
+------------------------------------*/
+.section-error {
+  height: 100vh;
+}
+
+.section-error.section-error-404 h1 {
+  color: #181818;
+  font-size: 180px;
+  line-height: 1;
+  margin-bottom: 0;
+}
+
+.section-error.section-error-404 h2 {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+/*------------------------------------
     Section: Search
 ------------------------------------*/
 /*------------------------------------
