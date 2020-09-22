@@ -1,3 +1,135 @@
 /*------------------------------------
     Section: Posts/Blog
 ------------------------------------*/
+
+
+/*------------------------------------
+    Element: Featured Posts
+------------------------------------*/
+
+.el-featured-posts {
+    z-index: 18;
+    overflow: hidden;
+    position: relative;
+    .post {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        border-radius: $default-br;
+        margin-bottom: 18px;
+        background-color: $base-1;
+        box-shadow: 0 3px 6px 0 rgba(140, 152, 164, 0.25) !important;
+        .post-image {
+            overflow: hidden;
+            position: relative;
+            padding-top: 60%;
+            transition: all 0.45s;
+            img {
+                top: 0;
+                right: 0;
+                width: 100%;
+                height: auto;
+                position: absolute;
+            }
+            &:after {
+                top: 39%;
+                right: 0;
+                width: 100%;
+                height: 100%;
+                content: "";
+                position: absolute;
+                background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 75%);
+            }
+        }
+        .post-details {
+            left: 0;
+            bottom: -60px;
+            padding: 15px 30px;
+            position: absolute;
+            transition: all 0.45s;
+            p {
+                color: #ccc;
+            }
+            h1,
+            h2 {
+                color: $base-0;
+                line-height: 1.5;
+                font-size: 21px;
+                padding-top: 15px;
+            }
+            .button {
+                padding-left: 0;
+            }
+            .post-details-footer {
+                padding-top: 30px;
+                transition: all 0.45s;
+                .author {
+                    float: left;
+                    color: $base-0;
+                    opacity: 0.75;
+                    font-size: 12px;
+                    font-weight: bold;
+                    position: relative;
+                    padding-top: 8px;
+                    padding-left: 45px;
+                    margin-right: 15px;
+                    img {
+                        top: 0;
+                        left: 0;
+                        width: 36px;
+                        height: 36px;
+                        position: absolute;
+                        border-radius: 50%;
+                        border: 2px solid $primary;
+                    }
+                }
+            }
+        }
+        &:hover {
+            .post-image {
+                opacity: 0.6;
+            }
+            .post-details {
+                bottom: 0;
+                .post-details-footer {
+                    padding-top: 0;
+                }
+            }
+        }
+        &.post-side {
+            .post-image {
+                padding-top: 59%;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .el-featured-posts {
+        .post {
+            &.post-side {
+                .post-details {
+                    h2 {
+                        font-size: 16px !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .el-featured-posts {
+        .post {
+            .post-details {
+                p {
+                    display: none !important;
+                }
+                h1,
+                h2 {
+                    font-size: 18px !important;
+                }
+            }
+        }
+    }
+}
