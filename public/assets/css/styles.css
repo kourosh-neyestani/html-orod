@@ -1758,6 +1758,30 @@ h6,
   margin-left: 50px !important;
 }
 
+.mt--18 {
+  margin-top: -18px !important;
+}
+
+.mt--24 {
+  margin-top: -24px !important;
+}
+
+.mt--30 {
+  margin-top: -30px !important;
+}
+
+.mt--36 {
+  margin-top: -36px !important;
+}
+
+.mt--45 {
+  margin-top: -45px !important;
+}
+
+.mt--60 {
+  margin-top: -60px !important;
+}
+
 .mb--18 {
   margin-bottom: -18px !important;
 }
@@ -1772,6 +1796,14 @@ h6,
 
 .mb--36 {
   margin-bottom: -36px !important;
+}
+
+.mb--45 {
+  margin-bottom: -45px !important;
+}
+
+.mb--60 {
+  margin-bottom: -60px !important;
 }
 
 /*------------------------------------
@@ -6498,6 +6530,21 @@ Preloader
 }
 
 .section-single-post .single-post .image img {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  position: absolute;
+}
+
+.section-single-post .image-large {
+  overflow: hidden;
+  padding-top: 57%;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.section-single-post .image-large img {
   top: 0;
   left: 0;
   width: 100%;
