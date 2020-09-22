@@ -284,6 +284,25 @@
     }
 }
 
+// Card-Post
+.el-card-post {
+    overflow: hidden;
+    position: relative;
+    border-radius: $default-br;
+    background-color: #fff;
+    border-bottom: 1px solid $gray;
+    .details {
+        padding: 20px;
+        p {
+            font-size: 12px;
+        }
+        h3 {
+            font-size: 18px;
+            line-height: 1.7;
+        }
+    }
+}
+
 // Card-Product
 .el-card-product {
     overflow: hidden;

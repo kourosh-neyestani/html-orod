@@ -244,6 +244,13 @@
         });
     };
 
+    /*====== Masonry Layout ======*/
+    AFRA.Masonry = function () {
+        $(function () {
+            $(".masonry").masonry();
+        });
+    };
+
     /*====== Math Products Price ======*/
     AFRA.RemoveItemFromShoppingCart = function () { 
         var button = $(".shopping-cart-item .item-trash");
@@ -259,6 +266,6 @@
 
     // Document.Ready
     $(document).ready(function () {
-        AFRA.Test(), AFRA.Counter(), AFRA.Carousel(), AFRA.DefaultTabs(), AFRA.DataFilters(), AFRA.SwitchGrid(), AFRA.ProductImages(), AFRA.ProductImageZoom(), AFRA.MathProductsPrice(), AFRA.ProductSliderPrice(), AFRA.RemoveItemFromShoppingCart();
+        AFRA.Test(), AFRA.Counter(), AFRA.Carousel(), AFRA.Masonry(), AFRA.DefaultTabs(), AFRA.DataFilters(), AFRA.SwitchGrid(), AFRA.ProductImages(), AFRA.ProductImageZoom(), AFRA.MathProductsPrice(), AFRA.ProductSliderPrice(), AFRA.RemoveItemFromShoppingCart();
     });
 })(jQuery);

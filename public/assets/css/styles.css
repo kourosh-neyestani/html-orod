@@ -4395,6 +4395,27 @@ form .input-select .select2-container--default .select2-selection--single .selec
   bottom: 18px;
 }
 
+.el-card-post {
+  overflow: hidden;
+  position: relative;
+  border-radius: 3px;
+  background-color: #fff;
+  border-bottom: 1px solid var(--gray);
+}
+
+.el-card-post .details {
+  padding: 20px;
+}
+
+.el-card-post .details p {
+  font-size: 12px;
+}
+
+.el-card-post .details h3 {
+  font-size: 18px;
+  line-height: 1.7;
+}
+
 .el-card-product {
   overflow: hidden;
   position: relative;
