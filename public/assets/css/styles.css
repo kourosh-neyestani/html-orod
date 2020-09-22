@@ -1161,6 +1161,46 @@ h6,
 /*------------------------------------
     Grid
 ------------------------------------*/
+@media (max-width: 576px) {
+  .order-xs-1 {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .order-sm-1 {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .order-md-1 {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
+@media (min-width: 992) and (max-width: 1200px) {
+  .order-lg-1 {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
+@media (min-width: 1200px) {
+  .order-xl-1 {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
 .row.grid-list > * {
   -ms-flex: 0 0 100% !important;
   -webkit-box-flex: 0 !important;
