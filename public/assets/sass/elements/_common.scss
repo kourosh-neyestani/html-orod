@@ -463,6 +463,22 @@
 }
 
 /*------------------------------------
+    Element: Panel
+------------------------------------*/
+
+.el-panel {
+    box-shadow: $default-bs;
+    border-radius: $default-br;
+    background-color: #fff;
+    .el-panel-head {
+        padding: 20px;
+    }
+    .el-panel-body {
+        padding: 20px;
+    }
+}
+
+/*------------------------------------
     Element: Slider
 ------------------------------------*/
 
@@ -1610,5 +1626,29 @@ Preloader
         &:not(:last-child) {
             margin-bottom: 9px;
         }
+    }
+}
+
+.el-list-tags {
+    ul {
+        display: inline-block;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li {
+            color: $text-color;
+            display: inline-block;
+            font-size: 12px;
+            margin-right: 9px;
+            margin-bottom: 3px;
+            &:before {
+                content: "#";
+                margin-right: 1px;
+            }
+        }
+    }
+    span {
+        font-weight: bold;
+        margin-right: 15px;
     }
 }

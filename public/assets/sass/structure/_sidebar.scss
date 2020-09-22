@@ -5,7 +5,7 @@
 .widget {
     overflow: hidden;
     position: relative;
-    margin-bottom: 24px;
+    margin-bottom: 18px;
     .widget-head {
         display: flex;
         padding: 0 0 25px;
@@ -27,3 +27,43 @@
     }
 }
 
+
+.widget {
+    &.el-widget-posts {
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            li {
+                display: block;
+                &:not(:last-child) {
+                    padding-bottom: 12px;
+                    margin-bottom: 12px;
+                    border-bottom: 1px solid $gray;
+                }
+                .image {
+                    overflow: hidden;
+                    position: relative;
+                    padding-top: 75%;
+                }
+                .details {
+                    h4 {
+                        color: $text-color;
+                        display: block;
+                        font-size: 12px;
+                        font-weight: 600;
+                        line-height: 1.8;
+                        padding-top: 9px;
+                        margin-bottom: 0;
+                        &:hover {
+                            color: $primary;
+                        }
+                    }
+                    .date {
+                        font-size: 11px;
+                    }
+                }
+            }
+        }
+    }
+}

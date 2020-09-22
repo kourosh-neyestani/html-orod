@@ -133,3 +133,29 @@
         }
     }
 }
+
+
+.section-single-post {
+    .single-post {
+        p {
+            text-align: justify;
+        }
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .image {
+            overflow: hidden;
+            padding-top: 57%;
+            position: relative;
+            margin-bottom: 20px;
+            img {
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: auto;
+                position: absolute;
+            }
+        }
+    }
+}

@@ -114,6 +114,7 @@
   --secondary: #00c9b7;
   --secondary-1: rgb(18, 172, 159);
   --text-color: #717f94;
+  --text-color: #666;
   --color-1: #70b6fe;
   --color-2: #c670fe;
   --color-3: #fec070;
@@ -2508,7 +2509,7 @@ h6,
 .widget {
   overflow: hidden;
   position: relative;
-  margin-bottom: 24px;
+  margin-bottom: 18px;
 }
 
 .widget .widget-head {
@@ -2532,6 +2533,46 @@ h6,
   width: 100%;
   height: 4px;
   position: relative;
+}
+
+.widget.el-widget-posts ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.widget.el-widget-posts ul li {
+  display: block;
+}
+
+.widget.el-widget-posts ul li:not(:last-child) {
+  padding-bottom: 12px;
+  margin-bottom: 12px;
+  border-bottom: 1px solid var(--gray);
+}
+
+.widget.el-widget-posts ul li .image {
+  overflow: hidden;
+  position: relative;
+  padding-top: 75%;
+}
+
+.widget.el-widget-posts ul li .details h4 {
+  color: var(--text-color);
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.8;
+  padding-top: 9px;
+  margin-bottom: 0;
+}
+
+.widget.el-widget-posts ul li .details h4:hover {
+  color: var(--primary);
+}
+
+.widget.el-widget-posts ul li .details .date {
+  font-size: 11px;
 }
 
 /*------------------------------------
@@ -4686,6 +4727,24 @@ form .input-select .select2-container--default .select2-selection--single .selec
 }
 
 /*------------------------------------
+    Element: Panel
+------------------------------------*/
+.el-panel {
+  -webkit-box-shadow: 0 3px 6px 0 rgba(140, 152, 164, 0.25);
+          box-shadow: 0 3px 6px 0 rgba(140, 152, 164, 0.25);
+  border-radius: 3px;
+  background-color: #fff;
+}
+
+.el-panel .el-panel-head {
+  padding: 20px;
+}
+
+.el-panel .el-panel-body {
+  padding: 20px;
+}
+
+/*------------------------------------
     Element: Slider
 ------------------------------------*/
 .el-slider {
@@ -5979,6 +6038,31 @@ Preloader
   margin-bottom: 9px;
 }
 
+.el-list-tags ul {
+  display: inline-block;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.el-list-tags ul li {
+  color: var(--text-color);
+  display: inline-block;
+  font-size: 12px;
+  margin-right: 9px;
+  margin-bottom: 3px;
+}
+
+.el-list-tags ul li:before {
+  content: "#";
+  margin-right: 1px;
+}
+
+.el-list-tags span {
+  font-weight: bold;
+  margin-right: 15px;
+}
+
 /*------------------------------------
     Sections Styles
 ------------------------------------*/
@@ -6355,6 +6439,30 @@ Preloader
   .el-featured-posts .post .post-details h2 {
     font-size: 18px !important;
   }
+}
+
+.section-single-post .single-post p {
+  text-align: justify;
+}
+
+.section-single-post .single-post h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.section-single-post .single-post .image {
+  overflow: hidden;
+  padding-top: 57%;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.section-single-post .single-post .image img {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  position: absolute;
 }
 
 /*------------------------------------
