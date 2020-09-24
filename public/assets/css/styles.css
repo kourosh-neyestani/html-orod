@@ -232,8 +232,8 @@
 
 html {
   width: 100%;
-  overflow: hidden;
-  overflow-y: auto;
+  height: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -2556,6 +2556,13 @@ h6,
 /*------------------------------------
     Footer
 ------------------------------------*/
+.app-footer {
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+
 .app-footer.app-footer-1 {
   height: 81px;
 }

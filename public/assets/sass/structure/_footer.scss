@@ -3,6 +3,10 @@
 ------------------------------------*/
 
 .app-footer {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    position: relative;
     &.app-footer-1 {
         height: 81px;
         &,
