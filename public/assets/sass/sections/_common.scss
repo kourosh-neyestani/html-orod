@@ -402,3 +402,94 @@
         }
     }
 }
+
+/*
+* Team - Style 1
+*/
+
+.section-team-1 .user-item {
+    overflow: hidden;
+    position: relative;
+    padding-top: 130%;
+    background-color: #fff;
+    -webkit-transition: all 0.45s;
+    transition: all 0.45s;
+}
+
+.section-team-1 .user-item p {
+    color: #eee;
+    -webkit-transform: translate(0, 45px);
+    transform: translate(0, 45px);
+    -webkit-transition: -webkit-transform 0.51s;
+    transition: -webkit-transform 0.51s;
+}
+
+.section-team-1 .user-item h4 {
+    color: #fff;
+    margin-bottom: 9px;
+    -webkit-transform: translate(0, 30px);
+    transform: translate(0, 30px);
+    -webkit-transition: -webkit-transform 0.45s;
+    transition: -webkit-transform 0.45s;
+}
+
+.section-team-1 .user-item ul li {
+    color: #eee;
+}
+
+.section-team-1 .user-item .user-image {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: no-repeat top center / cover;
+    -webkit-transition: all 0.6s;
+    transition: all 0.6s;
+}
+
+.section-team-1 .user-item .user-details {
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    opacity: 0;
+    text-align: center;
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: opacity 300ms;
+    transition: opacity 300ms;
+}
+
+.section-team-1 .user-item .divider-dots,
+.section-team-1 .user-item .divider-dots:before,
+.section-team-1 .user-item .divider-dots:after {
+    background: #ccc;
+}
+
+.section-team-1 .user-item:hover {
+    -webkit-box-shadow: 0 5px 30px -2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 5px 30px -2px rgba(0, 0, 0, 0.3);
+}
+
+.section-team-1 .user-item:hover p,
+.section-team-1 .user-item:hover .user-name {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+
+.section-team-1 .user-item:hover .user-image {
+    opacity: 0.2;
+    -webkit-transform: scale(1.11, 1.11);
+    transform: scale(1.11, 1.11);
+}
+
+.section-team-1 .user-item:hover ul,
+.section-team-1 .user-item:hover .user-overlay,
+.section-team-1 .user-item:hover .user-details {
+    opacity: 1;
+}
+
+.section-team-1.overlay-image .section-title h2 {
+    color: #ccc;
+}

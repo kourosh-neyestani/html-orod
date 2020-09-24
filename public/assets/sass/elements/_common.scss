@@ -140,12 +140,31 @@
         font-weight: 400;
         margin-bottom: 9px;
     }
-
     &.center {
         &,
         p {
             text-align: center;
         }
+    }
+    &.el-heading-4 {
+        margin-bottom: 20px !important;
+        h1,
+        h2,
+        h3 {
+            font-size: 30px;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+    }
+}
+
+/*------------------------------------
+    Element: Content 
+------------------------------------*/
+
+.el-content {
+    p {
+        margin-bottom: 20px;
     }
 }
 
