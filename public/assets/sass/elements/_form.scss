@@ -859,9 +859,10 @@ form .input-select .select2-container--default .select2-selection--single .selec
         left: 0;
         width: 20px;
         height: 20px;
-        font-family: "themify";
         position: absolute;
-        background-color: #eee;
+        font-family: "themify";
+        border-radius: $default-br;
+        background-color: #e6e6e6;
         &:after {
             top: 3px;
             left: 3px;
