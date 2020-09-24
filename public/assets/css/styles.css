@@ -110,6 +110,7 @@
   --primary: #5b70f9;
   --primary: #f6931c;
   --primary: #008aff;
+  --primary: #ef394e;
   --primary-1: #384cce;
   --primary-3: #0e0b2b;
   --secondary: #f64f1c;
@@ -2556,7 +2557,7 @@ h6,
     Footer
 ------------------------------------*/
 .app-footer.app-footer-1 {
-  height: 87px;
+  height: 81px;
 }
 
 .app-footer.app-footer-1,
@@ -2571,7 +2572,7 @@ h6,
 
 .app-footer.app-footer-1 p {
   text-align: right;
-  padding-top: 32px;
+  padding-top: 33px;
 }
 
 .app-footer.app-footer-1 .el-menu a {
@@ -2579,7 +2580,7 @@ h6,
 }
 
 .app-footer.app-footer-1 .el-select-languages {
-  padding-top: 27px;
+  padding-top: 28px;
 }
 
 /*------------------------------------
@@ -2770,6 +2771,10 @@ Forms
 .form-1 input[type="search"]:-ms-input-placeholder,
 .form-1 input[type="password"]:-ms-input-placeholder {
   color: var(--text-color);
+}
+
+.form-1 textarea {
+  padding-top: 12px;
 }
 
 .form-1 .form-item {

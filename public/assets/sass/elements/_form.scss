@@ -66,6 +66,9 @@ Forms
             color: $text-color;
         }
     }
+    textarea {
+        padding-top: 12px;
+    }
     .form-item {
         color: $text-color;
         label {
