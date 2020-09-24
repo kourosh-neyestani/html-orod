@@ -60,7 +60,7 @@ Forms
         box-shadow: none;
         border-radius: 0.375rem;
         padding: 0 20px;
-        border: 1px solid #e2e8f0;
+        border: 1px solid #e1e1e1;
         transition: all 0.2s ease;
         @include placeholder() {
             color: $text-color;
@@ -71,6 +71,15 @@ Forms
         label {
             display: block;
             margin-bottom: 9px;
+        }
+        .label-side {
+            top: 0;
+            right: 0;
+            cursor: pointer;
+            display: block;
+            font-size: 90%;
+            position: absolute;
+            border-bottom: 1px dashed $text-color;
         }
         .icon {
             left: 20px;
@@ -861,7 +870,6 @@ form .input-select .select2-container--default .select2-selection--single .selec
         height: 20px;
         position: absolute;
         font-family: "themify";
-        border-radius: $default-br;
         background-color: #e6e6e6;
         &:after {
             top: 3px;

@@ -139,6 +139,23 @@
         });
     };
 
+    /*====== Show Password ======*/
+    AFRA.ShowPassword = function () {
+        var button = $(".el-show-password");
+
+        button.on("click", function() {
+            var input = $(this).siblings("input");
+
+            if (input.attr("type") === "text") {
+                input.attr("type", "password");
+                $(this).html("Show password")
+            } else {
+                input.attr("type", "text");
+                $(this).html("Hide password")
+            }
+        })
+    };
+
     /*====== Switch Grid ======*/
     AFRA.SwitchGrid = function () {
         var grid = $(".el-switch-grid");
@@ -252,7 +269,7 @@
     };
 
     /*====== Math Products Price ======*/
-    AFRA.RemoveItemFromShoppingCart = function () { 
+    AFRA.RemoveItemFromShoppingCart = function () {
         var button = $(".shopping-cart-item .item-trash");
 
         button.on("click", function () {
@@ -266,6 +283,6 @@
 
     // Document.Ready
     $(document).ready(function () {
-        AFRA.Test(), AFRA.Counter(), AFRA.Carousel(), AFRA.Masonry(), AFRA.DefaultTabs(), AFRA.DataFilters(), AFRA.SwitchGrid(), AFRA.ProductImages(), AFRA.ProductImageZoom(), AFRA.MathProductsPrice(), AFRA.ProductSliderPrice(), AFRA.RemoveItemFromShoppingCart();
+        AFRA.Test(), AFRA.Counter(), AFRA.Carousel(), AFRA.Masonry(), AFRA.DefaultTabs(), AFRA.DataFilters(), AFRA.ShowPassword(), AFRA.SwitchGrid(), AFRA.ProductImages(), AFRA.ProductImageZoom(), AFRA.MathProductsPrice(), AFRA.ProductSliderPrice(), AFRA.RemoveItemFromShoppingCart();
     });
 })(jQuery);

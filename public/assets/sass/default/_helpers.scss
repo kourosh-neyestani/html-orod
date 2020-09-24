@@ -15,6 +15,9 @@
 .text-center {
     text-align: center !important;
 }
+.text-color {
+    color: $text-color;
+}
 .lowercase {
     text-transform: lowercase;
 }

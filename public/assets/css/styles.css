@@ -97,6 +97,7 @@
   --white: #fff;
   --black: #000;
   --base: #f7f7f7;
+  --base: #f6f9fc;
   --base-0: #f7f7f7;
   --base-0: #fff;
   --base-1: #151812;
@@ -1827,6 +1828,10 @@ h6,
   text-align: center !important;
 }
 
+.text-color {
+  color: var(--text-color);
+}
+
 .lowercase {
   text-transform: lowercase;
 }
@@ -2714,7 +2719,7 @@ Forms
           box-shadow: none;
   border-radius: 0.375rem;
   padding: 0 20px;
-  border: 1px solid #e2e8f0;
+  border: 1px solid #e1e1e1;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
@@ -2774,6 +2779,16 @@ Forms
 .form-1 .form-item label {
   display: block;
   margin-bottom: 9px;
+}
+
+.form-1 .form-item .label-side {
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  display: block;
+  font-size: 90%;
+  position: absolute;
+  border-bottom: 1px dashed var(--text-color);
 }
 
 .form-1 .form-item .icon {
@@ -3739,7 +3754,6 @@ form .input-select .select2-container--default .select2-selection--single .selec
   height: 20px;
   position: absolute;
   font-family: "themify";
-  border-radius: 3px;
   background-color: #e6e6e6;
 }
 
@@ -3982,9 +3996,10 @@ form .input-select .select2-container--default .select2-selection--single .selec
 }
 
 .button-lg {
-  height: 45px;
+  height: 50px;
   font-size: 14px;
-  padding: 9px 27px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .button-circle-lg {
