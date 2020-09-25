@@ -1923,7 +1923,7 @@ h6,
 }
 
 .text-primary {
-  color: var(--primary);
+  color: var(--primary) !important;
 }
 
 .text-secondary {
@@ -3982,9 +3982,9 @@ form .input-select .select2-container--default .select2-selection--single .selec
 }
 
 .button-sm {
-  height: 36px;
+  height: 39px;
   font-size: 12px;
-  padding: 9px 18px;
+  padding: 7px 18px;
 }
 
 .button-circle-sm {
@@ -4343,6 +4343,126 @@ form .input-select .select2-container--default .select2-selection--single .selec
 /*------------------------------------
     Elements
 ------------------------------------*/
+/*------------------------------------
+    Element: Accordion
+------------------------------------*/
+.el-accordion {
+  width: 992px;
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+  -webkit-box-shadow: 0 3px 6px 0 rgba(140, 152, 164, 0.25);
+          box-shadow: 0 3px 6px 0 rgba(140, 152, 164, 0.25);
+  border-radius: 3px;
+  background-color: var(--base-0);
+  -webkit-transition: all 0.45s;
+  transition: all 0.45s;
+}
+
+.el-accordion .el-accordion-head {
+  height: 84px;
+  color: var(--text-color);
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+
+.el-accordion .el-accordion-head .accordion-image {
+  width: 84px;
+  height: 84px;
+}
+
+.el-accordion .el-accordion-head .accordion-image img {
+  top: 18px;
+  width: 30px;
+  position: relative;
+}
+
+.el-accordion .el-accordion-head .accordion-title {
+  width: 90%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.el-accordion .el-accordion-head .accordion-title h4 {
+  color: var(--text-color);
+  font-size: 15px;
+  margin: 0;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+.el-accordion .el-accordion-head .accordion-arrow {
+  width: 84px;
+  height: 84px;
+  position: relative;
+  text-align: center;
+}
+
+.el-accordion .el-accordion-head .accordion-arrow span {
+  font-size: 18px;
+  font-weight: bold;
+  -webkit-transition: all 450ms;
+  transition: all 450ms;
+}
+
+.el-accordion .el-accordion-head .accordion-arrow.active span {
+  color: var(--primary);
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.el-accordion .el-accordion-body {
+  display: none;
+  overflow: hidden;
+  position: relative;
+  padding: 30px 45px;
+  border-top: 1px solid var(--gray);
+  background-color: #f7f7f7;
+}
+
+.el-accordion .el-accordion-body p {
+  margin: 0;
+}
+
+.el-accordion .el-accordion-body.active {
+  display: block;
+}
+
+.el-accordion:hover {
+  -webkit-box-shadow: 0 3px 1px 0 var(--primary);
+          box-shadow: 0 3px 1px 0 var(--primary);
+}
+
+.el-accordion:hover .el-accordion-head .accordion-title h4 {
+  color: var(--primary);
+}
+
+.el-accordion.active .el-accordion-head .accordion-title h4 {
+  color: var(--primary);
+}
+
+@media (max-width: 992px) {
+  .el-accordion .el-accordion-head .accordion-title h4 {
+    font-size: 14px;
+  }
+  .el-accordion .el-accordion-body {
+    padding: 20px 30px;
+  }
+  .el-accordion .el-accordion-body p {
+    font-size: 12px;
+    text-align: justify;
+  }
+}
+
 /*------------------------------------
     Element: Stars 
 ------------------------------------*/
@@ -7091,8 +7211,10 @@ Preloader
 /*------------------------------------
     Section: Features
 ------------------------------------*/
-.section-features .item {
+.section-features .el-item {
+  overflow: hidden;
   position: relative;
+  border-radius: 3px;
 }
 
 .section-features.section-features-2 .item {
@@ -7134,10 +7256,45 @@ Preloader
   background-color: var(--gray);
 }
 
-.section-features.section-features-7 .el-item:not(.el-item-1) {
-  padding-top: calc(50% - 5px);
+.section-features.section-features-7 .el-item .inner {
+  padding: 30px 42px;
 }
 
+.section-features.section-features-7 .el-item .inner .label {
+  display: block;
+}
+
+.section-features.section-features-7 .el-item .inner .title {
+  font-size: 27px;
+  font-weight: 600;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.section-features.section-features-7 .el-item .inner .title.title-2 {
+  font-size: 24px;
+}
+
+.section-features.section-features-7 .el-item .inner h4 {
+  font-size: 21px;
+}
+
+.section-features.section-features-7 .el-item:not(.el-item-1) {
+  padding-top: calc(50% - 4px) !important;
+}
+
+@media (max-width: 768px) {
+  .section-features.section-features-7 .inner h3 {
+    font-size: 14px !important;
+  }
+  .section-features.section-features-7 .inner .label {
+    font-size: 12px;
+  }
+}
+
+/*------------------------------------
+    Section: Features
+------------------------------------*/
 .section-features-line {
   overflow: initial;
 }
