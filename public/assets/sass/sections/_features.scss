@@ -3,8 +3,10 @@
 ------------------------------------*/
 
 .section-features {
-    .item {
+    .el-item {
+        overflow: hidden;
         position: relative;
+        border-radius: $default-br;
     }
     &.section-features-2 {
         .item {
@@ -45,12 +47,51 @@
     &.section-features-7 {
         .el-item {
             background-color: $gray;
+            .inner {
+                padding: 30px 42px;
+                .label {
+                    display: block;
+                }
+                .title {
+                    font-size: 27px;
+                    font-weight: 600;
+                    line-height: 1.5;
+                    margin: 0;
+                    &.title-2 {
+                        font-size: 24px;
+                    }
+                }
+                h4 {
+                    font-size: 21px;
+                }
+            }
             &:not(.el-item-1) {
-                padding-top: calc(50% - 5px);
+                padding-top: calc(50% - 4px) !important;
             }
         }
     }
 }
+
+@media (max-width: 768px) {
+    .section-features {
+        &.section-features-7 {
+            .inner {
+                h3 {
+                    font-size: 14px !important;
+                }
+                .label {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+
+/*------------------------------------
+    Section: Features
+------------------------------------*/
+
+
 .section-features-line {
     overflow: initial;
     .el-box {
