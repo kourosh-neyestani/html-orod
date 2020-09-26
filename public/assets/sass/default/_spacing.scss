@@ -193,7 +193,7 @@
 .mb-space-half {
     margin-bottom: $space / 2 !important;
 }
-@each $i in (5, 10, 15, 18, 20, 24, 25, 30, 35, 40, 45, 50) {
+@each $i in (5, 10, 15, 18, 20, 24, 25, 30, 35, 40, 45, 50, 75, 100) {
     .pt-#{$i} {
         padding-top: unquote(($i) + "px") !important;
     }

@@ -1762,6 +1762,70 @@ h6,
   margin-left: 50px !important;
 }
 
+.pt-75 {
+  padding-top: 75px !important;
+}
+
+.pr-75 {
+  padding-right: 75px !important;
+}
+
+.pb-75 {
+  padding-bottom: 75px !important;
+}
+
+.pl-75 {
+  padding-left: 75px !important;
+}
+
+.mt-75 {
+  margin-top: 75px !important;
+}
+
+.mr-75 {
+  margin-right: 75px !important;
+}
+
+.mb-75 {
+  margin-bottom: 75px !important;
+}
+
+.ml-75 {
+  margin-left: 75px !important;
+}
+
+.pt-100 {
+  padding-top: 100px !important;
+}
+
+.pr-100 {
+  padding-right: 100px !important;
+}
+
+.pb-100 {
+  padding-bottom: 100px !important;
+}
+
+.pl-100 {
+  padding-left: 100px !important;
+}
+
+.mt-100 {
+  margin-top: 100px !important;
+}
+
+.mr-100 {
+  margin-right: 100px !important;
+}
+
+.mb-100 {
+  margin-bottom: 100px !important;
+}
+
+.ml-100 {
+  margin-left: 100px !important;
+}
+
 .mt--18 {
   margin-top: -18px !important;
 }
@@ -6305,6 +6369,34 @@ Preloader
 }
 
 /*------------------------------------
+    Element: Countdown
+------------------------------------*/
+.el-countdown .countdown-item {
+  width: 60px;
+  height: 60px;
+  line-height: 1;
+  text-align: center;
+  display: inline-block;
+  margin-right: 9px;
+  padding-top: 9px;
+  -webkit-box-shadow: 0 3px 6px 0 rgba(140, 152, 164, 0.25);
+          box-shadow: 0 3px 6px 0 rgba(140, 152, 164, 0.25);
+  border-radius: 3px;
+  background-color: var(--base-1);
+}
+
+.el-countdown .countdown-item .countdown-label {
+  color: var(--base-0);
+}
+
+.el-countdown .countdown-item .countdown-value {
+  color: var(--primary);
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+/*------------------------------------
     Sections Styles
 ------------------------------------*/
 /*------------------------------------
@@ -6890,6 +6982,10 @@ Preloader
   background-color: var(--gray);
 }
 
+.section-cta.section-cta-6 {
+  height: 600px;
+}
+
 .section-cta.section-cta-6 .el-item {
   padding: 60px 45px;
   background-color: var(--gray);
@@ -6902,8 +6998,6 @@ Preloader
 
 .section-cta.section-cta-6 .el-item span.title {
   font-size: 24px;
-  font-weight: 700;
-  margin-bottom: 20px;
 }
 
 .section-cta.section-cta-6 .el-item span.subtitle {
@@ -6912,7 +7006,17 @@ Preloader
 }
 
 .section-cta.section-cta-7 {
-  height: 600px;
+  background-position: top center;
+}
+
+.section-cta.section-cta-7 .el-heading h2 {
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.section-cta.section-cta-7 .el-heading h2 .bigger {
+  font-size: 57px;
+  font-weight: 700;
 }
 
 /*------------------------------------

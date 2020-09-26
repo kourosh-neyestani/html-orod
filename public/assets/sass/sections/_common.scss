@@ -187,6 +187,7 @@
         background-color: $gray;
     }
     &.section-cta-6 {
+        height: 600px;
         .el-item {
             padding: 60px 45px;
             background-color: $gray;
@@ -195,8 +196,6 @@
                 line-height: 1;
                 &.title {
                     font-size: 24px;
-                    font-weight: 700;
-                    margin-bottom: 20px;
                 }
                 &.subtitle {
                     color: $primary;
@@ -206,7 +205,17 @@
         }
     }
     &.section-cta-7 {
-        height: 600px;
+        background-position: top center;
+        .el-heading {
+            h2 {
+                font-size: 45px;
+                font-weight: 700;
+                .bigger {
+                    font-size: 57px;
+                    font-weight: 700;
+                }
+            }
+        }
     }
 }
 

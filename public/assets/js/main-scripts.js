@@ -19,8 +19,20 @@
         hidePreloader();
     });
 
-     /*====== Accordion ======*/
-     AFRA.Accordion = function () {
+    /*====== Countdown ======*/
+    AFRA.Countdown = function () {
+        $(".el-countdown").each(function () {
+            var $this = $(this),
+                finalDate = $(this).data("time"),
+                e = $(this).data("labels");
+            $this.countdown(finalDate, function (event) {
+                $this.html(event.strftime('<div class="countdown-item"><div class="countdown-value">%D</div><div class="countdown-label">' + e["label-day"] + '</div></div><div class="countdown-item"><div class="countdown-value">%H</div><div class="countdown-label">' + e["label-hour"] + '</div></div><div class="countdown-item"><div class="countdown-value">%M</div><div class="countdown-label">' + e["label-minute"] + '</div></div><div class="countdown-item"><div class="countdown-value">%S</div><div class="countdown-label">' + e["label-second"] + "</div></div>"));
+            });
+        });
+    };
+
+    /*====== Accordion ======*/
+    AFRA.Accordion = function () {
         var toggle = $(".el-accordion .el-accordion-head");
         toggle.click(function (e) {
             e.preventDefault();
@@ -170,17 +182,17 @@
     AFRA.ShowPassword = function () {
         var button = $(".el-show-password");
 
-        button.on("click", function() {
+        button.on("click", function () {
             var input = $(this).siblings("input");
 
             if (input.attr("type") === "text") {
                 input.attr("type", "password");
-                $(this).html("Show password")
+                $(this).html("Show password");
             } else {
                 input.attr("type", "text");
-                $(this).html("Hide password")
+                $(this).html("Hide password");
             }
-        })
+        });
     };
 
     /*====== Switch Grid ======*/
@@ -310,6 +322,6 @@
 
     // Document.Ready
     $(document).ready(function () {
-        AFRA.Test(), AFRA.Accordion(), AFRA.Counter(), AFRA.Carousel(), AFRA.Masonry(), AFRA.DefaultTabs(), AFRA.DataFilters(), AFRA.ShowPassword(), AFRA.SwitchGrid(), AFRA.ProductImages(), AFRA.ProductImageZoom(), AFRA.MathProductsPrice(), AFRA.ProductSliderPrice(), AFRA.RemoveItemFromShoppingCart();
+        AFRA.Test(), AFRA.Accordion(), AFRA.Countdown(), AFRA.Counter(), AFRA.Carousel(), AFRA.Masonry(), AFRA.DefaultTabs(), AFRA.DataFilters(), AFRA.ShowPassword(), AFRA.SwitchGrid(), AFRA.ProductImages(), AFRA.ProductImageZoom(), AFRA.MathProductsPrice(), AFRA.ProductSliderPrice(), AFRA.RemoveItemFromShoppingCart();
     });
 })(jQuery);
