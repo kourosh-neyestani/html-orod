@@ -102,6 +102,10 @@
         });
     };
 
+    AFRA.MouseWheel = function () {
+
+    };
+
     /*====== Owl Carousel Setting ======*/
     AFRA.Carousel = function () {
         var mySwiper = new Swiper(".el-swiper-category-3", {
@@ -122,11 +126,11 @@
         });
         var mySwiper = new Swiper(".el-swiper-hero-2", {
             loop: true,
-            effect: 'fade', 
+            effect: "fade",
             autoplay: {
                 delay: 5100,
                 disableOnInteraction: false,
-              },
+            },
             slidesPerView: 1,
             pagination: {
                 el: ".swiper-pagination",
@@ -324,6 +328,6 @@
 
     // Document.Ready
     $(document).ready(function () {
-        AFRA.Test(), AFRA.Accordion(), AFRA.Countdown(), AFRA.Counter(), AFRA.Carousel(), AFRA.Masonry(), AFRA.DefaultTabs(), AFRA.DataFilters(), AFRA.ShowPassword(), AFRA.SwitchGrid(), AFRA.ProductImages(), AFRA.ProductImageZoom(), AFRA.MathProductsPrice(), AFRA.ProductSliderPrice(), AFRA.RemoveItemFromShoppingCart();
+        AFRA.Test(), AFRA.MouseWheel(), AFRA.Accordion(), AFRA.Countdown(), AFRA.Counter(), AFRA.Carousel(), AFRA.Masonry(), AFRA.DefaultTabs(), AFRA.DataFilters(), AFRA.ShowPassword(), AFRA.SwitchGrid(), AFRA.ProductImages(), AFRA.ProductImageZoom(), AFRA.MathProductsPrice(), AFRA.ProductSliderPrice(), AFRA.RemoveItemFromShoppingCart();
     });
 })(jQuery);

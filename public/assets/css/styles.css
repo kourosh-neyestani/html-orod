@@ -6586,10 +6586,11 @@ Preloader
 }
 
 .section-hero.section-hero-3 .hero-shapes .shape.shape-5 {
-  right: 14%;
-  bottom: 36%;
-  width: 12%;
-  padding-top: 12%;
+  right: 12%;
+  bottom: 45%;
+  width: 9%;
+  z-index: 1;
+  padding-top: 9%;
   background-color: lightblue;
 }
 
