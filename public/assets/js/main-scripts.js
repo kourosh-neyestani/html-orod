@@ -104,21 +104,6 @@
 
     /*====== Owl Carousel Setting ======*/
     AFRA.Carousel = function () {
-        // var x = document.getElementsByClassName("el-slider");
-        // for (var i = 0; i < x.length; i++) {
-        //     var el = x[i];
-        //     var swiper = el.getElementsByClassName("swiper-container")[0];
-        //     var nx = el.getElementsByClassName("el-slider-next")[0];
-        //     var pr = el.getElementsByClassName("el-slider-prev")[0];
-        //     new Swiper(swiper, {
-        //         slidesPerView: 2,
-        //         spaceBetween: 10,
-        //         navigation: {
-        //             nextEl: nx,
-        //             prevEl: pr,
-        //         },
-        //     });
-        // }
         var mySwiper = new Swiper(".el-swiper-category-3", {
             loop: false,
             spaceBetween: 18,
@@ -134,6 +119,23 @@
             loop: false,
             spaceBetween: 18,
             slidesPerView: 3,
+        });
+        var mySwiper = new Swiper(".el-swiper-hero-2", {
+            loop: true,
+            effect: 'fade', 
+            autoplay: {
+                delay: 5100,
+                disableOnInteraction: false,
+              },
+            slidesPerView: 1,
+            pagination: {
+                el: ".swiper-pagination",
+                type: "fraction",
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
         });
     };
 

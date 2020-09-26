@@ -1,9 +1,6 @@
 /*------------------------------------
     Section: Hero
 ------------------------------------*/
-/*------------------------------------
-    Section: Hero
-------------------------------------*/
 
 .section-hero {
     .hero-content {
@@ -11,6 +8,13 @@
         p {
             font-size: 18px;
             margin-bottom: 25px;
+        }
+        p,
+        h1,
+        h2,
+        .label,
+        .button {
+            transition: all 900ms;
         }
     }
     .display-center {
@@ -29,11 +33,15 @@
     }
     &.section-hero-2 {
         height: 100vh;
-        background-color: $primary;
+        .el-item {
+            height: 100vh;
+        }
         .hero-content {
-            margin: auto;
-            h1 {
-                color: $base-0;
+            h1,
+            h2 {
+                line-height: 1.2;
+                font-size: 60px;
+                font-weight: 700;
             }
         }
     }
@@ -93,7 +101,7 @@
                     &:after {
                         left: -60px;
                         bottom: -60px;
-                        opacity: .6;
+                        opacity: 0.6;
                     }
                 }
                 &.shape-4 {

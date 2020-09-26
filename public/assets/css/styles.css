@@ -1889,6 +1889,10 @@ h6,
   text-align: right !important;
 }
 
+.text-bold {
+  font-weight: 600;
+}
+
 .text-center, .section-page .page-head .page-head-inner .page-head-content {
   text-align: center !important;
 }
@@ -5115,8 +5119,9 @@ form .input-select .select2-container--default .select2-selection--single .selec
   right: 0 !important;
 }
 
-.el-slider .swiper-slide {
-  /* Center slide text vertically */
+.el-slider .swiper-button-next,
+.el-slider .swiper-button-prev {
+  color: var(--primary);
 }
 
 .el-slider-product-image {
@@ -5165,6 +5170,32 @@ form .input-select .select2-container--default .select2-selection--single .selec
 .el-slider-product-image.el-slider-product-image-2 .el-swiper-dots .el-swiper-pagination-image {
   display: block;
   margin-bottom: 9px;
+}
+
+.el-swiper-hero-2 .swiper-slide p,
+.el-swiper-hero-2 .swiper-slide .button {
+  -webkit-transform: translate(0, 30px);
+          transform: translate(0, 30px);
+}
+
+.el-swiper-hero-2 .swiper-slide h1,
+.el-swiper-hero-2 .swiper-slide h2 {
+  -webkit-transform: translate(0, -60px);
+          transform: translate(0, -60px);
+}
+
+.el-swiper-hero-2 .swiper-slide .label {
+  opacity: 0;
+}
+
+.el-swiper-hero-2 .swiper-slide.swiper-slide-active p,
+.el-swiper-hero-2 .swiper-slide.swiper-slide-active h1,
+.el-swiper-hero-2 .swiper-slide.swiper-slide-active h2,
+.el-swiper-hero-2 .swiper-slide.swiper-slide-active .label,
+.el-swiper-hero-2 .swiper-slide.swiper-slide-active .button {
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
 }
 
 /*------------------------------------
@@ -6402,9 +6433,6 @@ Preloader
 /*------------------------------------
     Section: Hero
 ------------------------------------*/
-/*------------------------------------
-    Section: Hero
-------------------------------------*/
 .section-hero .hero-content {
   width: 576px;
 }
@@ -6412,6 +6440,15 @@ Preloader
 .section-hero .hero-content p {
   font-size: 18px;
   margin-bottom: 25px;
+}
+
+.section-hero .hero-content p,
+.section-hero .hero-content h1,
+.section-hero .hero-content h2,
+.section-hero .hero-content .label,
+.section-hero .hero-content .button {
+  -webkit-transition: all 900ms;
+  transition: all 900ms;
 }
 
 .section-hero .display-center, .section-hero .section-page .page-head .page-head-inner .page-head-content, .section-page .page-head .page-head-inner .section-hero .page-head-content {
@@ -6433,15 +6470,17 @@ Preloader
 
 .section-hero.section-hero-2 {
   height: 100vh;
-  background-color: var(--primary);
 }
 
-.section-hero.section-hero-2 .hero-content {
-  margin: auto;
+.section-hero.section-hero-2 .el-item {
+  height: 100vh;
 }
 
-.section-hero.section-hero-2 .hero-content h1 {
-  color: var(--base-0);
+.section-hero.section-hero-2 .hero-content h1,
+.section-hero.section-hero-2 .hero-content h2 {
+  line-height: 1.2;
+  font-size: 60px;
+  font-weight: 700;
 }
 
 .section-hero.section-hero-3 {
@@ -6514,7 +6553,7 @@ Preloader
 .section-hero.section-hero-3 .hero-shapes .shape.shape-3:after {
   left: -60px;
   bottom: -60px;
-  opacity: .6;
+  opacity: 0.6;
 }
 
 .section-hero.section-hero-3 .hero-shapes .shape.shape-4 {
