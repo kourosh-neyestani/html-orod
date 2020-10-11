@@ -7,7 +7,78 @@
     display: block;
     overflow: hidden;
     position: relative;
+    .footer-copyright {
+        overflow: hidden;
+        position: relative;
+        p {
+            color: inherit;
+            margin-bottom: 0;
+        }
+        .container {
+            position: relative;
+        }
+    }
+    .footer-widgets {
+        .widget {
+            overflow: hidden;
+            position: relative;
+            margin-top: 15px;
+            h4 {
+                color: inherit;
+            }
+            &.widget-links {
+                ul {
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+                    li {
+                        display: block;
+                        a {
+                            display: block;
+                            &:hover {
+                                color: $primary;
+                            }
+                        }
+                        .icon {
+                            top: -1px;
+                            font-size: 9px;
+                            margin-right: 3px;
+                            position: relative;
+                        }
+                    }
+                }
+            }
+        }
+    }
     &.app-footer-1 {
+        color: #ccc;
+        position: relative;
+        background-color: #222;
+        .footer-widgets {
+            .widget {
+                .widget-title {
+                    h4 {
+                        color: $base-0;
+                    }
+                }
+            }
+        }
+        .footer-copyright {
+            color: $primary;
+            text-align: left;
+            padding-top: $space / 5;
+            padding-bottom: $space / 5;
+            .text-bold {
+                font-weight: 700;
+            }
+            .text-2 {
+                top: 0;
+                right: 15px;
+                position: absolute;
+            }
+        }
+    }
+    &.app-footer-4 {
         height: 81px;
         &,
         p {

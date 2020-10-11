@@ -154,7 +154,7 @@
 }
 .display-spacing-plus {
     padding-top: $space + 30px;
-    padding-bottom: 30px;
+    padding-bottom: $space;
 }
 .display-spacing-double {
     padding-top: $space + $space;
