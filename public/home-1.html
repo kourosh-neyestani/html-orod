@@ -24,6 +24,7 @@
     <link rel="shortcut icon" href="assets/favicon.ico" />
     <link rel="stylesheet" href="assets/css/plugins.min.css" />
     <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/skin-1.css" />
     <link rel="stylesheet" href="assets/css/custom.css" />
 </head>
 
@@ -36,7 +37,7 @@
     </div>
     <!-- / -->  
     <!--Header-->
-    <header class="app-header app-header-1 ">
+    <header class="app-header app-header-1 ${props.class}">
         <div class="container">
             <div class="header-wrap">
                 <button class="button button-menu button-open-sidenav">
@@ -50,7 +51,7 @@
                 <div class="el-menu">
                     <ul>
                         <li>
-                            <a href="home.html">
+                            <a href="home-1.html">
                                 <span class="text">Home</span>
                             </a>
                         </li>
@@ -1600,7 +1601,7 @@
     </div>
 </section>
 <!--/-->
-    <!--Footer-->
+<!--Footer-->
     <footer class="app-footer app-footer-1">
         <div class="footer-copyright">
             <div class="container">
@@ -1616,7 +1617,7 @@
                         <div class="el-menu">
                     <ul>
                         <li>
-                            <a href="home.html">
+                            <a href="home-1.html">
                                 <span class="text">Home</span>
                             </a>
                         </li>
@@ -1655,7 +1656,7 @@
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/plugins.min.js"></script>
     <script src="assets/js/main-scripts.js"></script>
-    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/${props.src}.js"></script>
     <!--/-->
 </body>
 
