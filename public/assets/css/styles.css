@@ -2577,12 +2577,12 @@ h6,
   display: inline-block;
 }
 
-.app-header.app-header-1 {
+.app-header.app-header-4 {
   top: 30px;
   position: absolute;
 }
 
-.app-header.app-header-1 .header-wrap {
+.app-header.app-header-4 .header-wrap {
   height: 84px;
   position: relative;
   -webkit-box-shadow: 0 3px 6px 0 rgba(140, 152, 164, 0.25);
@@ -2590,7 +2590,7 @@ h6,
   background-color: var(--base-0);
 }
 
-.app-header.app-header-1 .header-wrap .header-logo {
+.app-header.app-header-4 .header-wrap .header-logo {
   float: left;
   font-size: 21px;
   font-weight: 900;
@@ -2599,14 +2599,14 @@ h6,
   line-height: 88px;
 }
 
-.app-header.app-header-1 .header-wrap .header-links {
+.app-header.app-header-4 .header-wrap .header-links {
   top: 0;
   right: 0;
   position: absolute;
   padding: 28px 36px;
 }
 
-.app-header.app-header-1 .header-wrap .header-links .button {
+.app-header.app-header-4 .header-wrap .header-links .button {
   margin-left: 15px;
 }
 
