@@ -17,11 +17,10 @@
             height: 21px;
             z-index: 3;
             position: relative;
-            margin-right: 6px;
         }
         .count {
-            top: -2px;
-            left: 16px;
+            top: 1px;
+            right: 0;
             width: 27px;
             height: 27px;
             color: $base-1;
@@ -29,13 +28,10 @@
             font-weight: 700;
             text-align: center;
             line-height: 27px;
-            position: absolute;
+            position: relative;
             display: inline-block;
             border-radius: 50%;
             background-color: $gray;
-        }
-        &.button-icon-cart {
-            padding-right: 18px;
         }
     }
     &.button-read-more {

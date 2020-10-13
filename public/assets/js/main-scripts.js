@@ -58,6 +58,85 @@
         });
     };
 
+    /*====== Dropdown ======*/
+    AFRA.Dropdown = function () {
+        var link = $(".el-dropdown");
+        link.on({
+            mouseenter: function () {
+                $(this).find(".el-dropdown-box").show();
+                $(this).addClass("active");
+            },
+            mouseleave: function () {
+                $(this).removeClass("active");
+                $(this).find(".el-dropdown-box").slideUp(150);
+            },
+        });
+
+        // Dropdown search
+        var search = $(".el-hover-search-bar");
+        search.on({
+            mouseenter: function () {
+                $(this).find(".el-hover-search-bar-box").show();
+                $(this).addClass("active");
+            },
+            mouseleave: function () {
+                $(this).removeClass("active");
+                $(this).find(".el-dropdown-box").slideUp(150);
+            },
+        });
+    };
+
+    /*====== Sidenav ======*/
+    AFRA.Sidenav = function () {
+        var button = $(".button-display-sidenav");
+        var sidenav = $(".app-sidenav");
+
+        button.on("click", function (e) {
+            e.preventDefault();
+            sidenav.addClass("active");
+        });
+        sidenav.on("click", ".button-close-sidenav, .sidenav-close", function () {
+            sidenav.removeClass("active");
+        });
+    };
+
+    /*====== Megamenu ======*/
+    AFRA.Megamenu = function () {
+        var headerLink = $(".app-header .el-megamenu");
+        var sidenavLink = $(".app-sidenav .el-megamenu");
+
+        headerLink.on({
+            mouseenter: function () {
+                $(this).find(".el-megamenu-box").show();
+                $(this).addClass("active");
+            },
+            mouseleave: function () {
+                $(this).removeClass("active");
+                $(this).find(".el-megamenu-box").slideUp(150);
+            },
+        });
+        sidenavLink.on("click", function (e) {
+            e.preventDefault();
+            var menu = $(this).children(".el-megamenu-box");
+            menu.slideToggle(30);
+            $(this).toggleClass("active");
+        });
+    };
+
+    /*====== Shopping Cart ======*/
+    AFRA.ShoppingCart = function () {
+        var button = $(".button-display-shopping-cart");
+        var sidenav = $(".app-shopping-cart");
+
+        button.on("click", function (e) {
+            e.preventDefault();
+            sidenav.addClass("active");
+        });
+        sidenav.on("click", ".button-close-sidenav, .sidenav-close", function () {
+            sidenav.removeClass("active");
+        });
+    };
+
     /*====== Default Tabs ======*/
     AFRA.DefaultTabs = function () {
         var className = "active";
@@ -102,9 +181,7 @@
         });
     };
 
-    AFRA.MouseWheel = function () {
-
-    };
+    AFRA.MouseWheel = function () {};
 
     /*====== Owl Carousel Setting ======*/
     AFRA.Carousel = function () {
@@ -328,6 +405,6 @@
 
     // Document.Ready
     $(document).ready(function () {
-        AFRA.Test(), AFRA.MouseWheel(), AFRA.Accordion(), AFRA.Countdown(), AFRA.Counter(), AFRA.Carousel(), AFRA.Masonry(), AFRA.DefaultTabs(), AFRA.DataFilters(), AFRA.ShowPassword(), AFRA.SwitchGrid(), AFRA.ProductImages(), AFRA.ProductImageZoom(), AFRA.MathProductsPrice(), AFRA.ProductSliderPrice(), AFRA.RemoveItemFromShoppingCart();
+        AFRA.Test(), AFRA.MouseWheel(), AFRA.Accordion(), AFRA.Dropdown(), AFRA.Sidenav(), AFRA.Megamenu(), AFRA.ShoppingCart(), AFRA.Countdown(), AFRA.Counter(), AFRA.Carousel(), AFRA.Masonry(), AFRA.DefaultTabs(), AFRA.DataFilters(), AFRA.ShowPassword(), AFRA.SwitchGrid(), AFRA.ProductImages(), AFRA.ProductImageZoom(), AFRA.MathProductsPrice(), AFRA.ProductSliderPrice(), AFRA.RemoveItemFromShoppingCart();
     });
 })(jQuery);

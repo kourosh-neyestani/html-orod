@@ -1765,15 +1765,32 @@ Preloader
 ------------------------------------*/
 
 .el-list {
+    display: block;
     list-style: none;
     padding: 0;
     li {
-        display: block;
+        display: block !important;
+        line-height: 1.8 !important;
         position: relative;
         padding-left: 0;
         padding-right: 0;
         &:not(:last-child) {
             margin-bottom: 9px;
+        }
+        &.title {
+            font-weight: 700;
+            margin-bottom: 25px;
+        }
+        &:not(.title):hover {
+            a {
+                transform: translate(1px, 0);
+                color: $primary;
+            }
+        }
+        a {
+            display: block;
+            position: relative;
+            transition: all 300ms;
         }
     }
 }
@@ -1827,5 +1844,267 @@ Preloader
             font-weight: 700;
             margin-bottom: 6px;
         }
+    }
+}
+
+/*------------------------------------
+    Element: Megamenu
+------------------------------------*/
+
+.el-megamenu {
+    .megamenu-image {
+        &.megamenu-image-1 {
+            top: 30px;
+            right: 30px;
+            width: 300px;
+            height: 300px;
+            position: absolute;
+        }
+    }
+    .el-megamenu-box {
+        z-index: -3;
+        opacity: 0;
+        visibility: hidden;
+        border: 1px solid $gray;
+        box-shadow: $default-bs;
+        background-color: $base-0;
+        transition: all 0.45s;
+    }
+    & > a {
+        display: block;
+        position: relative;
+        &:before,
+        &:after {
+            top: 93%;
+            left: 0;
+            right: 0;
+            width: 9px;
+            height: 9px;
+            z-index: -1;
+            content: "";
+            opacity: 0;
+            display: block;
+            position: absolute;
+            margin: auto;
+            background-color: $gray;
+            transform: translate(0, -15px);
+            transition: all 240ms;
+        }
+        &:after {
+            top: 90%;
+            background-color: $base-0;
+        }
+    }
+    &.active {
+        .el-megamenu-box {
+            opacity: 1;
+            visibility: visible;
+            transform: translate(0, 0);
+        }
+        & > a {
+            &:before,
+            &:after {
+                opacity: 1;
+                transform: rotate(45deg) translate(0, 0);
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .el-megamenu {
+        .megamenu-image {
+            &.megamenu-image-1 {
+                top: 30px;
+                right: 30px;
+                width: 300px;
+                height: 300px;
+                position: absolute;
+            }
+        }
+        .el-megamenu-box {
+            top: 100%;
+            left: 0;
+            width: 100%;
+            min-height: 300px;
+            padding: 30px;
+            position: absolute;
+            transform: translate(0, -90px);
+        }
+    }
+}
+@media (max-width: 992px) {
+    .el-megamenu {
+        & > a {
+            display: block;
+            position: relative;
+            &:before,
+            &:after {
+                top: 90%;
+                background-color: $primary !important;
+            }
+        }
+        .el-megamenu-box {
+            height: 180px;
+            padding: 15px;
+            display: none;
+            overflow: hidden;
+            overflow-y: auto;
+            border: 3px solid $primary;
+            margin-top: -15px;
+            margin-bottom: 12px;
+            border-bottom-left-radius: $default-br;
+            border-bottom-right-radius: $default-br;
+        }
+    }
+}
+
+/*------------------------------------
+    Element: Dropdown
+------------------------------------*/
+
+.el-dropdown {
+    text-align: left;
+    user-select: none;
+    position: relative;
+    & > i {
+        font-size: 75%;
+        display: inline-block;
+        margin-left: 9px;
+    }
+    & > ul {
+        top: 100%;
+        left: 0;
+        opacity: 0;
+        z-index: 33;
+        display: block;
+        min-width: 150px;
+        padding: 20px;
+        position: absolute;
+        visibility: hidden;
+        border: 1px solid #eee;
+        border-bottom: 2px solid $gray;
+        background-color: $base-0;
+        box-shadow: 0 6px 30px rgba(0, 0, 0, 0.12);
+        transform: translate(0, 15px);
+        transition: all 0.45s;
+        & > li {
+            color: $base-1;
+            display: block;
+            line-height: 1;
+            &:not(:last-child) {
+                margin-bottom: 18px;
+            }
+        }
+        &:before,
+        &:after {
+            top: -6px;
+            left: 15px;
+            width: 9px;
+            height: 9px;
+            content: "";
+            opacity: 0;
+            display: block;
+            position: absolute;
+            background-color: $gray;
+            transform: translate(0, -15px);
+            transition: all 240ms;
+        }
+        &:after {
+            top: -5px;
+            background-color: $base-0;
+        }
+    }
+    &.active {
+        & > ul {
+            opacity: 1;
+            visibility: visible;
+            transform: translate(0, 0);
+            &:before,
+            &:after {
+                opacity: 1;
+                transform: rotate(45deg) translate(0, 0);
+            }
+        }
+    }
+}
+
+/*------------------------------------
+    Element: Search bar
+------------------------------------*/
+
+.el-hover-search-bar {
+    width: 60px;
+    height: 100%;
+    text-align: right;
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+    padding-right: 10px;
+    .el-hover-search-bar-box {
+        top: 100%;
+        right: -30px;
+        width: 450px;
+        height: 60px;
+        opacity: 0;
+        position: absolute;
+        visibility: hidden;
+        border-radius: 45px;
+        transform: translate(0, -15px);
+        transition: all 240ms;
+    }
+    &.active {
+        .el-hover-search-bar-box {
+            opacity: 1;
+            visibility: visible;
+            transform: translate(0, 0);
+        }
+    }
+}
+
+.el-search-hero {
+    height: 60px;
+    max-width: 540px;
+    position: relative;
+    margin: 0 auto;
+    background-color: $base-0;
+    border-radius: 45px;
+    border: 3px solid $primary;
+    i {
+        top: 18px;
+        left: 24px;
+        color: $text-color;
+        font-size: 16px;
+        position: absolute;
+    }
+    input {
+        width: 100%;
+        height: 100%;
+        display: block;
+        text-align: left;
+        font-size: 15px;
+        font-weight: 600;
+        padding-left: 57px;
+        padding-right: 75px;
+        border: 0;
+        outline: 0;
+        @include placeholder() {
+            color: $text-color;
+        }
+    }
+    .button {
+        top: 0;
+        right: -3px;
+        height: 100%;
+        color: $base-0;
+        position: absolute;
+        border: 0;
+        outline: 0;
+        padding: 0;
+        padding-left: 30px;
+        padding-right: 30px;
+        border-radius: 45px;
+        border: 3px solid $base-0;
+        background-color: $primary;
     }
 }

@@ -1,27 +1,150 @@
 /*------------------------------------
     Header
 ------------------------------------*/
-$header-1: 84px;
+$header-4: 84px;
+$header-bar: 44px;
+$header-nav: 60px;
 
 .app-header {
     width: 100%;
     display: block;
     z-index: 999;
+    user-select: none;
     position: relative;
+    .row > * {
+        position: initial;
+    }
+    .container {
+        position: relative;
+    }
     ul {
         list-style: none;
         padding: 0;
         margin: 0;
         li {
             display: inline-block;
+            a {
+                display: block;
+            }
         }
     }
-
+    .header-bar {
+        text-align: left;
+        height: $header-bar;
+        font-size: 90%;
+        .title {
+            color: inherit;
+            display: block;
+            line-height: $header-bar;
+            margin-bottom: 0;
+            span {
+                font-weight: 700;
+            }
+        }
+        .menubar {
+            margin-left: -9px;
+            margin-right: -12px;
+            & > li {
+                line-height: $header-bar;
+                display: inline-block;
+                padding-left: 9px;
+                padding-right: 9px;
+                &:not(:last-child) {
+                    &:after {
+                        content: "|";
+                        padding-left: 18px;
+                    }
+                }
+                .icon {
+                    top: 0;
+                    font-size: 75%;
+                    position: relative;
+                    margin-right: 3px;
+                }
+                .count {
+                    font-size: 81%;
+                }
+            }
+        }
+    }
+    .header-box {
+    }
+    .header-nav {
+        height: $header-nav;
+        color: $base-1;
+        background-color: $base-0;
+        .menu {
+            margin-left: -15px;
+            margin-right: -15px;
+            display: inline-block;
+            & > li {
+                height: $header-nav;
+                display: inline-block;
+                line-height: $header-nav;
+                padding-left: 15px;
+                padding-right: 15px;
+                &.el-dropdown {
+                    & > ul {
+                        &:after {
+                            top: -7px !important;
+                        }
+                    }
+                }
+            }
+        }
+        .button-icon {
+            top: 15px;
+            position: relative;
+            &.button-icon-search {
+                top: 16px;
+            }
+        }
+        .button-menu {
+            top: 4px;
+            left: 20px;
+            width: 50px;
+            height: 50px;
+            z-index: 99;
+            display: none;
+            padding: 0;
+            position: absolute;
+            span {
+                &,
+                &:before,
+                &:after {
+                    width: 33px;
+                    height: 3px;
+                    float: left;
+                    display: block;
+                    position: relative;
+                    background-color: $base-1;
+                }
+                &:before {
+                    top: -10px;
+                    content: "";
+                }
+                &:after {
+                    bottom: -8px;
+                    content: "";
+                }
+            }
+        }
+    }
+    &.app-header-1 {
+        top: 0;
+        left: 0;
+        width: 100%;
+        position: fixed;
+        .header-bar {
+            color: $base-0;
+            background-color: $base-1;
+        }
+    }
     &.app-header-4 {
         top: 30px;
         position: absolute;
         .header-wrap {
-            height: $header-1;
+            height: $header-4;
             position: relative;
             box-shadow: $default-bs;
             background-color: $base-0;
@@ -31,7 +154,7 @@ $header-1: 84px;
                 font-weight: 900;
                 padding-left: 36px;
                 padding-right: 18px;
-                line-height: $header-1 + 4px;
+                line-height: $header-4 + 4px;
             }
             .header-links {
                 top: 0;
@@ -41,6 +164,35 @@ $header-1: 84px;
                 .button {
                     margin-left: 15px;
                 }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .app-header {
+        &.app-header-1 {
+            .container {
+                width: 100%;
+                max-width: 100%;
+            }
+            .header-nav {
+                .menu {
+                    display: none;
+                }
+                .button-menu {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .app-header {
+        &.app-header-1 {
+            .header-bar {
+                text-align: center;
             }
         }
     }

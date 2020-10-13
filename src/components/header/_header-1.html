@@ -2,8 +2,80 @@ ${require('./_html.html') base="" href="custom" skin="1"}
     <!--Header-->
     <header class="app-header app-header-1">
         <div class="header-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <p class="title">Welcome you to <span class="text-primary">ORWELL</span> store!</p>
+                    </div>
+                    <div class="col-md-8 hidden-sm-down text-right">
+                        <ul class="menubar">
+                            <li>
+                                <i class="icon ti-heart"></i>
+                                <span>Wishlist</span>
+                                <span class="count">(0)</span>
+                            </li>
+                            <li>
+                                <i class="icon ti-control-shuffle"></i>
+                                <span>Compare</span>
+                                <span class="count">(0)</span>
+                            </li>
+                            <li class="el-dropdown el-dropdown-1">
+                                <span class="text">USD</span>
+                                <i class="ti-angle-down"></i>
+                                <ul class="el-dropdown-box">
+                                    <li>USD</li>
+                                    <li>EUR</li>
+                                </ul>
+                            </li>
+                            <li class="el-dropdown el-dropdown-1">
+                                <span class="text">English</span>
+                                <i class="ti-angle-down"></i>
+                                <ul class="el-dropdown-box">
+                                    <li>English</li>
+                                    <li>Spanish</li>
+                                    <li>German</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="header-box"></div>
-        <div class="header-nav"></div>
+        <!-- <div class="header-box">
+        </div> -->
+        <div class="header-nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        ${require('../menu/_1.html')}
+                        <button class="button button-menu button-display-sidenav">
+                            <span></span>
+                        </button>
+                    </div>
+                    <div class="col-md-6 text-right">
+                        <div class="el-hover-search-bar">
+                            <a href="#" class="button button-icon button-icon-search">
+                                <img class="icon" src="assets/images/icons/search.svg" alt="--Alternative--">
+                            </a>
+                            <div class="el-hover-search-bar-box" id="xxx">
+                                <div class="el-search-hero form-item">
+                                    <i class="fa fa-search"></i>
+                                    <input type="text" placeholder="What are you looking for?">
+                                    <button class="button">
+                                        <span class="text">Shop Now</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="button button-icon button-icon-cart button-display-shopping-cart">
+                            <img class="icon" src="assets/images/icons/shopping-cart.svg" alt="--Alternative--">
+                            <span class="count">3</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
     <!--/-->
+${require('../sidenav/_1.html')}
+${require('../sidenav/_shopping-cart-1.html')}
