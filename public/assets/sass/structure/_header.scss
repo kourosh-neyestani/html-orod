@@ -82,6 +82,10 @@ $header-nav: 60px;
                 line-height: $header-nav;
                 padding-left: 15px;
                 padding-right: 15px;
+                & > a {
+                    display: block;
+                    font-weight: 700;
+                }
                 &.el-dropdown {
                     & > ul {
                         &:after {
@@ -91,45 +95,55 @@ $header-nav: 60px;
                 }
             }
         }
-        .button-icon {
-            top: 15px;
-            position: relative;
-            &.button-icon-cart {
-                margin-right: 0;
+        .button {
+            &.button-icon {
+                top: 15px;
+                position: relative;
+                &.button-icon-cart {
+                    margin-right: 0;
+                }
+                &.button-icon-search {
+                    top: 16px;
+                }
             }
-            &.button-icon-search {
-                top: 16px;
+            &.button-menu {
+                top: 4px;
+                left: 20px;
+                width: 50px;
+                height: 50px;
+                z-index: 99;
+                display: none;
+                padding: 0;
+                position: absolute;
+                span {
+                    &,
+                    &:before,
+                    &:after {
+                        width: 33px;
+                        height: 3px;
+                        float: left;
+                        display: block;
+                        position: relative;
+                        background-color: $base-1;
+                    }
+                    &:before {
+                        top: -10px;
+                        content: "";
+                    }
+                    &:after {
+                        bottom: -8px;
+                        content: "";
+                    }
+                }
             }
         }
-        .button-menu {
-            top: 4px;
-            left: 20px;
-            width: 50px;
-            height: 50px;
-            z-index: 99;
-            display: none;
-            padding: 0;
-            position: absolute;
-            span {
-                &,
-                &:before,
-                &:after {
-                    width: 33px;
-                    height: 3px;
-                    float: left;
-                    display: block;
-                    position: relative;
-                    background-color: $base-1;
-                }
-                &:before {
-                    top: -10px;
-                    content: "";
-                }
-                &:after {
-                    bottom: -8px;
-                    content: "";
-                }
-            }
+        .header-logo {
+            float: left;
+            font-size: 21px;
+            font-weight: 900;
+            line-height: $header-nav - 1px;
+            padding-left: 36px;
+            padding-right: 39px;
         }
     }
     &.app-header-1 {
@@ -165,7 +179,6 @@ $header-nav: 60px;
                 margin-top: 14px;
                 & > li {
                     & > a {
-                        font-weight: 700;
                         text-transform: uppercase;
                         &:hover {
                             color: $primary;
@@ -174,11 +187,6 @@ $header-nav: 60px;
                 }
             }
             .header-logo {
-                float: left;
-                font-size: 21px;
-                font-weight: 900;
-                padding-left: 36px;
-                padding-right: 36px;
                 line-height: $header-4 + 1px;
             }
             .header-links {
@@ -261,9 +269,9 @@ $header-nav: 60px;
                 top: 17px;
                 left: 30px;
             }
-            .header-logo {
-                display: none;
-            }
+        }
+        .header-logo {
+            display: none;
         }
     }
 }

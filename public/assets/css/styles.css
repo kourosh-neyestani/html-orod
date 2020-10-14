@@ -227,7 +227,7 @@ body {
   color: var(--base-1);
   margin: 0;
   overflow-x: hidden;
-  background-color: var(--base-0);
+  background-color: var(--base);
 }
 
 body.state-menu {
@@ -2753,24 +2753,29 @@ h6,
   padding-right: 15px;
 }
 
+.app-header .header-nav .menu > li > a {
+  display: block;
+  font-weight: 700;
+}
+
 .app-header .header-nav .menu > li.el-dropdown > ul:after {
   top: -7px !important;
 }
 
-.app-header .header-nav .button-icon {
+.app-header .header-nav .button.button-icon {
   top: 15px;
   position: relative;
 }
 
-.app-header .header-nav .button-icon.button-icon-cart {
+.app-header .header-nav .button.button-icon.button-icon-cart {
   margin-right: 0;
 }
 
-.app-header .header-nav .button-icon.button-icon-search {
+.app-header .header-nav .button.button-icon.button-icon-search {
   top: 16px;
 }
 
-.app-header .header-nav .button-menu {
+.app-header .header-nav .button.button-menu {
   top: 4px;
   left: 20px;
   width: 50px;
@@ -2781,7 +2786,7 @@ h6,
   position: absolute;
 }
 
-.app-header .header-nav .button-menu span, .app-header .header-nav .button-menu span:before, .app-header .header-nav .button-menu span:after {
+.app-header .header-nav .button.button-menu span, .app-header .header-nav .button.button-menu span:before, .app-header .header-nav .button.button-menu span:after {
   width: 33px;
   height: 3px;
   float: left;
@@ -2790,14 +2795,23 @@ h6,
   background-color: var(--base-1);
 }
 
-.app-header .header-nav .button-menu span:before {
+.app-header .header-nav .button.button-menu span:before {
   top: -10px;
   content: "";
 }
 
-.app-header .header-nav .button-menu span:after {
+.app-header .header-nav .button.button-menu span:after {
   bottom: -8px;
   content: "";
+}
+
+.app-header .header-nav .header-logo {
+  float: left;
+  font-size: 21px;
+  font-weight: 900;
+  line-height: 59px;
+  padding-left: 36px;
+  padding-right: 39px;
 }
 
 .app-header.app-header-1 {
@@ -2843,7 +2857,6 @@ h6,
 }
 
 .app-header.app-header-4 .header-nav .menu > li > a {
-  font-weight: 700;
   text-transform: uppercase;
 }
 
@@ -2852,11 +2865,6 @@ h6,
 }
 
 .app-header.app-header-4 .header-nav .header-logo {
-  float: left;
-  font-size: 21px;
-  font-weight: 900;
-  padding-left: 36px;
-  padding-right: 36px;
   line-height: 85px;
 }
 
@@ -2920,7 +2928,7 @@ h6,
     top: 17px;
     left: 30px;
   }
-  .app-header.app-header-4 .header-logo {
+  .app-header .header-logo {
     display: none;
   }
 }
@@ -8907,9 +8915,5 @@ Preloader
 
 .section-theme-preview .el-item h3 a {
   display: block;
-}
-
-body {
-  background-color: var(--base) !important;
 }
 /*# sourceMappingURL=styles.css.map */
