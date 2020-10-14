@@ -167,6 +167,9 @@ $header-nav: 60px;
                     & > a {
                         font-weight: 700;
                         text-transform: uppercase;
+                        &:hover {
+                            color: $primary;
+                        }
                     }
                 }
             }

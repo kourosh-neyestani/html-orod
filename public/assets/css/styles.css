@@ -2843,6 +2843,10 @@ h6,
   text-transform: uppercase;
 }
 
+.app-header.app-header-4 .header-nav .menu > li > a:hover {
+  color: var(--primary);
+}
+
 .app-header.app-header-4 .header-nav .header-logo {
   float: left;
   font-size: 21px;
