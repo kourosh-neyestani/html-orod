@@ -7518,6 +7518,7 @@ Preloader
 .el-hover-search-bar {
   width: 60px;
   height: 100%;
+  color: var(--text-color);
   text-align: right;
   position: relative;
   display: inline-block;
@@ -7526,18 +7527,37 @@ Preloader
 }
 
 .el-hover-search-bar .el-hover-search-bar-box {
-  top: 100%;
-  right: -30px;
-  width: 450px;
+  top: 12px;
+  right: 15px;
+  width: 300px;
   height: 60px;
   opacity: 0;
   position: absolute;
   visibility: hidden;
   border-radius: 45px;
-  -webkit-transform: translate(0, -15px);
-          transform: translate(0, -15px);
-  -webkit-transition: all 240ms;
-  transition: all 240ms;
+  -webkit-transform: translate(90px, 0);
+          transform: translate(90px, 0);
+  -webkit-transition: all 600ms;
+  transition: all 600ms;
+}
+
+.el-hover-search-bar .el-hover-search-bar-box .form-item {
+  height: 39px;
+  position: relative;
+}
+
+.el-hover-search-bar .el-hover-search-bar-box .form-item input {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-bottom: 1px solid #000;
+  background-color: transparent;
+}
+
+.el-hover-search-bar .el-hover-search-bar-box .form-item .button {
+  padding-bottom: 0;
 }
 
 .el-hover-search-bar.active .el-hover-search-bar-box {

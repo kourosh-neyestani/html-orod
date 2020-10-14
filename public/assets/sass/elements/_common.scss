@@ -2033,25 +2033,43 @@ Preloader
     Element: Search bar
 ------------------------------------*/
 
+
 .el-hover-search-bar {
     width: 60px;
     height: 100%;
+    color: $text-color;
     text-align: right;
     position: relative;
     display: inline-block;
     margin-right: 20px;
     padding-right: 10px;
     .el-hover-search-bar-box {
-        top: 100%;
-        right: -30px;
-        width: 450px;
+        top: 12px;
+        right: 15px;
+        width: 300px;
         height: 60px;
         opacity: 0;
         position: absolute;
         visibility: hidden;
         border-radius: 45px;
-        transform: translate(0, -15px);
-        transition: all 240ms;
+        transform: translate(90px, 0);
+        transition: all 600ms;
+        .form-item {
+            height: 39px;
+            position: relative;
+            input {
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                border-bottom: 1px solid #000;
+                background-color: transparent;
+            }
+            .button {
+                padding-bottom: 0;
+            }
+        }
     }
     &.active {
         .el-hover-search-bar-box {
