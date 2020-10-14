@@ -54,9 +54,20 @@
         left: 0;
         bottom: 0;
         width: 100%;
-        height: 66px !important;
+        height: 45px !important;
         z-index: 999;
         position: absolute;
+        p,
+        ul li {
+            line-height: 45px !important;
+        }
+        .el-select-languages {
+            padding-top: 7px !important;
+        }
+        &.glass {
+            color: #ccc;
+            background-color: rgba(0, 0, 0, 0.45);
+        }
     }
     &.app-footer-1 {
         color: #ccc;

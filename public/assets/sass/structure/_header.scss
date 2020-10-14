@@ -66,6 +66,17 @@ $header-nav: 60px;
                 }
             }
         }
+        .header-back {
+            display: block;
+            padding-top: 12px;
+            i {
+                display: inline-block;
+                margin-right: 6px;
+            }
+            &:hover {
+                color: $primary;
+            }
+        }
     }
     .header-nav {
         height: $header-nav;
