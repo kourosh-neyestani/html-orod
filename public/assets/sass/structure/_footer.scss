@@ -50,6 +50,14 @@
             }
         }
     }
+    &.app-footer-0 {
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 66px !important;
+        z-index: 999;
+        position: absolute;
+    }
     &.app-footer-1 {
         color: #ccc;
         position: relative;
@@ -110,10 +118,6 @@
     &.app-footer-4 {
         height: 81px;
         border-bottom: 3px solid $primary;
-        &,
-        p {
-            color: #333;
-        }
         ul {
             list-style: none;
             text-align: center;
