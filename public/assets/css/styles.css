@@ -1151,6 +1151,37 @@ h6,
   }
 }
 
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+
 /*------------------------------------
     Grid
 ------------------------------------*/
@@ -2696,8 +2727,8 @@ h6,
 
 .app-header .header-nav {
   height: 60px;
-  color: var(--base-1);
-  background-color: var(--base-0);
+  -webkit-transition: all 450ms;
+  transition: all 450ms;
 }
 
 .app-header .header-nav .menu {
@@ -2761,7 +2792,7 @@ h6,
   top: 0;
   left: 0;
   width: 100%;
-  position: fixed;
+  position: absolute;
 }
 
 .app-header.app-header-1 .header-bar {
@@ -2800,6 +2831,29 @@ h6,
 
 .app-header.app-header-4 .header-wrap .header-links .button {
   margin-left: 15px;
+}
+
+.app-header.glass.app-header-1 .header-nav {
+  background-color: transparent;
+}
+
+.app-header.sticky.app-header-1 .header-nav {
+  top: 0;
+  left: 0;
+  width: 100%;
+  position: fixed;
+  -webkit-box-shadow: 0 3px 6px 0 rgba(140, 152, 164, 0.25);
+          box-shadow: 0 3px 6px 0 rgba(140, 152, 164, 0.25);
+  background-color: var(--base-0);
+  -webkit-animation-name: fadeInDown;
+          animation-name: fadeInDown;
+}
+
+.header-nav {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
 }
 
 @media (max-width: 992px) {
@@ -4793,7 +4847,7 @@ form .input-select .select2-container--default .select2-selection--single .selec
 }
 
 .button.button-icon .count {
-  top: 1px;
+  top: 2px;
   right: 0;
   width: 27px;
   height: 27px;
@@ -4805,7 +4859,7 @@ form .input-select .select2-container--default .select2-selection--single .selec
   position: relative;
   display: inline-block;
   border-radius: 50%;
-  background-color: var(--gray);
+  background-color: rgba(0, 0, 0, 0.075);
 }
 
 .button.button-read-more {

@@ -19,7 +19,7 @@
             position: relative;
         }
         .count {
-            top: 1px;
+            top: 2px;
             right: 0;
             width: 27px;
             height: 27px;
@@ -31,7 +31,7 @@
             position: relative;
             display: inline-block;
             border-radius: 50%;
-            background-color: $gray;
+            background-color: rgba(0, 0, 0, 0.075);
         }
     }
     &.button-read-more {
@@ -60,7 +60,7 @@
             text-align: center;
             line-height: 30px;
             border-radius: 50%;
-            background-color: rgba(204, 204, 204, .3);
+            background-color: rgba(204, 204, 204, 0.3);
         }
     }
 }

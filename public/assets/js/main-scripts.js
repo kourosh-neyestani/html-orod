@@ -19,6 +19,18 @@
         hidePreloader();
     });
 
+     /*====== Sticky Navigation Menu ======*/
+     AFRA.StickyHeader = function () {
+        var header = $(".app-header");
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > header.height()) {
+                header.addClass("sticky");
+            } else {
+                header.removeClass("sticky");
+            }
+        });
+    };
+    
     /*====== Countdown ======*/
     AFRA.Countdown = function () {
         $(".el-countdown").each(function () {
@@ -180,8 +192,6 @@
             }
         });
     };
-
-    AFRA.MouseWheel = function () {};
 
     /*====== Owl Carousel Setting ======*/
     AFRA.Carousel = function () {
@@ -405,6 +415,6 @@
 
     // Document.Ready
     $(document).ready(function () {
-        AFRA.Test(), AFRA.MouseWheel(), AFRA.Accordion(), AFRA.Dropdown(), AFRA.Sidenav(), AFRA.Megamenu(), AFRA.ShoppingCart(), AFRA.Countdown(), AFRA.Counter(), AFRA.Carousel(), AFRA.Masonry(), AFRA.DefaultTabs(), AFRA.DataFilters(), AFRA.ShowPassword(), AFRA.SwitchGrid(), AFRA.ProductImages(), AFRA.ProductImageZoom(), AFRA.MathProductsPrice(), AFRA.ProductSliderPrice(), AFRA.RemoveItemFromShoppingCart();
+        AFRA.Test(),AFRA.StickyHeader(), AFRA.Accordion(), AFRA.Dropdown(), AFRA.Sidenav(), AFRA.Megamenu(), AFRA.ShoppingCart(), AFRA.Countdown(), AFRA.Counter(), AFRA.Carousel(), AFRA.Masonry(), AFRA.DefaultTabs(), AFRA.DataFilters(), AFRA.ShowPassword(), AFRA.SwitchGrid(), AFRA.ProductImages(), AFRA.ProductImageZoom(), AFRA.MathProductsPrice(), AFRA.ProductSliderPrice(), AFRA.RemoveItemFromShoppingCart();
     });
 })(jQuery);
