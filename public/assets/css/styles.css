@@ -3047,6 +3047,7 @@ h6,
 
 .app-footer.app-footer-4 {
   height: 81px;
+  border-bottom: 3px solid var(--primary);
 }
 
 .app-footer.app-footer-4,
@@ -3056,12 +3057,28 @@ h6,
 
 .app-footer.app-footer-4 ul {
   list-style: none;
-  margin: 0;
+  text-align: center;
+  margin: 0 -15px;
+  padding: 0;
+}
+
+.app-footer.app-footer-4 ul li {
+  line-height: 81px;
+  display: inline-block;
+  padding: 0 15px;
+}
+
+.app-footer.app-footer-4 ul li a {
+  display: block;
+}
+
+.app-footer.app-footer-4 ul li:hover a {
+  color: var(--primary);
 }
 
 .app-footer.app-footer-4 p {
   text-align: right;
-  padding-top: 33px;
+  line-height: 81px;
 }
 
 .app-footer.app-footer-4 .el-menu a {
