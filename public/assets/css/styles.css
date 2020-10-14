@@ -2808,6 +2808,18 @@ h6,
   background-color: var(--base-1);
 }
 
+.app-header.app-header-2 {
+  top: 0;
+  left: 0;
+  width: 100%;
+  position: absolute;
+}
+
+.app-header.app-header-2 .header-bar {
+  color: var(--base-0);
+  background-color: var(--base-1);
+}
+
 .app-header.app-header-4 {
   top: 30px;
   position: absolute;
@@ -2846,6 +2858,18 @@ h6,
 }
 
 .app-header.sticky.app-header-1 .header-nav {
+  top: 0;
+  left: 0;
+  width: 100%;
+  position: fixed;
+  -webkit-box-shadow: 0 3px 6px 0 rgba(140, 152, 164, 0.25);
+          box-shadow: 0 3px 6px 0 rgba(140, 152, 164, 0.25);
+  background-color: var(--base-0);
+  -webkit-animation-name: fadeInDown;
+          animation-name: fadeInDown;
+}
+
+.app-header.sticky.app-header-2 .header-nav {
   top: 0;
   left: 0;
   width: 100%;
@@ -2964,6 +2988,33 @@ h6,
 }
 
 .app-footer.app-footer-1 .footer-copyright .text-2 {
+  top: 0;
+  right: 15px;
+  position: absolute;
+}
+
+.app-footer.app-footer-2 {
+  color: var(--text-color);
+  position: relative;
+  border-bottom: 6px solid var(--primary);
+}
+
+.app-footer.app-footer-2 .footer-widgets .widget .widget-title h4 {
+  color: var(--base-1);
+}
+
+.app-footer.app-footer-2 .footer-copyright {
+  color: var(--text-color);
+  text-align: left;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.app-footer.app-footer-2 .footer-copyright .text-bold {
+  font-weight: 700;
+}
+
+.app-footer.app-footer-2 .footer-copyright .text-2 {
   top: 0;
   right: 15px;
   position: absolute;

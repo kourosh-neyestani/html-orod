@@ -142,6 +142,16 @@ $header-nav: 60px;
             background-color: $base-1;
         }
     }
+    &.app-header-2 {
+        top: 0;
+        left: 0;
+        width: 100%;
+        position: absolute;
+        .header-bar {
+            color: $base-0;
+            background-color: $base-1;
+        }
+    }
     &.app-header-4 {
         top: 30px;
         position: absolute;
@@ -186,6 +196,17 @@ $header-nav: 60px;
 .app-header {
     &.sticky {
         &.app-header-1 {
+            .header-nav {
+                top: 0;
+                left: 0;
+                width: 100%;
+                position: fixed;
+                box-shadow: $default-bs;
+                background-color: $base-0;
+                animation-name: fadeInDown;
+            }
+        }
+        &.app-header-2 {
             .header-nav {
                 top: 0;
                 left: 0;

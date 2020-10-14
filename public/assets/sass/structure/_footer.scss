@@ -78,6 +78,34 @@
             }
         }
     }
+    &.app-footer-2 {
+        color: $text-color;
+        position: relative;
+        border-bottom: 6px solid $primary;
+        .footer-widgets {
+            .widget {
+                .widget-title {
+                    h4 {
+                        color: $base-1;
+                    }
+                }
+            }
+        }
+        .footer-copyright {
+            color: $text-color;
+            text-align: left;
+            padding-top: $space / 5;
+            padding-bottom: $space / 5;
+            .text-bold {
+                font-weight: 700;
+            }
+            .text-2 {
+                top: 0;
+                right: 15px;
+                position: absolute;
+            }
+        }
+    }
     &.app-footer-4 {
         height: 81px;
         &,
