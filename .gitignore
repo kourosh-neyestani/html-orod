@@ -2,3 +2,4 @@ node_modules/
 public/assets/css/styles.css.map
 public
 !public/assets
+package.json
