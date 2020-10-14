@@ -93,7 +93,7 @@
             },
             mouseleave: function () {
                 $(this).removeClass("active");
-                $(this).find(".el-dropdown-box").slideUp(150);
+                $(this).find(".el-hover-search-bar-box").slideUp(450);
             },
         });
     };

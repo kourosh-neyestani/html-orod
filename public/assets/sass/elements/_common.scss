@@ -2125,3 +2125,22 @@ Preloader
         background-color: $primary;
     }
 }
+
+.el-social-icon {
+    list-style: none;
+    padding: 0;
+    display: inline-block;
+    margin: 0 -9px !important;
+    li {
+        padding: 10px 9px;
+        display: inline-block;
+        a {
+            display: block;
+        }
+        &:hover {
+            a {
+                color: $primary;
+            }
+        }
+    }
+}

@@ -2260,6 +2260,10 @@ h6,
   background-color: #f6931c !important;
 }
 
+.bg-gray {
+  background-color: var(--gray) !important;
+}
+
 .bg-primary {
   background-color: var(--primary) !important;
 }
@@ -7631,6 +7635,26 @@ Preloader
   border-radius: 45px;
   border: 3px solid var(--base-0);
   background-color: var(--primary);
+}
+
+.el-social-icon {
+  list-style: none;
+  padding: 0;
+  display: inline-block;
+  margin: 0 -9px !important;
+}
+
+.el-social-icon li {
+  padding: 10px 9px;
+  display: inline-block;
+}
+
+.el-social-icon li a {
+  display: block;
+}
+
+.el-social-icon li:hover a {
+  color: var(--primary);
 }
 
 /*------------------------------------
