@@ -2699,7 +2699,7 @@ h6,
 
 .app-header .header-bar .menubar {
   margin-left: -9px;
-  margin-right: -12px;
+  margin-right: -6px;
 }
 
 .app-header .header-bar .menubar > li {
@@ -2752,6 +2752,10 @@ h6,
 .app-header .header-nav .button-icon {
   top: 15px;
   position: relative;
+}
+
+.app-header .header-nav .button-icon.button-icon-cart {
+  margin-right: 0;
 }
 
 .app-header .header-nav .button-icon.button-icon-search {
@@ -4848,7 +4852,7 @@ form .input-select .select2-container--default .select2-selection--single .selec
 
 .button.button-icon .count {
   top: 2px;
-  right: 0;
+  right: -3px;
   width: 27px;
   height: 27px;
   color: var(--base-1);

@@ -43,7 +43,7 @@ $header-nav: 60px;
         }
         .menubar {
             margin-left: -9px;
-            margin-right: -12px;
+            margin-right: -6px;
             & > li {
                 line-height: $header-bar;
                 display: inline-block;
@@ -94,6 +94,9 @@ $header-nav: 60px;
         .button-icon {
             top: 15px;
             position: relative;
+            &.button-icon-cart {
+                margin-right: 0;
+            }
             &.button-icon-search {
                 top: 16px;
             }
