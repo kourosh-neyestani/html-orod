@@ -3005,6 +3005,7 @@ h6,
   text-align: left;
   padding-top: 20px;
   padding-bottom: 20px;
+  background-color: var(--base-1);
 }
 
 .app-footer.app-footer-1 .footer-copyright .text-bold {
