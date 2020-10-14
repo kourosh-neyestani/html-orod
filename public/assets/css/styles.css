@@ -2821,11 +2821,12 @@ h6,
 }
 
 .app-header.app-header-4 {
-  top: 30px;
+  top: 0;
   position: absolute;
 }
 
-.app-header.app-header-4 .header-wrap {
+.app-header.app-header-4 .header-nav {
+  top: 30px;
   height: 84px;
   position: relative;
   -webkit-box-shadow: 0 3px 6px 0 rgba(140, 152, 164, 0.25);
@@ -2833,24 +2834,27 @@ h6,
   background-color: var(--base-0);
 }
 
-.app-header.app-header-4 .header-wrap .header-logo {
+.app-header.app-header-4 .header-nav .menu {
+  margin-top: 14px;
+}
+
+.app-header.app-header-4 .header-nav .menu > li > a {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.app-header.app-header-4 .header-nav .header-logo {
   float: left;
   font-size: 21px;
   font-weight: 900;
   padding-left: 36px;
-  padding-right: 18px;
-  line-height: 88px;
+  padding-right: 36px;
+  line-height: 85px;
 }
 
-.app-header.app-header-4 .header-wrap .header-links {
-  top: 0;
-  right: 0;
-  position: absolute;
-  padding: 28px 36px;
-}
-
-.app-header.app-header-4 .header-wrap .header-links .button {
-  margin-left: 15px;
+.app-header.app-header-4 .header-nav .header-links {
+  margin-top: 10px;
+  margin-right: 15px;
 }
 
 .app-header.glass.app-header-1 .header-nav {
@@ -2870,6 +2874,18 @@ h6,
 }
 
 .app-header.sticky.app-header-2 .header-nav {
+  top: 0;
+  left: 0;
+  width: 100%;
+  position: fixed;
+  -webkit-box-shadow: 0 3px 6px 0 rgba(140, 152, 164, 0.25);
+          box-shadow: 0 3px 6px 0 rgba(140, 152, 164, 0.25);
+  background-color: var(--base-0);
+  -webkit-animation-name: fadeInDown;
+          animation-name: fadeInDown;
+}
+
+.app-header.sticky.app-header-4 .header-nav {
   top: 0;
   left: 0;
   width: 100%;

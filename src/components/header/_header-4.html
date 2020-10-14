@@ -1,32 +1,40 @@
-${require('./_html.html') base="" href="custom" skin="4"}
+    ${require('./_html.html') base="" href="custom" skin="4"}
     <!--Header-->
-    <header class="app-header app-header-4 ${props.class}">
+    <header class="app-header app-header-4">
         <div class="container">
-            <div class="header-wrap">
-                <button class="button button-menu button-open-sidenav">
-                    <span></span>
-                </button>
-                <div class="header-logo">
-                    <a href="home.html">
-                        <span class="text">OR</span><span class="text">WELL</span>
-                    </a>
-                </div>
-                ${require('./_menu.html')}
-                <div class="header-links">
-                    <a href="#" class="button button-icon">
-                        <img class="icon" src="assets/images/icons/user.svg" alt="--Alternative--"/>
-                        <span class="text">Register</span>
-                    </a>
-                    <!-- <a href="#" class="button button-icon">
-                        <img class="icon" src="assets/images/icons/search.svg" alt="--Alternative--"/>
-                        <span class="text">Search</span>
-                    </a> -->
-                    <a href="#" class="button button-icon button-icon-cart">
-                        <img class="icon" src="assets/images/icons/shopping-cart.svg" alt="--Alternative--"/>
-                        <span class="count">3</span>
-                    </a>
+            <div class="header-nav">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <span class="header-logo">ORWELL</span>
+                            ${require('../menu/_1.html')}
+                            <button class="button button-menu button-display-sidenav">
+                                <span></span>
+                            </button>
+                        </div>
+                        <div class="col-md-4 text-right">
+                            <div class="header-links">
+                                <div class="el-hover-search-bar">
+                                    <button type="submit" class="button button-icon button-icon-search">
+                                        <img class="icon" src="assets/images/icons/search.svg" alt="--Alternative--">
+                                    </button>
+                                    <div class="el-hover-search-bar-box" id="xxx">
+                                        <div class="form-item">
+                                            <input type="text" placeholder="What are you looking for?">
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="button" class="button button-icon button-icon-cart button-display-shopping-cart">
+                                    <img class="icon" src="assets/images/icons/shopping-cart.svg" alt="--Alternative--">
+                                    <span class="count">3</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </header>
     <!--/-->
+${require('../sidenav/_1.html')}
+${require('../sidenav/_shopping-cart-1.html')}
