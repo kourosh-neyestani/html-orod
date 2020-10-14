@@ -7364,8 +7364,8 @@ Preloader
   background-color: var(--gray);
   -webkit-transform: translate(0, -15px);
           transform: translate(0, -15px);
-  -webkit-transition: all 240ms;
-  transition: all 240ms;
+  -webkit-transition: all 600ms;
+  transition: all 600ms;
 }
 
 .el-megamenu > a:after {
@@ -7523,12 +7523,11 @@ Preloader
   position: relative;
   display: inline-block;
   margin-right: 20px;
-  padding-right: 10px;
 }
 
 .el-hover-search-bar .el-hover-search-bar-box {
   top: 12px;
-  right: 15px;
+  right: 0;
   width: 300px;
   height: 60px;
   opacity: 0;
