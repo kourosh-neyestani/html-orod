@@ -1830,6 +1830,386 @@
     <script src="assets/js/main-scripts.js"></script>
     <script src="assets/js/${props.src}.js"></script>
     <!--/-->
+    <style>
+        /*------------------------------------
+    afra Demo Options
+    ------------------------------------*/
+        .afra-demo {
+            top: 0;
+            right: -330px;
+            width: 330px;
+            color: #000;
+            direction: ltr;
+            z-index: 99999;
+            position: fixed;
+            background: #fff;
+            -webkit-transition: right 750ms;
+            transition: right 750ms;
+            font-family: "Poppins", sans-serif;
+        }
+
+        .afra-demo.active {
+            right: 0;
+        }
+
+        .afra-demo .row {
+            margin-left: -6px;
+            margin-right: -6px;
+        }
+
+        .afra-demo .row>div {
+            padding-left: 6px;
+            padding-right: 6px;
+        }
+
+        .afra-demo .afra-demo-close {
+            top: 20px;
+            right: 20px;
+            width: 45px;
+            height: 45px;
+            cursor: pointer;
+            font-size: 21px;
+            line-height: 45px;
+            text-align: center;
+            position: absolute;
+        }
+
+        /* 
+    * afra Demo Options - Panel
+    */
+        .afra-demo .afra-demo-panel {
+            width: 100%;
+            height: 100vh;
+            opacity: 0;
+            max-width: 330px;
+            min-height: 100%;
+            overflow: hidden;
+            overflow-y: scroll;
+            visibility: hidden;
+            -webkit-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+            box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+            -webkit-transition: all 600ms;
+            transition: all 600ms;
+        }
+
+        .afra-demo .afra-demo-panel .afra-demo-title {
+            display: block;
+            font-size: 20px;
+            font-weight: 700;
+            text-align: left;
+            padding: 24px 30px;
+        }
+
+        .afra-demo .afra-demo-panel .afra-demo-subtitle {
+            display: block;
+            direction: ltr;
+            font-size: 16px;
+            font-weight: 500;
+            text-align: left;
+            padding: 30px 30px;
+            border-top: 1px solid #ccc;
+        }
+
+        .afra-demo.active .afra-demo-panel {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* 
+    * afra Demo Options - Colors
+    */
+        .afra-demo .afra-demo-panel .afra-demo-colors {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            list-style: none;
+            -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -ms-flex-line-pack: stretch;
+            align-content: stretch;
+            -webkit-box-align: start;
+            -ms-flex-align: start;
+            align-items: flex-start;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            padding: 0 30px;
+            margin-bottom: 0;
+        }
+
+        .afra-demo .afra-demo-panel .afra-demo-colors li {
+            width: 36px;
+            height: 36px;
+            cursor: pointer;
+            border-radius: 50%;
+            -webkit-box-align: stretch;
+            -ms-flex-align: stretch;
+            align-items: stretch;
+            -webkit-box-flex: 0;
+            -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+            -ms-flex-item-align: auto;
+            -ms-grid-row-align: auto;
+            align-self: auto;
+            margin-bottom: 9px;
+        }
+
+        /* 
+    * afra Demo Options - Layouts
+    */
+        .afra-demo .afra-demo-pages {
+            list-style: none;
+            padding: 0 30px;
+        }
+
+        .afra-demo .afra-demo-pages li {
+            padding: 0 6px;
+        }
+
+        .afra-demo .afra-demo-pages li a {
+            display: block;
+            overflow: hidden;
+            position: relative;
+            padding-bottom: 30px;
+            margin-bottom: 12px;
+            border-radius: 3px;
+            -webkit-box-shadow: 0 0px 2px rgba(0, 0, 0, 0.3), 0 3px 12px rgba(0, 0, 0, 0.21);
+            box-shadow: 0 0px 2px rgba(0, 0, 0, 0.3), 0 3px 12px rgba(0, 0, 0, 0.21);
+        }
+
+        .afra-demo .afra-demo-pages li span {
+            left: 0;
+            right: 0;
+            height: 30px;
+            bottom: 0;
+            display: block;
+            font-size: 14px;
+            text-align: center;
+            white-space: nowrap;
+            padding-top: 4px;
+            position: absolute;
+            background-color: #fff;
+        }
+
+        /* 
+    * afra Demo Options - Toggle
+    */
+        .afra-demo .afra-demo-toggle {
+            top: 120px;
+            left: -45px;
+            width: 45px;
+            height: 45px;
+            color: #fff;
+            cursor: pointer;
+            opacity: 0.75;
+            font-size: 27px;
+            line-height: 50px;
+            position: absolute;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.3);
+            border-top-left-radius: 3px;
+            border-bottom-left-radius: 3px;
+            -webkit-transition: right 900ms;
+            transition: right 900ms;
+        }
+
+        .afra-demo .afra-demo-toggle i {
+            -webkit-transition: all 3s;
+            transition: all 3s;
+            -webkit-animation: rotation 6s infinite linear;
+            animation: rotation 6s infinite linear;
+        }
+
+        .afra-demo .afra-demo-toggle:hover {
+            opacity: 1;
+            background: #000;
+        }
+
+        /* 
+    * afra Demo Options - Animations
+    */
+        @-webkit-keyframes rotation {
+            from {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+
+            to {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes rotation {
+            from {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+
+            to {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+
+        .rotation {
+            -webkit-animation: rotating 2s linear infinite;
+            animation: rotating 2s linear infinite;
+        }
+    </style>
+    <div class="afra-demo">
+        <div class="afra-demo-panel">
+            <span class="afra-demo-close">
+                <i class="ti-close"></i>
+            </span>
+            <span class="afra-demo-title">Demo Options</span>
+            <span class="afra-demo-subtitle">- Color Schemes</span>
+            <ul class="afra-demo-colors">
+                <li class="afra-demo-color-1" style="background-color: orange;"></li>
+                <li class="afra-demo-color-2" style="background-color: #de5881;"></li>
+                <li class="afra-demo-color-3" style="background-color: #0b7554;"></li>
+                <li class="afra-demo-color-4" style="background-color: #7b1f29;"></li>
+                <li class="afra-demo-color-5" style="background-color: #00b7b8;"></li>
+                <li class="afra-demo-color-6" style="background-color: #33b5e5;"></li>
+            </ul>
+            <ul class="afra-demo-colors">
+                <li class="afra-demo-color-7" style="background-color: #1d3268;"></li>
+                <li class="afra-demo-color-8" style="background-color: #00897b;"></li>
+                <li class="afra-demo-color-9" style="background-color: #ff5e14;"></li>
+                <li class="afra-demo-color-10" style="background-color: #fdb415;"></li>
+                <li class="afra-demo-color-11" style="background-color: #c89454;"></li>
+                <li class="afra-demo-color-12" style="background-color: hotpink;"></li>
+            </ul>
+            <ul class="afra-demo-colors">
+                <li class="afra-demo-color-13" style="background-color: #ac5f33;"></li>
+                <li class="afra-demo-color-14" style="background-color: #e79e7e;"></li>
+                <li class="afra-demo-color-15" style="background-color: #ffcdb4;"></li>
+                <li class="afra-demo-color-16" style="background-color: #e8a384;"></li>
+                <li class="afra-demo-color-17" style="background-color: #f9b689;"></li>
+                <li class="afra-demo-color-18" style="background-color: #ffcba6;"></li>
+            </ul>
+            <ul class="afra-demo-colors">
+                <li class="afra-demo-color-19" style="background-color: #a45223;"></li>
+                <li class="afra-demo-color-20" style="background-color: #d88c75;"></li>
+                <li class="afra-demo-color-21" style="background-color: #f7c3b6;"></li>
+                <li class="afra-demo-color-22" style="background-color: #dc9263;"></li>
+                <li class="afra-demo-color-23" style="background-color: #e9b876;"></li>
+                <li class="afra-demo-color-24" style="background-color: #d78150;"></li>
+            </ul>
+        </div>
+        <div class="afra-demo-toggle">
+            <i class="ti-settings"></i>
+        </div>
+    </div>
+    <script>
+        $(".afra-demo .afra-demo-close").on("click", function () {
+            $(".afra-demo").removeClass("active");
+        });
+        $(".afra-demo .afra-demo-toggle").on("click", function () {
+            $(".afra-demo").toggleClass("active");
+        });
+        $(".afra-demo-color-1").on("click", function () {
+            document.documentElement.style.setProperty("--primary", "orange");
+            document.documentElement.style.setProperty("--primary-1", "#ff8800");
+        });
+        $(".afra-demo-color-2").on("click", function () {
+            document.documentElement.style.setProperty("--primary", "#de5881");
+            document.documentElement.style.setProperty("--primary-1", "rgb(252, 90, 171)");
+        });
+        $(".afra-demo-color-3").on("click", function () {
+            document.documentElement.style.setProperty("--primary", "#0b7554");
+            document.documentElement.style.setProperty("--primary-1", "#339266");
+        });
+        $(".afra-demo-color-4").on("click", function () {
+            document.documentElement.style.setProperty("--primary", "#7b1f29");
+            document.documentElement.style.setProperty("--primary-1", "darkred");
+        });
+        $(".afra-demo-color-5").on("click", function () {
+            document.documentElement.style.setProperty("--primary", "#00b7b8");
+            document.documentElement.style.setProperty("--primary-1", "#339266");
+        });
+        $(".afra-demo-color-6").on("click", function () {
+            document.documentElement.style.setProperty("--primary", "#33b5e5");
+            document.documentElement.style.setProperty("--primary-1", "rgb(158, 221, 241)");
+        });
+        $(".afra-demo-color-7").on("click", function () {
+            document.documentElement.style.setProperty("--primary", "#1d3268");
+            document.documentElement.style.setProperty("--primary-1", "#132041");
+
+        });
+        $(".afra-demo-color-8").on("click", function () {
+            document.documentElement.style.setProperty("--primary", "#00897b");
+            document.documentElement.style.setProperty("--primary-1", "#004d40");
+        });
+        $(".afra-demo-color-9").on("click", function () {
+            document.documentElement.style.setProperty("--primary", "#ff5e14");
+            document.documentElement.style.setProperty("--primary-1", "#bf360c");
+        });
+        $(".afra-demo-color-10").on("click", function () {
+            document.documentElement.style.setProperty("--primary", "#ffa000");
+            document.documentElement.style.setProperty("--primary-1", "#f57c00");
+        });
+        $(".afra-demo-color-11").on("click", function () {
+            document.documentElement.style.setProperty("--primary", "#c89454");
+            document.documentElement.style.setProperty("--primary-1", "#a37946");
+        });
+        $(".afra-demo-color-12").on("click", function () {
+            document.documentElement.style.setProperty("--primary", "#ff69b4");
+            document.documentElement.style.setProperty("--primary-1", "#eb328e");
+        });
+        $(".afra-demo-color-13").on("click", function () {
+            document.documentElement.style.setProperty("--primary", "#ac5f33");
+            document.documentElement.style.setProperty("--primary-1", "");
+        });
+        $(".afra-demo-color-14").on("click", function () {
+            document.documentElement.style.setProperty("--primary", "#e79e7e");
+            document.documentElement.style.setProperty("--primary-1", "");
+        });
+        $(".afra-demo-color-15").on("click", function () {
+            document.documentElement.style.setProperty("--primary", "#ffcdb4");
+            document.documentElement.style.setProperty("--primary-1", "");
+        });
+        $(".afra-demo-color-16").on("click", function () {
+            document.documentElement.style.setProperty("--primary", "#e8a384");
+            document.documentElement.style.setProperty("--primary-1", "");
+        });
+        $(".afra-demo-color-17").on("click", function () {
+            document.documentElement.style.setProperty("--primary", "#f9b689");
+            document.documentElement.style.setProperty("--primary-1", "");
+        });
+        $(".afra-demo-color-18").on("click", function () {
+            document.documentElement.style.setProperty("--primary", "#ffcba6");
+            document.documentElement.style.setProperty("--primary-1", "");
+        });
+        $(".afra-demo-color-19").on("click", function () {
+            document.documentElement.style.setProperty("--primary", "#a45223");
+            document.documentElement.style.setProperty("--primary-1", "");
+        });
+        $(".afra-demo-color-20").on("click", function () {
+            document.documentElement.style.setProperty("--primary", "#d88c75");
+            document.documentElement.style.setProperty("--primary-1", "");
+        });
+        $(".afra-demo-color-21").on("click", function () {
+            document.documentElement.style.setProperty("--primary", "#f7c3b6");
+            document.documentElement.style.setProperty("--primary-1", "");
+        });
+        $(".afra-demo-color-22").on("click", function () {
+            document.documentElement.style.setProperty("--primary", "#dc9263");
+            document.documentElement.style.setProperty("--primary-1", "");
+        });
+        $(".afra-demo-color-23").on("click", function () {
+            document.documentElement.style.setProperty("--primary", "#e9b876");
+            document.documentElement.style.setProperty("--primary-1", "");
+        });
+        $(".afra-demo-color-24").on("click", function () {
+            document.documentElement.style.setProperty("--primary", "#d78150");
+            document.documentElement.style.setProperty("--primary-1", "");
+        });
+    </script>    
 </body>
 
 </html>
