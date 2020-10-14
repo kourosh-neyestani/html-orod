@@ -2733,6 +2733,10 @@ h6,
   height: 60px;
   -webkit-transition: all 450ms;
   transition: all 450ms;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
 }
 
 .app-header .header-nav .menu {
@@ -2901,28 +2905,28 @@ h6,
           animation-name: fadeInDown;
 }
 
-.header-nav {
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-}
-
 @media (max-width: 992px) {
-  .app-header.app-header-1 .container {
+  .app-header.app-header-1 .container, .app-header.app-header-2 .container, .app-header.app-header-4 .container {
     width: 100%;
     max-width: 100%;
   }
-  .app-header.app-header-1 .header-nav .menu {
+  .app-header.app-header-1 .header-nav .menu, .app-header.app-header-2 .header-nav .menu, .app-header.app-header-4 .header-nav .menu {
     display: none;
   }
-  .app-header.app-header-1 .header-nav .button-menu {
+  .app-header.app-header-1 .header-nav .button-menu, .app-header.app-header-2 .header-nav .button-menu, .app-header.app-header-4 .header-nav .button-menu {
     display: block;
+  }
+  .app-header.app-header-4 .button-menu {
+    top: 17px;
+    left: 30px;
+  }
+  .app-header.app-header-4 .header-logo {
+    display: none;
   }
 }
 
 @media (max-width: 768px) {
-  .app-header.app-header-1 .header-bar {
+  .app-header.app-header-1 .header-bar, .app-header.app-header-2 .header-bar, .app-header.app-header-4 .header-bar {
     text-align: center;
   }
 }
