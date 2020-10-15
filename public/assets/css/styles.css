@@ -2062,7 +2062,7 @@ h6,
   display: block;
 }
 
-.display-center, .section-page .page-head .page-head-inner .page-head-content {
+.display-center, .section-page .page-head .page-head-inner .page-head-content, .section-category.section-category-3 .item .details {
   top: 50%;
   left: 50%;
   width: 100%;
@@ -5425,6 +5425,14 @@ form .input-select .select2-container--default .select2-selection--single .selec
           transform: rotate(-45deg);
 }
 
+.button-simple-icon i {
+  top: 1px;
+  font-size: 90%;
+  font-weight: 700;
+  position: relative;
+  margin: 0 3px;
+}
+
 /*------------------------------------
     Elements
 ------------------------------------*/
@@ -7816,7 +7824,7 @@ Preloader
   transition: all 900ms;
 }
 
-.section-hero .display-center, .section-hero .section-page .page-head .page-head-inner .page-head-content, .section-page .page-head .page-head-inner .section-hero .page-head-content {
+.section-hero .display-center, .section-hero .section-page .page-head .page-head-inner .page-head-content, .section-page .page-head .page-head-inner .section-hero .page-head-content, .section-hero .section-category.section-category-3 .item .details, .section-category.section-category-3 .item .section-hero .details {
   z-index: 12;
 }
 
@@ -8847,6 +8855,43 @@ Preloader
 
 .section-category.section-category-2 .item .image img {
   opacity: 0;
+}
+
+.section-category.section-category-3 .item {
+  overflow: hidden;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 3px 6px 0 rgba(140, 152, 164, 0.25);
+          box-shadow: 0 3px 6px 0 rgba(140, 152, 164, 0.25);
+}
+
+.section-category.section-category-3 .item .details {
+  text-align: left;
+  padding: 27px 30px 15px;
+}
+
+.section-category.section-category-3 .item .details p {
+  line-height: 1;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.section-category.section-category-3 .item .details h3 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1;
+  margin-bottom: 12px;
+}
+
+.section-category.section-category-3 .item .details .button {
+  color: var(--text-color);
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: left;
+}
+
+.section-category.section-category-3 .item .details:hover .button {
+  color: var(--primary);
 }
 
 .section-category.section-category-6 .el-item {
