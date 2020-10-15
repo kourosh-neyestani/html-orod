@@ -153,7 +153,6 @@ $header-nav: 60px;
             font-size: 21px;
             font-weight: 900;
             line-height: $header-nav - 1px;
-            padding-left: 36px;
             padding-right: 39px;
         }
     }
@@ -198,6 +197,7 @@ $header-nav: 60px;
                 }
             }
             .header-logo {
+                padding-left: 36px;
                 line-height: $header-4 + 1px;
             }
             .header-links {

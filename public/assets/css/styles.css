@@ -2826,7 +2826,6 @@ h6,
   font-size: 21px;
   font-weight: 900;
   line-height: 59px;
-  padding-left: 36px;
   padding-right: 39px;
 }
 
@@ -2881,6 +2880,7 @@ h6,
 }
 
 .app-header.app-header-4 .header-nav .header-logo {
+  padding-left: 36px;
   line-height: 85px;
 }
 
