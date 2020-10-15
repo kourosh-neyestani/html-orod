@@ -188,10 +188,10 @@
                 }
             }
             &.pt-50pe {
-                margin-bottom: -24px;
+                margin-bottom: -24px !important;
             }
             &.pt-100pe {
-                padding-top: calc(100% - 9px);
+                padding-top: calc(100% - 9px) !important;
             }
         }
     }
