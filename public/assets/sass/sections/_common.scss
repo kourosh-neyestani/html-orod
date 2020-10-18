@@ -204,6 +204,12 @@
             }
         }
     }
+    &.section-cta-7 {
+        background-position: top center !important;
+        h2 {
+            font-size: 36px;
+        }
+    }
     &.section-cta-9 {
         color: $base-0;
         padding: ($space / 3) 0;

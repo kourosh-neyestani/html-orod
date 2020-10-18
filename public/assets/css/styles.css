@@ -8355,6 +8355,14 @@ Preloader
   font-size: 24px;
 }
 
+.section-cta.section-cta-7 {
+  background-position: top center !important;
+}
+
+.section-cta.section-cta-7 h2 {
+  font-size: 36px;
+}
+
 .section-cta.section-cta-9 {
   color: var(--base-0);
   padding: 33.33333px 0;
