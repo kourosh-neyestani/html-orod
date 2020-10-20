@@ -1,6 +1,6 @@
 node_modules/
 public/assets/css/styles.css.map
-public
-!public/assets
+public/*.html
 package.json
+package-lock.json
 Orwell.code-workspace
