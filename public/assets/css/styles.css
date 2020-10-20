@@ -5582,6 +5582,10 @@ form .input-select .select2-container--default .select2-selection--single .selec
   display: inline-block;
 }
 
+.el-stars li .active {
+  color: #f6931c;
+}
+
 /*------------------------------------
     Element: Social 
 ------------------------------------*/

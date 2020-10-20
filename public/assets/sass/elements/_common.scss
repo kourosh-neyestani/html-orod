@@ -131,6 +131,9 @@ $el-accordion-size: 84px;
     margin: 0;
     li {
         display: inline-block;
+        .active {
+            color: $warning;
+        }
     }
 }
 
