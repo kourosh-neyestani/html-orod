@@ -2,11 +2,6 @@
     "use strict";
     var AFRA = {};
 
-    /*====== Test ======*/
-    AFRA.Test = function () {
-        console.log("Worked!");
-    };
-
     /*====== Preloader ======*/
     var preloader = $(".preloader");
     $(window).on("load", function () {
@@ -19,8 +14,8 @@
         hidePreloader();
     });
 
-     /*====== Sticky Navigation Menu ======*/
-     AFRA.StickyHeader = function () {
+    /*====== Sticky Navigation Menu ======*/
+    AFRA.StickyHeader = function () {
         var header = $(".app-header");
         $(window).scroll(function () {
             if ($(this).scrollTop() > header.height()) {
@@ -30,7 +25,7 @@
             }
         });
     };
-    
+
     /*====== Countdown ======*/
     AFRA.Countdown = function () {
         $(".el-countdown").each(function () {
@@ -408,6 +403,6 @@
 
     // Document.Ready
     $(document).ready(function () {
-        AFRA.Test(),AFRA.StickyHeader(), AFRA.Accordion(), AFRA.Dropdown(), AFRA.Sidenav(), AFRA.Megamenu(), AFRA.ShoppingCart(), AFRA.Countdown(), AFRA.Counter(), AFRA.Carousel(), AFRA.Masonry(), AFRA.DefaultTabs(), AFRA.DataFilters(), AFRA.ShowPassword(), AFRA.SwitchGrid(), AFRA.ProductImages(), AFRA.ProductImageZoom(), AFRA.MathProductsPrice(), AFRA.RemoveItemFromShoppingCart();
+        AFRA.StickyHeader(), AFRA.Accordion(), AFRA.Dropdown(), AFRA.Sidenav(), AFRA.Megamenu(), AFRA.ShoppingCart(), AFRA.Countdown(), AFRA.Counter(), AFRA.Carousel(), AFRA.Masonry(), AFRA.DefaultTabs(), AFRA.DataFilters(), AFRA.ShowPassword(), AFRA.SwitchGrid(), AFRA.ProductImages(), AFRA.ProductImageZoom(), AFRA.MathProductsPrice(), AFRA.RemoveItemFromShoppingCart();
     });
 })(jQuery);
