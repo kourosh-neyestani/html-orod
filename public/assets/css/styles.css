@@ -6977,7 +6977,7 @@ Preloader
   outline: 0;
   z-index: 0;
   position: absolute;
-  text-align: center;
+  text-align: left;
 }
 
 .el-counter .button {
@@ -7124,6 +7124,7 @@ Preloader
   height: 100%;
   border: 0;
   outline: 0;
+  color: #666;
   font-size: 12px;
   position: absolute;
   padding-top: 0;
@@ -7134,7 +7135,7 @@ Preloader
 .el-counter.el-counter-6 .button {
   width: 21px;
   height: 21px;
-  color: #aaa;
+  color: #666;
   float: right;
   font-size: 9px;
   line-height: 21px;
