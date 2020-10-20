@@ -6150,6 +6150,11 @@ form .input-select .select2-container--default .select2-selection--single .selec
   right: 0 !important;
 }
 
+.el-slider .el-slider-prev i,
+.el-slider .el-slider-next i {
+  font-size: 12px;
+}
+
 .el-slider .swiper-button-next,
 .el-slider .swiper-button-prev {
   color: var(--primary);

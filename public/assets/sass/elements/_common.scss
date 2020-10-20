@@ -672,6 +672,9 @@ $el-accordion-size: 84px;
         &.el-slider-next {
             right: 0 !important;
         }
+        i {
+            font-size: 12px;
+        }
     }
     .swiper-button-next,
     .swiper-button-prev {
