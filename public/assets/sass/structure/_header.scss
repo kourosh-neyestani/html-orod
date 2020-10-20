@@ -218,6 +218,16 @@ $header-nav: 60px;
         }
     }
 }
+// Boxed
+.app-header {
+    &.boxed {
+        &.app-header-1 {
+            .header-nav {
+                background-color: $base-0;
+            }
+        }
+    }
+}
 
 // Sticky
 .app-header {
@@ -296,5 +306,12 @@ $header-nav: 60px;
                 text-align: center;
             }
         }
+    }
+}
+
+.section-clearfix-1 {
+    margin-top: $header-bar;
+    .el-banner {
+        padding-top: $header-nav;
     }
 }

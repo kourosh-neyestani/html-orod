@@ -6,6 +6,17 @@
     --primary-1: #ef394e;
     --primary-2: #ef394e;
     --primary-3: #ef394e;
-    --secondary: #ef394e;
+    --secondary: #ac39ef;
     --secondary-1: #ef394e;
+}
+:root {
+    --base: #f7f7f7;
+    --base-0: #fff;
+    --base-1: #000;
+    --primary: #2775FF;
+    --primary-1: #2161cf;
+    --primary-2: #ef394e;
+    --primary-3: #ef394e;
+    --secondary:  #C13B95;
+    --secondary-1: #9c3078;
 }

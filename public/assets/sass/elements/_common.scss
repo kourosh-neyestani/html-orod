@@ -193,44 +193,38 @@ $el-accordion-size: 84px;
 }
 
 /*------------------------------------
-    Element: Breadcrumbs 
-------------------------------------*/
-
-.el-breadcrumbs {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    li {
-        display: inline-block;
-        &:not(:last-child) {
-            &:after {
-                content: "/";
-                margin-left: 6px;
-                margin-right: 3px;
-            }
-        }
-    }
-}
-
-/*------------------------------------
     Element: Banner 
 ------------------------------------*/
 
 .el-banner {
     &.el-banner-1 {
-        background-color: lightblue;
-        .content {
-            color: $base-1;
-            text-align: center;
-            h1 {
-                color: inherit;
-            }
+        h1 {
+            color: $base-0;
+            font-size: 42px;
+            line-height: 1;
+            text-transform: uppercase;
+            margin-bottom: 0;
         }
     }
 }
-.app-header-1 + .el-banner-1 {
-    .content {
-        margin-top: 15px;
+@media (max-width: 992px) {
+    .el-banner {
+        &,
+        & .text-left,
+        & .text-right {
+            text-align: center !important;
+        }
+        h1 {
+            font-size: 39px !important;
+            margin-bottom: 15px;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .el-banner {
+        h1 {
+            font-size: 30px !important;
+        }
     }
 }
 
@@ -1730,6 +1724,39 @@ Preloader
 }
 
 /*------------------------------------
+    Element: Breadcrumbs
+------------------------------------*/
+
+.el-breadcrumbs {
+    display: inline-block;
+    list-style: none;
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+    li {
+        display: inline-block;
+        &:not(:last-child) {
+            &:after {
+                content: "/";
+                margin-left: 6px;
+                margin-right: 6px;
+            }
+        }
+        a {
+            color: inherit;
+            &.active {
+                cursor: not-allowed;
+                pointer-events: none;
+            }
+        }
+    }
+    &.el-breadcrumbs {
+        padding: 9px 18px;
+        border-radius: 45px;
+    }
+}
+
+/*------------------------------------
     Element: Shop Navigation
 ------------------------------------*/
 
@@ -2032,7 +2059,6 @@ Preloader
 /*------------------------------------
     Element: Search bar
 ------------------------------------*/
-
 
 .el-hover-search-bar {
     width: 60px;
