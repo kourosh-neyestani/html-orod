@@ -4164,7 +4164,7 @@ Forms
   display: inline-block;
   position: absolute;
   padding: 0 9px;
-  background-color: var(--base-0);
+  background-color: var(--base);
   -webkit-transition: all 300ms;
   transition: all 300ms;
 }
@@ -4179,7 +4179,7 @@ Forms
   color: red;
   display: inline-block;
   position: absolute;
-  background-color: var(--base-0);
+  background-color: var(--base);
 }
 
 .form-3 .form-item input {
@@ -4440,7 +4440,7 @@ Forms
 }
 
 .form-4 .form-item .form-label {
-  color: var(--base-0);
+  color: var(--base);
   font-size: 12px;
   font-weight: bold;
   display: inline-block;
@@ -4467,7 +4467,7 @@ Forms
   color: red;
   display: inline-block;
   position: absolute;
-  background-color: var(--base-0);
+  background-color: var(--base);
 }
 
 .form-4 .form-input-divider {

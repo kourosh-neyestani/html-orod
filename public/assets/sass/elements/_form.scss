@@ -276,7 +276,7 @@ Forms
             display: inline-block;
             position: absolute;
             padding: 0 9px;
-            background-color: $base-0;
+            background-color: $base;
             transition: all 300ms;
         }
         .form-input-q {
@@ -288,7 +288,7 @@ Forms
             color: $danger;
             display: inline-block;
             position: absolute;
-            background-color: $base-0;
+            background-color: $base;
         }
         input {
             z-index: 3;
@@ -496,7 +496,7 @@ Forms
             }
         }
         .form-label {
-            color: $base-0;
+            color: $base;
             font-size: 12px;
             font-weight: bold;
             display: inline-block;
@@ -520,7 +520,7 @@ Forms
             color: $danger;
             display: inline-block;
             position: absolute;
-            background-color: $base-0;
+            background-color: $base;
         }
     }
     .form-input-divider {
