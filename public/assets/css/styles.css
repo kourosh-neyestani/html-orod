@@ -5674,14 +5674,14 @@ form .input-select .select2-container--default .select2-selection--single .selec
 ------------------------------------*/
 .el-heading p {
   font-size: 16px;
-  margin: 15px 0 0;
+  margin: 9px 0 0;
 }
 
 .el-heading h2,
 .el-heading h3 {
   font-size: 27px;
   font-weight: 600;
-  line-height: 1;
+  line-height: 1.6;
   margin: 0;
 }
 
