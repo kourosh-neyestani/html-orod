@@ -454,6 +454,41 @@
     }
 }
 
+/*------------------------------------
+    Section: About
+------------------------------------*/
+
+.section-about {
+    .item {
+        color: $base-0;
+        text-align: center;
+        position: relative;
+        h3 {
+            color: inherit
+        }
+        .numbers {
+            font-size: 30px;
+            font-weight: 500;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .section-about {
+        .item {
+            h3 {
+                font-size: 21px;
+            }
+            .numbers {
+                font-size: 24px;
+            }
+        }
+    }
+}
+
+/*------------------------------------
+    Section: Team
+------------------------------------*/
+
 /*
 * Team - Style 1
 */
@@ -543,4 +578,84 @@
 
 .section-team-1.overlay-image .section-title h2 {
     color: #ccc;
+}
+
+/*------------------------------------
+    Section: Testimonial
+------------------------------------*/
+
+.section-testimonial {
+    .item {
+        .content {
+            padding: 30px;
+            position: relative;
+            border-radius: 15px;
+            background-color: $base-0;
+            p {
+                text-align: left;
+                margin: 0;
+            }
+            &:after {
+                left: 20px;
+                bottom: -3px;
+                width: 30px;
+                height: 30px;
+                content: "";
+                display: block;
+                position: absolute;
+                background-color: $base-0;
+                transform: rotate(45deg);
+            }
+        }
+        .author {
+            top: 30px;
+            left: 15px;
+            height: 75px;
+            position: relative;
+            h4,
+            h5 {
+                left: 60px;
+                color: $base-0;
+                opacity: 0.87;
+                font-weight: 700;
+                line-height: 1;
+                white-space: nowrap;
+                position: absolute;
+            }
+            h4 {
+                top: 4px;
+                font-size: 14px;
+                margin-bottom: 12px;
+            }
+            h5 {
+                top: 27px;
+                opacity: 0.6;
+                font-size: 12px;
+            }
+            .avatar {
+                width: 45px;
+                height: 45px;
+                overflow: hidden;
+                border-radius: 50%;
+                border: 2px solid $base-0;
+            }
+        }
+    }
+    .bg-color {
+        opacity: 0.9;
+    }
+    .swiper-pagination-bullet {
+        background-color: $gray;
+    }
+    &:after {
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 4px;
+        content: "";
+        position: absolute;
+        border-radius: 6px;
+        background-color: $primary;
+        @extend .bg-animation-2;
+    }
 }

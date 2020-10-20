@@ -1,5 +1,5 @@
-${require('./components/header/_header-1.html')}
-<section class="section section-hero section-hero-1 overlay-image bg-primary" style="background-image: url(assets/images/images/bg-8.jpg);"></section>
+${require('./components/header/_header-1.html') class="boxed"}
+${require('./components/banner/_1.html') t1="About Us" bc="About"}
 <!--About-->
 <section class="section section-about section-about-1">
     <div class="display-spacing">
@@ -7,9 +7,9 @@ ${require('./components/header/_header-1.html')}
             <div class="row">
                 <div class="col-lg-6">
                     <div class="display-spacing">
-                        <div class="el-heading el-heading-4">
+                        <header class="el-heading el-heading-4">
                             <h2>We Are 100% Trustable <br /> And Provide <span class="text-primary">Fast Delivery</span></h2>
-                        </div>
+                        </header>
                         <div class="el-content">
                             <p>Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.</p>
                             <p>Phasellus gravida semper nisi. Nullam vel sem. Pellentesque libero tortor, tincidunt et, tincidunt eget, semper nec, quam. </p>
@@ -27,20 +27,48 @@ ${require('./components/header/_header-1.html')}
                         <div class="col-6">
                             <div class="row row-lg">
                                 <div class="col-12">
-                                    <div class="item pt-100pe bg-color-1"></div>
+                                    <div class="item pt-100pe bg-color-2">
+                                        <div class="display-center">
+                                            <div class="item-inner">
+                                                <span class="numbers">1830</span>
+                                                <h3>HAPPY CLIENTS</h3>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="col-12">
-                                    <div class="item pt-100pe bg-color-2"></div>
+                                    <div class="item pt-100pe bg-secondary">
+                                        <div class="display-center">
+                                            <div class="item-inner">
+                                                <span class="numbers">540</span>
+                                                <h3>FINISHED PROJECTS</h3>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-6 mt--30">
                             <div class="row row-lg">
                                 <div class="col-12">
-                                    <div class="item pt-100pe bg-color-3"></div>
+                                    <div class="item pt-100pe bg-color-5">
+                                        <div class="display-center">
+                                            <div class="item-inner">
+                                                <span class="numbers">96</span>
+                                                <h3>EXPERTS</h3>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="col-12">
-                                    <div class="item pt-100pe bg-color-4"></div>
+                                    <div class="item pt-100pe bg-color-6">
+                                        <div class="display-center">
+                                            <div class="item-inner">
+                                                <span class="numbers">1080</span>
+                                                <h3>POSTS</h3>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -51,7 +79,7 @@ ${require('./components/header/_header-1.html')}
     </div>
 </section>
 <!--/-->
-<section style="height: 450px;" class="bg-primary"></section>
+${require('./sections/testimonials/_1.html')}
 <!--Team-->
 <section class="section section-team section-team-1">
     <div class="display-spacing">
@@ -62,249 +90,249 @@ ${require('./components/header/_header-1.html')}
             </header>
             <div class="row row-md">
                 <div class="col-6 col-sm-6 col-md-6 col-lg-3">
-                    <div class="user-item bg-gradient-180">
-                        <div class="user-image" style="background-image: url(assets/images/team/person-1.jpg);"></div>
+                    <div class="user-item bg-primary">
+                        <div class="user-image" style="background-image: url(assets/images/team/1.jpg);"></div>
                         <div class="user-details">
                             <h4 class="user-name">Miranda Fox</h4>
                             <p>CEO &amp; Founder</p>                
-                            <ul class="el-social">
+                            <ul class="el-social-icon">
                                 <li>
                                     <a href="#">
-                                        <i class="fa fa-instagram"></i>
+                                        <i class="ti-instagram"></i>
                                     </a>
-                                </li> 
+                                </li>
                                 <li>
                                     <a href="#">
-                                        <i class="fa fa-twitter"></i>
+                                        <i class="ti-dribbble"></i>
                                     </a>
-                                </li>     
+                                </li>
                                 <li>
                                     <a href="#">
-                                        <i class="fa fa-facebook"></i>
+                                        <i class="ti-twitter"></i>
                                     </a>
-                                </li>                        
+                                </li>
                                 <li>
                                     <a href="#">
-                                        <i class="fa fa-linkedin"></i>
+                                        <i class="ti-tumblr"></i>
                                     </a>
-                                </li>                                                                                       
+                                </li>
                             </ul>
                         </div>
                     </div>
                 </div>
                 <div class="col-6 col-sm-6 col-md-6 col-lg-3">
-                    <div class="user-item bg-gradient-180">
-                        <div class="user-image" style="background-image: url(assets/images/team/person-2.jpg);"></div>
+                    <div class="user-item bg-primary">
+                        <div class="user-image" style="background-image: url(assets/images/team/2.jpg);"></div>
                         <div class="user-details">
                             <h4 class="user-name">James Maxwell</h4>
                             <p>Web Developer</p>                        
-                            <ul class="user-social-icons">
+                            <ul class="el-social-icon">
                                 <li>
                                     <a href="#">
-                                        <i class="fa fa-instagram"></i>
+                                        <i class="ti-instagram"></i>
                                     </a>
-                                </li> 
+                                </li>
                                 <li>
                                     <a href="#">
-                                        <i class="fa fa-twitter"></i>
+                                        <i class="ti-dribbble"></i>
                                     </a>
-                                </li>     
+                                </li>
                                 <li>
                                     <a href="#">
-                                        <i class="fa fa-facebook"></i>
+                                        <i class="ti-twitter"></i>
                                     </a>
-                                </li>                        
+                                </li>
                                 <li>
                                     <a href="#">
-                                        <i class="fa fa-linkedin"></i>
+                                        <i class="ti-tumblr"></i>
                                     </a>
-                                </li>                                                                                       
+                                </li>
                             </ul>
                         </div>
                     </div>
                 </div>
                 <div class="col-6 col-sm-6 col-md-6 col-lg-3">
-                    <div class="user-item bg-gradient-180">
-                        <div class="user-image" style="background-image: url(assets/images/team/person-3.jpg);"></div>
+                    <div class="user-item bg-primary">
+                        <div class="user-image" style="background-image: url(assets/images/team/3.jpg);"></div>
                         <div class="user-details">
                             <h4 class="user-name">John Woo</h4>
                             <p>Web Developer</p>                          
-                            <ul class="user-social-icons">
+                            <ul class="el-social-icon">
                                 <li>
                                     <a href="#">
-                                        <i class="fa fa-instagram"></i>
+                                        <i class="ti-instagram"></i>
                                     </a>
-                                </li> 
+                                </li>
                                 <li>
                                     <a href="#">
-                                        <i class="fa fa-twitter"></i>
+                                        <i class="ti-dribbble"></i>
                                     </a>
-                                </li>     
+                                </li>
                                 <li>
                                     <a href="#">
-                                        <i class="fa fa-facebook"></i>
+                                        <i class="ti-twitter"></i>
                                     </a>
-                                </li>                        
+                                </li>
                                 <li>
                                     <a href="#">
-                                        <i class="fa fa-linkedin"></i>
+                                        <i class="ti-tumblr"></i>
                                     </a>
-                                </li>                                                                                       
+                                </li>
                             </ul>
                         </div>
                     </div>
                 </div>
                 <div class="col-6 col-sm-6 col-md-6 col-lg-3">
-                    <div class="user-item bg-gradient-180">
-                        <div class="user-image" style="background-image: url(assets/images/team/person-4.jpg);"></div>
+                    <div class="user-item bg-primary">
+                        <div class="user-image" style="background-image: url(assets/images/team/4.jpg);"></div>
                         <div class="user-details">
                             <h4 class="user-name">Emily Thompson</h4>
                             <p>Web Developer</p>                          
-                            <ul class="user-social-icons">
+                            <ul class="el-social-icon">
                                 <li>
                                     <a href="#">
-                                        <i class="fa fa-instagram"></i>
+                                        <i class="ti-instagram"></i>
                                     </a>
-                                </li> 
+                                </li>
                                 <li>
                                     <a href="#">
-                                        <i class="fa fa-twitter"></i>
+                                        <i class="ti-dribbble"></i>
                                     </a>
-                                </li>     
+                                </li>
                                 <li>
                                     <a href="#">
-                                        <i class="fa fa-facebook"></i>
+                                        <i class="ti-twitter"></i>
                                     </a>
-                                </li>                        
+                                </li>
                                 <li>
                                     <a href="#">
-                                        <i class="fa fa-linkedin"></i>
+                                        <i class="ti-tumblr"></i>
                                     </a>
-                                </li>                                                                                       
+                                </li>
                             </ul>
                         </div>
                     </div>
                 </div>
                 <div class="col-6 col-sm-6 col-md-6 col-lg-3">
-                    <div class="user-item bg-gradient-180">
-                        <div class="user-image" style="background-image: url(assets/images/team/person-5.jpg);"></div>
+                    <div class="user-item bg-primary">
+                        <div class="user-image" style="background-image: url(assets/images/team/5.jpg);"></div>
                         <div class="user-details">
                             <h4 class="user-name">Ava Taylor</h4>
                             <p>Marketing</p>
-                            <ul class="user-social-icons">
+                            <ul class="el-social-icon">
                                 <li>
                                     <a href="#">
-                                        <i class="fa fa-instagram"></i>
+                                        <i class="ti-instagram"></i>
                                     </a>
-                                </li> 
+                                </li>
                                 <li>
                                     <a href="#">
-                                        <i class="fa fa-twitter"></i>
+                                        <i class="ti-dribbble"></i>
                                     </a>
-                                </li>     
+                                </li>
                                 <li>
                                     <a href="#">
-                                        <i class="fa fa-facebook"></i>
+                                        <i class="ti-twitter"></i>
                                     </a>
-                                </li>                        
+                                </li>
                                 <li>
                                     <a href="#">
-                                        <i class="fa fa-linkedin"></i>
+                                        <i class="ti-tumblr"></i>
                                     </a>
-                                </li>                                                                                       
+                                </li>
                             </ul>
                         </div>
                     </div>
                 </div>
                 <div class="col-6 col-sm-6 col-md-6 col-lg-3">
-                    <div class="user-item bg-gradient-180">
-                        <div class="user-image" style="background-image: url(assets/images/team/person-6.jpg);"></div>
+                    <div class="user-item bg-primary">
+                        <div class="user-image" style="background-image: url(assets/images/team/6.jpg);"></div>
                         <div class="user-details">
-                            <h4 class="user-name">Robert Fox</h4>
+                            <h4 class="user-name">Kourosh Neyestani</h4>
                             <p>Marketing</p>
-                            <ul class="user-social-icons">
+                            <ul class="el-social-icon">
                                 <li>
                                     <a href="#">
-                                        <i class="fa fa-instagram"></i>
+                                        <i class="ti-instagram"></i>
                                     </a>
-                                </li> 
+                                </li>
                                 <li>
                                     <a href="#">
-                                        <i class="fa fa-twitter"></i>
+                                        <i class="ti-dribbble"></i>
                                     </a>
-                                </li>     
+                                </li>
                                 <li>
                                     <a href="#">
-                                        <i class="fa fa-facebook"></i>
+                                        <i class="ti-twitter"></i>
                                     </a>
-                                </li>                        
+                                </li>
                                 <li>
                                     <a href="#">
-                                        <i class="fa fa-linkedin"></i>
+                                        <i class="ti-tumblr"></i>
                                     </a>
-                                </li>                                                                                       
+                                </li>
                             </ul>
                         </div>
                     </div>
                 </div>
                 <div class="col-6 col-sm-6 col-md-6 col-lg-3">
-                    <div class="user-item bg-gradient-180">
-                        <div class="user-image" style="background-image: url(assets/images/team/person-7.jpg);"></div>
-                        <div class="user-details">
-                            <h4 class="user-name">Mark Heffner</h4>
-                            <p>Designer</p>
-                            <ul class="user-social-icons">
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-instagram"></i>
-                                    </a>
-                                </li> 
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-twitter"></i>
-                                    </a>
-                                </li>     
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-facebook"></i>
-                                    </a>
-                                </li>                        
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-linkedin"></i>
-                                    </a>
-                                </li>                                                                                       
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-6 col-md-6 col-lg-3">
-                    <div class="user-item bg-gradient-180">
-                        <div class="user-image" style="background-image: url(assets/images/team/person-8.jpg);"></div>
+                    <div class="user-item bg-primary">
+                        <div class="user-image" style="background-image: url(assets/images/team/7.jpg);"></div>
                         <div class="user-details">
                             <h4 class="user-name">Sara Smith</h4>
                             <p>Designer</p>
-                            <ul class="user-social-icons">
+                            <ul class="el-social-icon">
                                 <li>
                                     <a href="#">
-                                        <i class="fa fa-instagram"></i>
+                                        <i class="ti-instagram"></i>
                                     </a>
-                                </li> 
+                                </li>
                                 <li>
                                     <a href="#">
-                                        <i class="fa fa-twitter"></i>
+                                        <i class="ti-dribbble"></i>
                                     </a>
-                                </li>     
+                                </li>
                                 <li>
                                     <a href="#">
-                                        <i class="fa fa-facebook"></i>
+                                        <i class="ti-twitter"></i>
                                     </a>
-                                </li>                        
+                                </li>
                                 <li>
                                     <a href="#">
-                                        <i class="fa fa-linkedin"></i>
+                                        <i class="ti-tumblr"></i>
                                     </a>
-                                </li>                                                                                       
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+                    <div class="user-item bg-primary">
+                        <div class="user-image" style="background-image: url(assets/images/team/8.jpg);"></div>
+                        <div class="user-details">
+                            <h4 class="user-name">Mark Heffner</h4>
+                            <p>Designer</p>
+                            <ul class="el-social-icon">
+                                <li>
+                                    <a href="#">
+                                        <i class="ti-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="ti-dribbble"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="ti-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="ti-tumblr"></i>
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                     </div>
