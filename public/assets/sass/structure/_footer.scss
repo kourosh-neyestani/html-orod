@@ -162,3 +162,19 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .app-footer {
+        .footer-copyright {
+            p {
+                left: 0 !important;
+                right: 0 !important;
+                width: 100%;
+                text-align: center;
+                margin-bottom: 6px;
+                position: relative !important;
+                display: block !important;
+            }
+        }
+    }
+}

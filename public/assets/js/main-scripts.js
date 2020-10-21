@@ -190,24 +190,6 @@
 
     /*====== Owl Carousel Setting ======*/
     AFRA.Carousel = function () {
-        var mySwiper = new Swiper(".el-swiper-category-3", {
-            loop: false,
-            spaceBetween: 18,
-            slidesPerView: 3,
-            navigation: {
-                nextEl: ".el-slider-next",
-                prevEl: ".el-slider-prev",
-            },
-        });
-        var mySwiper = new Swiper(".el-swiper-products-3", {
-            loop: false,
-            spaceBetween: 18,
-            slidesPerView: 4,
-            navigation: {
-                nextEl: ".el-slider-next",
-                prevEl: ".el-slider-prev",
-            },
-        });
         var mySwiper = new Swiper(".el-swiper-blog-3", {
             loop: false,
             spaceBetween: 18,
@@ -234,7 +216,47 @@
                 prevEl: ".swiper-button-prev",
             },
         });
-        var swiperTestimonial = new Swiper(".swiper-testimonial", {
+        var mySwiper = new Swiper(".el-swiper-category-3", {
+            loop: false,
+            spaceBetween: 18,
+            slidesPerView: 3,
+            navigation: {
+                nextEl: ".el-slider-next",
+                prevEl: ".el-slider-prev",
+            },
+        });
+        var mySwiper = new Swiper(".el-swiper-products-3", {
+            loop: false,
+            spaceBetween: 18,
+            slidesPerView: 4,
+            navigation: {
+                nextEl: ".el-slider-next",
+                prevEl: ".el-slider-prev",
+            },
+            breakpoints: {
+                480: {
+                    slidesPerView: 1.5,
+                    spaceBetween: 12,
+                },
+                576: {
+                    slidesPerView: 2,
+                    spaceBetween: 12,
+                },
+                768: {
+                    slidesPerView: 2.3,
+                    spaceBetween: 18,
+                },
+                992: {
+                    slidesPerView: 3.3,
+                    spaceBetween: 18,
+                },
+                1200: {
+                    slidesPerView: 4,
+                    spaceBetween: 18,
+                }
+            },
+        });
+        var mySwiper = new Swiper(".swiper-testimonial", {
             loop: true,
             spaceBetween: 30,
             breakpoints: {

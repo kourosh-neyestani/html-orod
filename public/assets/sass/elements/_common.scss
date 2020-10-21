@@ -291,6 +291,8 @@ $el-accordion-size: 84px;
     overflow: hidden;
     position: relative;
     .el-data-filters-links {
+        width: 100%;
+        overflow-x: auto;
         ul {
             list-style: none;
             user-select: none;
@@ -318,6 +320,18 @@ $el-accordion-size: 84px;
         ul {
             list-style: none;
             padding: 0;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .el-data-filters {
+        .el-data-filters-links {
+            ul {
+                li {
+                    padding-left: 6px;
+                    padding-right: 6px;
+                }
+            }
         }
     }
 }
@@ -2071,6 +2085,20 @@ Preloader
             }
         }
     }
+    &.el-dropdown-1 {
+        & > ul {
+            min-width: 120px;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .el-dropdown {
+        &.el-dropdown-1 {
+            & > ul {
+                min-width: 90px !important;
+            }
+        }
+    }
 }
 
 /*------------------------------------
@@ -2166,6 +2194,15 @@ Preloader
         border-radius: 45px;
         border: 3px solid $base-0;
         background-color: $primary;
+    }
+}
+
+@media (max-width: 768px) {
+    .el-search-hero {
+        input {
+            font-size: 12px;
+            padding-left: 30px;
+        }
     }
 }
 

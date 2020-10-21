@@ -207,7 +207,6 @@ $header-nav: 60px;
         }
     }
 }
-
 // Glass
 .app-header {
     &.glass {
@@ -228,7 +227,6 @@ $header-nav: 60px;
         }
     }
 }
-
 // Sticky
 .app-header {
     &.sticky {
@@ -296,7 +294,6 @@ $header-nav: 60px;
         }
     }
 }
-
 @media (max-width: 768px) {
     .app-header {
         &.app-header-1,
@@ -304,6 +301,29 @@ $header-nav: 60px;
         &.app-header-4 {
             .header-bar {
                 text-align: center;
+            }
+        }
+        .header-nav {
+            .el-hover-search-bar {
+                display: none;
+            }
+        }
+        .header-bar {
+            .menubar {
+                text-align: left;
+                white-space: nowrap;
+                padding-left: 12px;
+                & > li {
+                    font-size: 12px;
+                    padding-left: 3px;
+                    padding-right: 3px;
+                    &:after {
+                        padding-left: 6px !important; 
+                    }
+                }
+            }
+            .text-center {
+                text-align: left;
             }
         }
     }

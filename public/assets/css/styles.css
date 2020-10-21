@@ -2957,6 +2957,25 @@ h6,
   .app-header.app-header-1 .header-bar, .app-header.app-header-2 .header-bar, .app-header.app-header-4 .header-bar {
     text-align: center;
   }
+  .app-header .header-nav .el-hover-search-bar {
+    display: none;
+  }
+  .app-header .header-bar .menubar {
+    text-align: left;
+    white-space: nowrap;
+    padding-left: 12px;
+  }
+  .app-header .header-bar .menubar > li {
+    font-size: 12px;
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+  .app-header .header-bar .menubar > li:after {
+    padding-left: 6px !important;
+  }
+  .app-header .header-bar .text-center, .app-header .header-bar .section-page .page-head .page-head-inner .page-head-content, .section-page .page-head .page-head-inner .app-header .header-bar .page-head-content {
+    text-align: left;
+  }
 }
 
 .section-clearfix-1 {
@@ -3141,6 +3160,18 @@ h6,
 
 .app-footer.app-footer-4 .el-select-languages {
   padding-top: 28px;
+}
+
+@media (max-width: 768px) {
+  .app-footer .footer-copyright p {
+    left: 0 !important;
+    right: 0 !important;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 6px;
+    position: relative !important;
+    display: block !important;
+  }
 }
 
 /*------------------------------------
@@ -5729,6 +5760,11 @@ form .input-select .select2-container--default .select2-selection--single .selec
   position: relative;
 }
 
+.el-data-filters .el-data-filters-links {
+  width: 100%;
+  overflow-x: auto;
+}
+
 .el-data-filters .el-data-filters-links ul {
   list-style: none;
   -webkit-user-select: none;
@@ -5763,6 +5799,13 @@ form .input-select .select2-container--default .select2-selection--single .selec
 .el-data-filters .el-data-filters-content ul {
   list-style: none;
   padding: 0;
+}
+
+@media (max-width: 768px) {
+  .el-data-filters .el-data-filters-links ul li {
+    padding-left: 6px;
+    padding-right: 6px;
+  }
 }
 
 /*------------------------------------
@@ -7719,6 +7762,16 @@ Preloader
           transform: rotate(45deg) translate(0, 0);
 }
 
+.el-dropdown.el-dropdown-1 > ul {
+  min-width: 120px;
+}
+
+@media (max-width: 768px) {
+  .el-dropdown.el-dropdown-1 > ul {
+    min-width: 90px !important;
+  }
+}
+
 /*------------------------------------
     Element: Search bar
 ------------------------------------*/
@@ -7836,6 +7889,13 @@ Preloader
   background-color: var(--primary);
 }
 
+@media (max-width: 768px) {
+  .el-search-hero input {
+    font-size: 12px;
+    padding-left: 30px;
+  }
+}
+
 .el-social-icon {
   list-style: none;
   padding: 0;
@@ -7864,6 +7924,7 @@ Preloader
 ------------------------------------*/
 .section-hero .hero-content {
   width: 576px;
+  max-width: 100%;
 }
 
 .section-hero .hero-content p {
@@ -8034,6 +8095,30 @@ Preloader
 .section-hero.section-hero-6 .el-item {
   padding-top: 390px;
   background-color: var(--gray);
+}
+
+@media (max-width: 992px) {
+  .section-hero .hero-content p {
+    font-size: 18px;
+    margin-bottom: 25px;
+  }
+  .section-hero .hero-content h1 {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-hero .hero-content {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .section-hero .hero-content p {
+    font-size: 15px;
+    margin-bottom: 25px;
+  }
+  .section-hero .hero-content h1 {
+    font-size: 36px;
+  }
 }
 
 /*------------------------------------
@@ -8962,11 +9047,15 @@ Preloader
 }
 
 @media (max-width: 768px) {
-  .section-features.section-features-7 .inner h3 {
-    font-size: 14px !important;
+  .section-features.section-features-7 .el-item .inner h2 {
+    font-size: 21px !important;
+    padding-top: 6px;
   }
-  .section-features.section-features-7 .inner .label {
-    font-size: 12px;
+  .section-features.section-features-7 .el-item .inner h3 {
+    font-size: 18px !important;
+  }
+  .section-features.section-features-7 .el-item.el-item-1 {
+    padding-top: 69% !important;
   }
 }
 
@@ -8999,6 +9088,12 @@ Preloader
   width: 45px;
   float: left;
   margin-right: 20px;
+}
+
+@media (max-width: 1200px) {
+  .section-features-line .item {
+    margin-bottom: 12px;
+  }
 }
 
 /*------------------------------------
