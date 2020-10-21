@@ -284,9 +284,17 @@ $header-nav: 60px;
             }
         }
         &.app-header-4 {
+            .header-nav {
+                top: 15px;
+                height: 60px;
+            }
             .button-menu {
                 top: 17px;
                 left: 30px;
+            }
+            .header-links {
+                margin-top: 0 !important;
+                margin-right: 0 !important;
             }
         }
         .header-logo {

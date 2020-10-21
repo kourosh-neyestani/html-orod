@@ -2944,9 +2944,17 @@ h6,
   .app-header.app-header-1 .header-nav .button-menu, .app-header.app-header-2 .header-nav .button-menu, .app-header.app-header-4 .header-nav .button-menu {
     display: block;
   }
+  .app-header.app-header-4 .header-nav {
+    top: 15px;
+    height: 60px;
+  }
   .app-header.app-header-4 .button-menu {
     top: 17px;
     left: 30px;
+  }
+  .app-header.app-header-4 .header-links {
+    margin-top: 0 !important;
+    margin-right: 0 !important;
   }
   .app-header .header-logo {
     display: none;

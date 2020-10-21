@@ -202,11 +202,11 @@
                     spaceBetween: 12,
                 },
                 576: {
-                    slidesPerView: 2,
+                    slidesPerView: 1.5,
                     spaceBetween: 12,
                 },
                 768: {
-                    slidesPerView: 3,
+                    slidesPerView: 1.8,
                     spaceBetween: 18,
                 },
                 992: {
