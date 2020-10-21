@@ -163,7 +163,7 @@
                 margin-bottom: 25px;
             }
             h1 {
-                font-size: 48px;
+                font-size: 48px !important;
             }
         }
     }
@@ -177,8 +177,9 @@
                 font-size: 15px;
                 margin-bottom: 25px;
             }
-            h1 {
-                font-size: 36px;
+            h1,
+            h2 {
+                font-size: 36px !important;
             }
         }
     }
