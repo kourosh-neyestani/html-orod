@@ -490,6 +490,11 @@
         }
     }
 }
+@media (max-width: 992px) {
+    .custom-table {
+        padding-top: 0 !important;
+    }
+}
 @media (max-width: 768px) {
     .section-about {
         .item {
