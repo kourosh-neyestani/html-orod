@@ -8913,6 +8913,25 @@ Preloader
   margin-bottom: 30px;
 }
 
+@media (max-width: 992px) {
+  .section-error.section-error-404 h1 {
+    font-size: 150px;
+  }
+  .section-error.section-error-404 h2 {
+    font-size: 21px;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-error.section-error-404 h1 {
+    font-size: 120px;
+    padding-top: 30px;
+  }
+  .section-error.section-error-404 h2 {
+    font-size: 21px;
+  }
+}
+
 /*------------------------------------
     Section: About
 ------------------------------------*/
