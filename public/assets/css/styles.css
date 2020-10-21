@@ -6121,7 +6121,7 @@ form .input-select .select2-container--default .select2-selection--single .selec
 
 .el-slider .el-slider-prev,
 .el-slider .el-slider-next {
-  top: -96px;
+  top: 30px;
   left: inherit;
   width: 39px;
   height: 39px;
@@ -6231,6 +6231,16 @@ form .input-select .select2-container--default .select2-selection--single .selec
   opacity: 1;
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
+}
+
+.el-slider-top-navigation .swiper-wrapper {
+  margin-top: 135px;
+}
+
+.el-slider-top-navigation .el-heading {
+  top: 0;
+  left: 0;
+  position: absolute;
 }
 
 /*------------------------------------
@@ -9033,6 +9043,7 @@ Preloader
 .section-category.section-category-3 .item {
   overflow: hidden;
   border-radius: 3px;
+  margin-bottom: 18px;
   -webkit-box-shadow: 0 3px 6px 0 rgba(140, 152, 164, 0.25);
           box-shadow: 0 3px 6px 0 rgba(140, 152, 164, 0.25);
 }

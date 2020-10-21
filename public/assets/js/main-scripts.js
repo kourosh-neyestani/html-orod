@@ -194,17 +194,28 @@
             loop: false,
             spaceBetween: 18,
             slidesPerView: 3,
-            slidesPerColumn: 2,
+            navigation: {
+                nextEl: ".el-slider-next",
+                prevEl: ".el-slider-prev",
+            },
         });
         var mySwiper = new Swiper(".el-swiper-products-3", {
             loop: false,
             spaceBetween: 18,
             slidesPerView: 4,
+            navigation: {
+                nextEl: ".el-slider-next",
+                prevEl: ".el-slider-prev",
+            },
         });
         var mySwiper = new Swiper(".el-swiper-blog-3", {
             loop: false,
             spaceBetween: 18,
             slidesPerView: 3,
+            navigation: {
+                nextEl: ".el-slider-next",
+                prevEl: ".el-slider-prev",
+            },
         });
         var mySwiper = new Swiper(".el-swiper-hero-2", {
             loop: true,

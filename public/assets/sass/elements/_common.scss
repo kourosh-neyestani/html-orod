@@ -649,7 +649,7 @@ $el-accordion-size: 84px;
     // Navigation
     .el-slider-prev,
     .el-slider-next {
-        top: -96px;
+        top: 30px;
         left: inherit;
         width: 39px;
         height: 39px;
@@ -749,6 +749,17 @@ $el-accordion-size: 84px;
                 transform: translate(0, 0);
             }
         }
+    }
+}
+
+.el-slider-top-navigation {
+    .swiper-wrapper {
+        margin-top: 135px;
+    }
+    .el-heading {
+        top: 0;
+        left: 0;
+        position: absolute;
     }
 }
 
