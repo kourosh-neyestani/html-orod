@@ -7,13 +7,6 @@
     display: block;
     overflow: hidden;
     position: relative;
-    .display-cente {
-        z-index: 6;
-    }
-    .display-spacing {
-        z-index: 6;
-        position: relative;
-    }
     .section-shape {
         z-index: 1;
         &.shape-1 {

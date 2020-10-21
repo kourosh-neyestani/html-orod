@@ -107,6 +107,20 @@
         });
     };
 
+    /*====== Sidenav ======*/
+    AFRA.SidebarFilterProducts = function () {
+        var button = $("#button-display-filter-products");
+        var sidenav = $("#sidebar-filter-products");
+
+        button.on("click", function (e) {
+            e.preventDefault();
+            sidenav.toggleClass("active");
+        });
+        sidenav.on("click", ".button-close-sidenav, .sidebar-close", function () {
+            sidenav.removeClass("active");
+        });
+    };
+
     /*====== Megamenu ======*/
     AFRA.Megamenu = function () {
         var headerLink = $(".app-header .el-megamenu");
@@ -474,6 +488,6 @@
 
     // Document.Ready
     $(document).ready(function () {
-        AFRA.StickyHeader(), AFRA.Accordion(), AFRA.Dropdown(), AFRA.Sidenav(), AFRA.Megamenu(), AFRA.ShoppingCart(), AFRA.Countdown(), AFRA.Counter(), AFRA.Carousel(), AFRA.Masonry(), AFRA.DefaultTabs(), AFRA.DataFilters(), AFRA.ShowPassword(), AFRA.SwitchGrid(), AFRA.ProductImages(), AFRA.ProductImageZoom(), AFRA.MathProductsPrice(), AFRA.RemoveItemFromShoppingCart();
+        AFRA.StickyHeader(), AFRA.Accordion(), AFRA.Dropdown(), AFRA.Sidenav(), AFRA.SidebarFilterProducts(), AFRA.Megamenu(), AFRA.ShoppingCart(), AFRA.Countdown(), AFRA.Counter(), AFRA.Carousel(), AFRA.Masonry(), AFRA.DefaultTabs(), AFRA.DataFilters(), AFRA.ShowPassword(), AFRA.SwitchGrid(), AFRA.ProductImages(), AFRA.ProductImageZoom(), AFRA.MathProductsPrice(), AFRA.RemoveItemFromShoppingCart();
     });
 })(jQuery);

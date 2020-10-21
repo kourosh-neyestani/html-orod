@@ -151,6 +151,22 @@
 }
 
 /*------------------------------------
+    Container
+------------------------------------*/
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .container{
+        max-width: 555px;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 992px) {
+    .container{
+        max-width: 810px;
+    }
+}
+
+/*------------------------------------
     Spacing
 ------------------------------------*/
 

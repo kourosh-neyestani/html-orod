@@ -5,8 +5,7 @@ ${require('./components/banner/_1.html') t1="Our Products" bc="products"}
         <div class="display-spacing">
             <div class="container">
                 <div class="row row-lg">
-                    ${require('./components/sidebar/_1.html') class="col-lg-3"}
-                    <div class="col-lg-9">
+                    <div class="col-lg-8 col-xl-9 order-2">
                         <div>
                             <div class="row row-xs justify-content-md-center" data-switch-grid-id="switch-grid-1-1">
                                 <!--Item-->
@@ -878,6 +877,7 @@ ${require('./components/banner/_1.html') t1="Our Products" bc="products"}
                             </ul>
                         </div>
                     </div>
+                    ${require('./components/sidebar/_1.html') parentClass="col-lg-4 col-xl-3 pl-10 order-1 sidebar-filter-products-with-sidebar"}
                 </div>
             </div>
         </div>
