@@ -8987,6 +8987,7 @@ Preloader
 
 .section-product-detail .product-detail .product-table ul li span {
   width: 50%;
+  white-space: nowrap;
   display: inline-block;
 }
 
@@ -9025,6 +9026,27 @@ Preloader
 .section-product-detail.section-product-detail-1 .product-detail .price {
   color: var(--primary);
   font-size: 24px;
+}
+
+@media (max-width: 992px) {
+  .section-product-detail .el-tabs .el-tabs-links ul {
+    text-align: center;
+    white-space: nowrap;
+  }
+  .section-product-detail .el-tabs .el-tabs-links ul li {
+    width: 33%;
+    margin: 0;
+  }
+  .section-product-detail .product-images {
+    margin-bottom: 20px;
+  }
+  .section-product-detail .product-detail p {
+    text-align: justify;
+    margin-bottom: 20px;
+  }
+  .section-product-detail .product-detail h1 {
+    font-size: 24px;
+  }
 }
 
 /*------------------------------------
