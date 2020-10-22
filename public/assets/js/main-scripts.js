@@ -67,7 +67,7 @@
 
     /*====== Dropdown ======*/
     AFRA.Dropdown = function () {
-        var link = $(".el-dropdown");
+        var link = $(".el-dropdown.el-dropdown-hover");
         link.on({
             mouseenter: function () {
                 $(this).find(".el-dropdown-box").show();
@@ -124,7 +124,7 @@
     /*====== Megamenu ======*/
     AFRA.Megamenu = function () {
         var headerLink = $(".app-header .el-megamenu");
-        var sidenavLink = $(".app-sidenav .el-megamenu");
+        var sidenavLink = $(".app-sidenav .el-megamenu a, .app-sidenav .el-dropdown a");
 
         headerLink.on({
             mouseenter: function () {
@@ -138,9 +138,9 @@
         });
         sidenavLink.on("click", function (e) {
             e.preventDefault();
-            var menu = $(this).children(".el-megamenu-box");
+            var menu = $(this).siblings(".el-megamenu-box, .el-dropdown-box");
             menu.slideToggle(30);
-            $(this).toggleClass("active");
+            $(this).parent(".el-megamenu, .el-dropdown").toggleClass("active");
         });
     };
 

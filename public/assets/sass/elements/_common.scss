@@ -1882,6 +1882,23 @@ Preloader
 }
 
 /*------------------------------------
+    Element: Labels
+------------------------------------*/
+
+.el-label {
+    color: $base-0;
+    height: 18px;
+    min-width: 36px;
+    font-size: 9px;
+    line-height: 1;
+    font-weight: 700;
+    text-align: center;
+    display: inline-block;
+    border-radius: 45px;
+    padding: 4px 6px;
+}
+
+/*------------------------------------
     Element: Countdown
 ------------------------------------*/
 
@@ -1924,8 +1941,9 @@ Preloader
         }
     }
     .el-megamenu-box {
-        z-index: -3;
         opacity: 0;
+        z-index: -3;
+        overflow: hidden;
         visibility: hidden;
         border: 1px solid $gray;
         box-shadow: $default-bs;
@@ -1971,6 +1989,11 @@ Preloader
             }
         }
     }
+    .el-label {
+        top: -1px;
+        margin-right: 4px;
+        position: relative;
+    }
 }
 
 @media (min-width: 992px) {
@@ -1988,10 +2011,22 @@ Preloader
             top: 100%;
             left: 0;
             width: 100%;
-            min-height: 300px;
-            padding: 30px;
             position: absolute;
             transform: translate(0, -90px);
+        }
+        &.el-megamenu-xs {
+            position: relative;
+            .el-megamenu-box {
+                width: 180px;
+                padding: 15px 20px;
+            }
+        }
+        &.el-megamenu-lg {
+            .el-megamenu-box {
+                width: 100%;
+                min-height: 300px;
+                padding: 30px;
+            }
         }
     }
 }
@@ -2088,11 +2123,26 @@ Preloader
                 transform: rotate(45deg) translate(0, 0);
             }
         }
+        .el-dropdown-box {
+            opacity: 1;
+            visibility: visible;
+            transform: translate(0, 0);
+        }
+        & > a {
+            &:before,
+            &:after {
+                opacity: 1;
+                transform: rotate(45deg) translate(0, 0);
+            }
+        }
     }
     &.el-dropdown-1 {
         & > ul {
             min-width: 120px;
         }
+    }
+    .dropdown-box {
+        transition: all 0.45s;
     }
 }
 @media (max-width: 768px) {
@@ -2100,6 +2150,37 @@ Preloader
         &.el-dropdown-1 {
             & > ul {
                 min-width: 90px !important;
+            }
+        }
+    }
+}
+@media (max-width: 992px) {
+    .app-sidenav {
+        .el-dropdown {
+            & > a {
+                display: block;
+                position: relative;
+                &:before,
+                &:after {
+                    top: 90%;
+                    background-color: $primary !important;
+                }
+            }
+            & > ul {
+                transform: translate(0, 0) !important;
+            }
+            .el-dropdown-box {
+                height: 180px;
+                padding: 15px;
+                display: none;
+                overflow: hidden;
+                overflow-y: auto;
+                position: relative !important;
+                border: 3px solid $primary;
+                margin-top: -15px;
+                margin-bottom: 12px;
+                border-bottom-left-radius: $default-br;
+                border-bottom-right-radius: $default-br;
             }
         }
     }
