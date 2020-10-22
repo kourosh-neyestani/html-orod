@@ -2598,7 +2598,7 @@ h6,
 
 @media (max-width: 768px) {
   .display-spacing-plus {
-    padding-top: 90px;
+    padding-top: 150px;
   }
 }
 
@@ -8559,6 +8559,9 @@ Preloader
   }
 }
 
+/*------------------------------------
+    Element: Single Post
+------------------------------------*/
 .section-single-post .single-post p {
   text-align: justify;
 }
@@ -8596,6 +8599,16 @@ Preloader
   width: 100%;
   height: auto;
   position: absolute;
+}
+
+@media (max-width: 768px) {
+  .section-single-post .single-post p {
+    text-align: justify;
+  }
+  .section-single-post .single-post h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
 }
 
 /*------------------------------------

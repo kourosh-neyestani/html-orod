@@ -1,8 +1,6 @@
 /*------------------------------------
     Section: Posts/Blog
 ------------------------------------*/
-
-
 /*------------------------------------
     Element: Featured Posts
 ------------------------------------*/
@@ -137,6 +135,9 @@
     }
 }
 
+/*------------------------------------
+    Element: Single Post
+------------------------------------*/
 
 .section-single-post {
     .single-post {
@@ -172,6 +173,20 @@
             width: 100%;
             height: auto;
             position: absolute;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .section-single-post {
+        .single-post {
+            p {
+                text-align: justify;
+            }
+            h1 {
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
         }
     }
 }
