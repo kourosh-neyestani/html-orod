@@ -1668,6 +1668,7 @@ Preloader
                     .el-comments-author {
                         color: $base-1;
                         font-size: 16px;
+                        text-align: left;
                     }
                 }
             }
@@ -1684,17 +1685,28 @@ Preloader
         & > ul {
             & > li {
                 .el-comments-avatar {
+                    top: 0;
                     width: 45px;
                     height: 45px;
                 }
                 .el-comments-author {
-                    top: 15px;
-                    right: 75px;
+                    top: 7px;
+                    left: 84px;
                     position: absolute;
+                    white-space: nowrap;
                 }
-                .el-comments-date,
+                .el-comments-date {
+                    top: 7px;
+                    padding: 0;
+                    font-size: 12px;
+                    position: relative;
+                    white-space: nowrap;
+                }
                 .el-comments-content {
                     padding: 0;
+                    .el-comments-info {
+                        margin-bottom: 36px;
+                    }
                 }
             }
         }

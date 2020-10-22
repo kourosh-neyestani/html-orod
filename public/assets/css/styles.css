@@ -7473,6 +7473,7 @@ Preloader
 .el-comments > ul > li .el-comments-content .el-comments-info .el-comments-author {
   color: var(--base-1);
   font-size: 16px;
+  text-align: left;
 }
 
 .el-comments > ul > li:not(:last-child) {
@@ -7482,17 +7483,28 @@ Preloader
 
 @media (max-width: 992px) {
   .el-comments > ul > li .el-comments-avatar {
+    top: 0;
     width: 45px;
     height: 45px;
   }
   .el-comments > ul > li .el-comments-author {
-    top: 15px;
-    right: 75px;
+    top: 7px;
+    left: 84px;
     position: absolute;
+    white-space: nowrap;
   }
-  .el-comments > ul > li .el-comments-date,
+  .el-comments > ul > li .el-comments-date {
+    top: 7px;
+    padding: 0;
+    font-size: 12px;
+    position: relative;
+    white-space: nowrap;
+  }
   .el-comments > ul > li .el-comments-content {
     padding: 0;
+  }
+  .el-comments > ul > li .el-comments-content .el-comments-info {
+    margin-bottom: 36px;
   }
 }
 
