@@ -7846,12 +7846,18 @@ Preloader
   }
   .el-megamenu.el-megamenu-xs .el-megamenu-box {
     width: 180px;
+    -webkit-transform: translate(0, -60px);
+            transform: translate(0, -60px);
     padding: 15px 20px;
   }
   .el-megamenu.el-megamenu-lg .el-megamenu-box {
     width: 100%;
     min-height: 300px;
     padding: 30px;
+  }
+  .el-megamenu.active .el-megamenu-box {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
   }
 }
 

@@ -2018,6 +2018,7 @@ Preloader
             position: relative;
             .el-megamenu-box {
                 width: 180px;
+                transform: translate(0, -60px);
                 padding: 15px 20px;
             }
         }
@@ -2026,6 +2027,11 @@ Preloader
                 width: 100%;
                 min-height: 300px;
                 padding: 30px;
+            }
+        }
+        &.active {
+            .el-megamenu-box {
+                transform: translate(0, 0);
             }
         }
     }
