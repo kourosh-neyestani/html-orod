@@ -8565,7 +8565,7 @@ Preloader
 }
 
 .section .section-shape {
-  z-index: 1;
+  z-index: -1;
 }
 
 .section .section-shape.shape-1 {

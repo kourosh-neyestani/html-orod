@@ -8,7 +8,7 @@
     overflow: hidden;
     position: relative;
     .section-shape {
-        z-index: 1;
+        z-index: -1;
         &.shape-1 {
             top: -6%;
             left: -1%;
