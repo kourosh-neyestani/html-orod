@@ -312,6 +312,10 @@
             loop: true,
             spaceBetween: 30,
             breakpoints: {
+                0: {
+                    slidesPerView: 1.1,
+                    spaceBetween: 12,
+                },
                 640: {
                     slidesPerView: 2,
                     spaceBetween: 30,
