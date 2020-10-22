@@ -124,7 +124,7 @@
     /*====== Megamenu ======*/
     AFRA.Megamenu = function () {
         var headerLink = $(".app-header .el-megamenu");
-        var sidenavLink = $(".app-sidenav .el-megamenu a, .app-sidenav .el-dropdown a");
+        var sidenavLink = $(".app-sidenav .el-megamenu > a, .app-sidenav .el-dropdown > a");
 
         headerLink.on({
             mouseenter: function () {

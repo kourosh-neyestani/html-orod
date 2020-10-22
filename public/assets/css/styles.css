@@ -6447,6 +6447,13 @@ form .input-select .select2-container--default .select2-selection--single .selec
   position: absolute;
 }
 
+@media (max-width: 768px) {
+  .el-slider .el-slider-prev,
+  .el-slider .el-slider-next {
+    display: none;
+  }
+}
+
 /*------------------------------------
     Element: Progress Bar
 ------------------------------------*/

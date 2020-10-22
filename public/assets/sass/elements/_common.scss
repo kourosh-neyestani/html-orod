@@ -777,6 +777,15 @@ $el-accordion-size: 84px;
     }
 }
 
+@media (max-width: 768px) {
+    .el-slider {
+        .el-slider-prev,
+        .el-slider-next {
+            display: none;
+        }
+    }
+}
+
 /*------------------------------------
     Element: Progress Bar
 ------------------------------------*/
