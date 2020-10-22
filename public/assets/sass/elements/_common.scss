@@ -1432,8 +1432,12 @@ Preloader
     &.el-counter-1 {
         height: 30px;
         font-size: 12px;
+        text-align: center;
         border-radius: $default-br;
         background-color: #f7f7f7;
+        input {
+            text-align: center;
+        }
         .label {
             color: $text-color;
             display: none;

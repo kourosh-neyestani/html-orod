@@ -7216,8 +7216,13 @@ Preloader
 .el-counter.el-counter-1 {
   height: 30px;
   font-size: 12px;
+  text-align: center;
   border-radius: 9px;
   background-color: #f7f7f7;
+}
+
+.el-counter.el-counter-1 input {
+  text-align: center;
 }
 
 .el-counter.el-counter-1 .label {
