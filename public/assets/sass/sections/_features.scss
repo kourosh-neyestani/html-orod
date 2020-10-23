@@ -45,7 +45,13 @@
             .inner {
                 padding: 30px 42px;
                 .label {
-                    display: block;
+                    color: $base-0;
+                    font-size: 12px;;
+                    padding: 3px 9px;
+                    border-radius: 60px;
+                    display: inline-block;
+                    margin-bottom: 15px;
+                    background-color: $primary;
                 }
                 .title {
                     font-size: 27px;

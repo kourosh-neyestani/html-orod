@@ -2882,8 +2882,9 @@ h6,
   background-color: var(--base-0);
 }
 
-.app-header.app-header-4 .header-nav .menu {
-  margin-top: 14px;
+.app-header.app-header-4 .header-nav .menu > li {
+  height: 84px;
+  padding-top: 12px;
 }
 
 .app-header.app-header-4 .header-nav .menu > li > a {
@@ -9377,7 +9378,13 @@ Preloader
 }
 
 .section-features.section-features-7 .el-item .inner .label {
-  display: block;
+  color: var(--base-0);
+  font-size: 12px;
+  padding: 3px 9px;
+  border-radius: 60px;
+  display: inline-block;
+  margin-bottom: 15px;
+  background-color: var(--primary);
 }
 
 .section-features.section-features-7 .el-item .inner .title {

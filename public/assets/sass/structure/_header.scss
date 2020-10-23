@@ -186,8 +186,9 @@ $header-nav: 60px;
             box-shadow: $default-bs;
             background-color: $base-0;
             .menu {
-                margin-top: 14px;
                 & > li {
+                    height: $header-4;
+                    padding-top: 12px;
                     & > a {
                         text-transform: uppercase;
                         &:hover {
