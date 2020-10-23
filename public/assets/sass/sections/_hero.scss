@@ -3,6 +3,8 @@
 ------------------------------------*/
 
 .section-hero {
+    z-index: 1;
+    position: relative;
     .hero-content {
         width: 576px;
         max-width: 100%;
@@ -21,14 +23,31 @@
     .display-center {
         z-index: 12;
     }
-
     &.section-hero-1 {
         height: 100vh;
         background-color: $primary;
+        .bg-color {
+            z-index: 15;
+        }
+        .el-slider {
+            .el-item {
+                animation: zoom 30s infinite;
+                height: 100vh;
+            }
+        }
+        .hero-inner {
+            z-index: 15;
+            position: relative;
+        }
         .hero-content {
+            z-index: 33;
             margin: auto;
+            position: relative;
+            p {
+                color: #ccc !important;
+            }
             h1 {
-                color: #333;
+                color: $base-0;
             }
         }
     }

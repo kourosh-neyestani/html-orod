@@ -2905,6 +2905,44 @@ h6,
   margin-right: 15px;
 }
 
+.app-header.light {
+  color: #eee;
+}
+
+.app-header.light a {
+  -webkit-transition: all .009ms;
+  transition: all .009ms;
+}
+
+.app-header.light input {
+  color: #eee;
+  border-color: #ccc !important;
+}
+
+.app-header.light input::-webkit-input-placeholder {
+  color: #eee;
+}
+
+.app-header.light input:-moz-placeholder {
+  color: #eee;
+}
+
+.app-header.light input::-moz-placeholder {
+  color: #eee;
+}
+
+.app-header.light input:-ms-input-placeholder {
+  color: #eee;
+}
+
+.app-header.light .button.button-icon .count {
+  color: #ccc;
+}
+
+.app-header.light.sticky .header-nav {
+  background-color: var(--primary-1) !important;
+}
+
 .app-header.glass.app-header-1 .header-nav {
   background-color: transparent;
 }
@@ -7817,6 +7855,7 @@ Preloader
 }
 
 .el-megamenu .el-megamenu-box {
+  color: var(--base-1);
   opacity: 0;
   z-index: -3;
   overflow: hidden;
@@ -8225,6 +8264,11 @@ Preloader
 /*------------------------------------
     Section: Hero
 ------------------------------------*/
+.section-hero {
+  z-index: 1;
+  position: relative;
+}
+
 .section-hero .hero-content {
   width: 576px;
   max-width: 100%;
@@ -8253,12 +8297,33 @@ Preloader
   background-color: var(--primary);
 }
 
+.section-hero.section-hero-1 .bg-color {
+  z-index: 15;
+}
+
+.section-hero.section-hero-1 .el-slider .el-item {
+  -webkit-animation: zoom 30s infinite;
+          animation: zoom 30s infinite;
+  height: 100vh;
+}
+
+.section-hero.section-hero-1 .hero-inner {
+  z-index: 15;
+  position: relative;
+}
+
 .section-hero.section-hero-1 .hero-content {
+  z-index: 33;
   margin: auto;
+  position: relative;
+}
+
+.section-hero.section-hero-1 .hero-content p {
+  color: #ccc !important;
 }
 
 .section-hero.section-hero-1 .hero-content h1 {
-  color: #333;
+  color: var(--base-0);
 }
 
 .section-hero.section-hero-2 {

@@ -1,0 +1,75 @@
+${require('./_html.html') base="" href="custom" skin="1"}
+    <!--Header-->
+    <header class="app-header app-header-1 ${props.class}">
+        <div class="header-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 div-center text-center">
+                        <ul class="menubar">
+                            <li>
+                                <i class="icon ti-heart"></i>
+                                <span>Wishlist</span>
+                                <span class="count">(0)</span>
+                            </li>
+                            <li>
+                                <i class="icon ti-control-shuffle"></i>
+                                <span>Compare</span>
+                                <span class="count">(0)</span>
+                            </li>
+                            <li class="el-dropdown el-dropdown-1 el-dropdown-hover">
+                                <span class="text">USD</span>
+                                <i class="ti-angle-down"></i>
+                                <ul class="el-dropdown-box">
+                                    <li>USD</li>
+                                    <li>EUR</li>
+                                </ul>
+                            </li>
+                            <li class="el-dropdown el-dropdown-1 el-dropdown-hover">
+                                <span class="text">English</span>
+                                <i class="ti-angle-down"></i>
+                                <ul class="el-dropdown-box">
+                                    <li>English</li>
+                                    <li>Spanish</li>
+                                    <li>German</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="header-box">
+        </div> -->
+        <div class="header-nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="header-logo">OR<span>WELL</span></div>
+                        ${require('../menu/_1.html')}
+                        <button class="button button-menu button-display-sidenav">
+                            <span></span>
+                        </button>
+                    </div>
+                    <div class="col-md-4 text-right">
+                        <div class="el-hover-search-bar">
+                            <button type="submit" class="button button-icon button-icon-search">
+                                <img class="icon" src="assets/images/icons/search-light.svg" alt="--Alternative--">
+                            </button>
+                            <div class="el-hover-search-bar-box" id="xxx">
+                                <div class="form-item">
+                                    <input type="text" placeholder="What are you looking for?">
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="button button-icon button-icon-cart button-display-shopping-cart">
+                            <img class="icon" src="assets/images/icons/shopping-cart-light.svg" alt="--Alternative--">
+                            <span class="count">3</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--/-->
+${require('../sidenav/_1.html')}
+${require('../sidenav/_shopping-cart-1.html')}

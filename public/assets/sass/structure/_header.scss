@@ -208,6 +208,32 @@ $header-nav: 60px;
         }
     }
 }
+// Light
+.app-header {
+    &.light {
+        color: #eee;
+        a {
+            transition: all .009ms;
+        }
+        input {
+            color: #eee;
+            border-color: #ccc !important;
+            @include placeholder() {
+                color: #eee;
+            }
+        }
+        .button.button-icon {
+            .count {
+                color: #ccc;
+            }
+        }
+        &.sticky {
+            .header-nav {
+                background-color: $primary-1 !important;
+            }
+        }
+    }
+}
 // Glass
 .app-header {
     &.glass {
