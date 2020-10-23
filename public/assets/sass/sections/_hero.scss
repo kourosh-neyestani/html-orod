@@ -26,8 +26,11 @@
     &.section-hero-1 {
         height: 100vh;
         background-color: $primary;
-        .bg-color {
+        .bg-color{
             z-index: 15;
+        }
+        .bg-pattern {
+            z-index: 16;
         }
         .el-slider {
             .el-item {

@@ -2209,23 +2209,23 @@ h6,
 
 .overlay-pattern .bg-pattern-1 {
   position: absolute;
-  background: repeat url("/assets/images/common/pattern-1.png") center center/9px;
+  background: repeat url("../images/patterns/pattern-1.png") center center/9px;
 }
 
 .overlay-pattern .bg-pattern-2 {
   position: absolute;
-  background: repeat url("/assets/images/common/pattern-2.png") center center/9px;
+  background: repeat url("../images/patterns/pattern-2.png") center center/9px;
 }
 
 .overlay-pattern .bg-pattern-3 {
   position: absolute;
-  background: repeat url("/assets/images/common/pattern-3.png") center center/5px;
+  background: repeat url("../images/patterns/pattern-3.png") center center/5px;
 }
 
 .overlay-pattern .bg-patline-1 {
   opacity: 0.6;
   position: absolute;
-  background: repeat-x url("/assets/images/common/patline-1.png") top center;
+  background: repeat-x url("../images/patterns/patline-1.png") top center;
 }
 
 .overlay-pattern .bg-pattern-a {
@@ -8299,6 +8299,10 @@ Preloader
 
 .section-hero.section-hero-1 .bg-color {
   z-index: 15;
+}
+
+.section-hero.section-hero-1 .bg-pattern {
+  z-index: 16;
 }
 
 .section-hero.section-hero-1 .el-slider .el-item {
