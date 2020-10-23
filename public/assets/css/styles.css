@@ -7837,7 +7837,7 @@ Preloader
 }
 
 .el-countdown .countdown-item .countdown-value {
-  color: var(--primary);
+  color: var(--gray);
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 6px;
@@ -9390,7 +9390,7 @@ Preloader
 }
 
 .section-testimonial.section-testimonial-2 .item .content {
-  background-color: var(--primary);
+  background-color: var(--secondary);
 }
 
 .section-testimonial.section-testimonial-2 .item .content p {
@@ -9405,7 +9405,7 @@ Preloader
   content: "";
   display: block;
   position: absolute;
-  background-color: var(--primary);
+  background-color: var(--secondary);
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
@@ -9427,7 +9427,7 @@ Preloader
   height: 45px;
   overflow: hidden;
   border-radius: 50%;
-  border: 2px solid var(--primary);
+  border: 2px solid var(--secondary);
 }
 
 /*------------------------------------

@@ -716,7 +716,7 @@
     &.section-testimonial-2 {
         .item {
             .content {
-                background-color: $primary;
+                background-color: $secondary;
                 p {
                     color: $base-0;
                 }
@@ -728,7 +728,7 @@
                     content: "";
                     display: block;
                     position: absolute;
-                    background-color: $primary;
+                    background-color: $secondary;
                     transform: rotate(45deg);
                 }
             }
@@ -746,7 +746,7 @@
                     height: 45px;
                     overflow: hidden;
                     border-radius: 50%;
-                    border: 2px solid $primary;
+                    border: 2px solid $secondary;
                 }
             }
         }
