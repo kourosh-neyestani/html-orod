@@ -323,7 +323,7 @@ $sc-width: 330px;
     .sidenav-menu {
         right: -100%;
         width: $sc-width;
-        max-width: 93%;
+        max-width: 90%;
         height: 100%;
         min-height: 100%;
         z-index: 10001;
@@ -445,6 +445,7 @@ $sc-width: 330px;
         .sidenav-down {
             right: 0;
             width: $sc-width;
+            max-width: 90%;
             bottom: 0;
             height: 150px;
             opacity: 0;

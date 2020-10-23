@@ -3544,7 +3544,7 @@ h6,
 .app-shopping-cart .sidenav-menu {
   right: -100%;
   width: 330px;
-  max-width: 93%;
+  max-width: 90%;
   height: 100%;
   min-height: 100%;
   z-index: 10001;
@@ -3690,6 +3690,7 @@ h6,
 .app-shopping-cart .sidenav-menu .sidenav-down {
   right: 0;
   width: 330px;
+  max-width: 90%;
   bottom: 0;
   height: 150px;
   opacity: 0;
