@@ -843,6 +843,28 @@ h6,
   }
 }
 
+@-webkit-keyframes demo {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+  }
+}
+
+@keyframes demo {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+  }
+}
+
 @-webkit-keyframes music {
   0% {
     -webkit-transform: scale(1, 1);
@@ -8286,10 +8308,6 @@ Preloader
 /*------------------------------------
     Section: Hero
 ------------------------------------*/
-.theme-preview {
-  background-color: var(--primary);
-}
-
 .section-hero {
   z-index: 1;
   position: relative;
@@ -8320,6 +8338,7 @@ Preloader
 
 .section-hero.section-hero-0 {
   height: 100vh;
+  overflow: initial;
   min-height: 720px !important;
   background-color: var(--primary);
 }
@@ -8353,6 +8372,50 @@ Preloader
   margin-right: 9px;
   border-radius: 50%;
   background-color: var(--base-0);
+}
+
+.section-hero.section-hero-0 .hero-frame {
+  right: -30px;
+  bottom: -120px;
+  width: 900px;
+  z-index: 1;
+  overflow: hidden;
+  text-align: center;
+  position: absolute;
+}
+
+.section-hero.section-hero-0 .hero-frame img {
+  width: 100%;
+  z-index: 12;
+  position: relative;
+}
+
+.section-hero.section-hero-0 .hero-frame .frame-lcd {
+  top: 9%;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  width: 59.64%;
+  margin: auto;
+  overflow: hidden;
+  position: absolute;
+  padding-top: 38%;
+  background-color: red;
+}
+
+.section-hero.section-hero-0 .hero-frame .frame-lcd .el-slider {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.section-hero.section-hero-0 .hero-frame .frame-lcd .el-slider .el-item {
+  width: 100%;
+  height: 100%;
+  -webkit-animation: demo 30s infinite;
+          animation: demo 30s infinite;
 }
 
 .section-hero.section-hero-1 {
@@ -8534,6 +8597,28 @@ Preloader
 .section-hero.section-hero-6 .el-item {
   padding-top: 390px;
   background-color: var(--gray);
+}
+
+@media (max-width: 1200px) {
+  .section-hero.section-hero-0 .hero-frame {
+    right: -30px;
+    bottom: -30px;
+    width: 690px;
+  }
+}
+
+@media (max-width: 992px) {
+  .section-hero.section-hero-0 .hero-frame {
+    right: -30px;
+    bottom: 30px;
+    width: 540px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-hero.section-hero-0 .hero-frame {
+    display: none;
+  }
 }
 
 @media (max-width: 992px) {
@@ -9826,6 +9911,10 @@ Preloader
 /*------------------------------------
     Element: Theme Preview
 ------------------------------------*/
+.theme-preview {
+  background-color: var(--primary);
+}
+
 .section-theme-preview {
   background-color: var(--base-0);
 }

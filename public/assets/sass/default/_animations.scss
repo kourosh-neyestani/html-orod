@@ -21,6 +21,14 @@
         transform: scale(1.11, 1.11);
     }
 }
+@keyframes demo {
+    0% {
+        transform: translate(0,0);
+    }
+    100% {
+        transform: translate(0, -50%);
+    }
+}
 @keyframes music {
     0% {
         transform: scale(1, 1);

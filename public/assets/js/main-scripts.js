@@ -250,6 +250,15 @@
                 prevEl: ".swiper-button-prev",
             },
         });
+        var mySwiper = new Swiper(".el-swiper-hero-demo", {
+            loop: true,
+            effect: "fade",
+            autoplay: {
+                delay: 6000,
+                disableOnInteraction: false,
+            },
+            slidesPerView: 1,
+        });
         var mySwiper = new Swiper(".el-swiper-category-3", {
             loop: false,
             navigation: {
