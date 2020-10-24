@@ -3,16 +3,24 @@
 ------------------------------------*/
 
 .section-theme-preview {
+    background-color: $base-0;
     .el-item {
-        padding: 30px;
         text-align: center;
         border-radius: $default-br;
         border: 1px solid $gray;
-        h3 {
-            line-height: 1;
-            margin-bottom: 0;
-            a {
-                display: block;
+        .image {
+            padding-top: 60%;
+            background-color: orange;
+        }
+        .detail {
+            padding: 20px;
+            h3 {
+                font-size: 18px;
+                line-height: 1;
+                margin-bottom: 0;
+                a {
+                    display: block;
+                }
             }
         }
     }

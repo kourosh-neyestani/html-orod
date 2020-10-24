@@ -1,7 +1,9 @@
 /*------------------------------------
     Section: Hero
 ------------------------------------*/
-
+.theme-preview {
+    background-color: $primary;
+}
 .section-hero {
     z-index: 1;
     position: relative;
@@ -23,6 +25,37 @@
     .display-center {
         z-index: 12;
     }
+    &.section-hero-0 {
+        height: 100vh;
+        min-height: 720px !important;
+        background-color: $primary;
+        p {
+            font-size: 14px;
+        }
+        h1 {
+            font-size: 51px;
+        }
+        .hero-icons {
+            left: 0;
+            width: 100%;
+            bottom: 75px;
+            position: absolute;
+            ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                li {
+                    width: 45px;
+                    height: 45px;
+                    display: inline-block;
+                    padding: 9px;
+                    margin-right: 9px;
+                    border-radius: 50%;
+                    background-color: $base-0;
+                }
+            }
+        }
+    }
     &.section-hero-1 {
         height: 100vh;
         background-color: $primary;
@@ -39,7 +72,7 @@
             }
         }
         .hero-inner {
-            z-index: 15;
+            z-index: 18;
             position: relative;
         }
         .hero-content {
