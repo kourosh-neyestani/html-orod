@@ -2935,6 +2935,10 @@ h6,
   color: #eee;
 }
 
+.app-header.light .button-menu span, .app-header.light .button-menu span:before, .app-header.light .button-menu span:after {
+  background-color: var(--base-0) !important;
+}
+
 .app-header.light .button.button-icon .count {
   color: #ccc;
 }

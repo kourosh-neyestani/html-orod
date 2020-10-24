@@ -222,6 +222,15 @@ $header-nav: 60px;
                 color: #eee;
             }
         }
+        .button-menu {
+            span {
+                &,
+                &:before,
+                &:after {
+                    background-color: $base-0 !important;
+                }
+            }
+        }
         .button.button-icon {
             .count {
                 color: #ccc;
