@@ -239,11 +239,24 @@
                     left: 30px;
                     bottom: 30px;
                     position: absolute;
+                    p {
+                        color: $gray;
+                        margin-bottom: 20px;
+                    }
+                    h3 {
+                        color: $base-0;
+                        line-height: 1;
+                        font-weight: 800;
+                        margin-bottom: 15px;
+                    }
                     .title {
                         font-size: 27px;
                         font-weight: 600;
                         line-height: 1;
                         margin: 0 0 15px;
+                    }
+                    .button {
+                        line-height: 50px;
                     }
                 }
             }

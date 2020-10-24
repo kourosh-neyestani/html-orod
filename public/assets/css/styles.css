@@ -9709,11 +9709,27 @@ Preloader
   position: absolute;
 }
 
+.section-category.section-category-6 .el-item a .details p {
+  color: var(--gray);
+  margin-bottom: 20px;
+}
+
+.section-category.section-category-6 .el-item a .details h3 {
+  color: var(--base-0);
+  line-height: 1;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
 .section-category.section-category-6 .el-item a .details .title {
   font-size: 27px;
   font-weight: 600;
   line-height: 1;
   margin: 0 0 15px;
+}
+
+.section-category.section-category-6 .el-item a .details .button {
+  line-height: 50px;
 }
 
 .section-category.section-category-6 .el-item:hover .button {
