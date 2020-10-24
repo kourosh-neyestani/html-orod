@@ -8717,14 +8717,14 @@ Preloader
   margin-bottom: 20px;
 }
 
-.section-single-post .single-post .post-image {
+.section-single-post .single-post .image {
   overflow: hidden;
   padding-top: 57%;
   position: relative;
   margin-bottom: 20px;
 }
 
-.section-single-post .single-post .post-image img {
+.section-single-post .single-post .image img {
   top: 0;
   left: 0;
   width: 100%;
@@ -9830,6 +9830,7 @@ Preloader
   text-align: center;
   border-radius: 9px;
   border: 1px solid var(--gray);
+  background-color: #f9f9f9;
 }
 
 .section-theme-preview .el-item .image {
