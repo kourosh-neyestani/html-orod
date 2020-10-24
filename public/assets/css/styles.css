@@ -9833,8 +9833,16 @@ Preloader
 }
 
 .section-theme-preview .el-item .image {
+  overflow: hidden;
+  position: relative;
   padding-top: 60%;
   background-color: orange;
+}
+
+.section-theme-preview .el-item .image .el-label {
+  top: 12px;
+  right: 12px;
+  position: absolute;
 }
 
 .section-theme-preview .el-item .detail {

@@ -9,8 +9,15 @@
         border-radius: $default-br;
         border: 1px solid $gray;
         .image {
+            overflow: hidden;
+            position: relative;
             padding-top: 60%;
             background-color: orange;
+            .el-label {
+                top: 12px;
+                right: 12px;
+                position: absolute;
+            }
         }
         .detail {
             padding: 20px;
