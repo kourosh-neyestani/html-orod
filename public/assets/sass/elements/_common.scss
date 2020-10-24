@@ -3,6 +3,25 @@
 ------------------------------------*/
 
 /*------------------------------------
+    Element: Item Hover Style
+------------------------------------*/
+
+.el-hover {
+    img,
+    .image {
+        opacity: 1;
+        transition: all 600ms;
+    }
+    &:hover {
+        img,
+        .image {
+            opacity: 1;
+            transform: scale(1.05, 1.05);
+        }
+    }
+}
+
+/*------------------------------------
     Element: Accordion
 ------------------------------------*/
 
@@ -374,8 +393,9 @@ $el-accordion-size: 84px;
                 }
             }
         }
-        .image {
+        .post-image {
             overflow: hidden;
+            position: relative;
             padding-top: 57%;
             img {
                 top: 0;
