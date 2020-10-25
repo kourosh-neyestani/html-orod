@@ -8646,6 +8646,16 @@ Preloader
   }
 }
 
+@media (max-width: 576px) {
+  .section-hero .hero-content p {
+    font-size: 14px;
+  }
+  .section-hero .hero-content h1,
+  .section-hero .hero-content h2 {
+    font-size: 33px !important;
+  }
+}
+
 /*------------------------------------
     Section: About
 ------------------------------------*/

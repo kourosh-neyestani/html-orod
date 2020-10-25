@@ -310,3 +310,16 @@
         }
     }
 }
+@media (max-width: 576px) {
+    .section-hero {
+        .hero-content {
+            p {
+                font-size: 14px;
+            }
+            h1,
+            h2 {
+                font-size: 33px !important;
+            }
+        }
+    }
+}
