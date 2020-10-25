@@ -9466,6 +9466,15 @@ Preloader
   color: #ccc;
 }
 
+@media (max-width: 992px) {
+  .section-team-1 .el-item:hover p {
+    font-size: 12px;
+  }
+  .section-team-1 .el-item:hover .user-name {
+    font-size: 16px;
+  }
+}
+
 /*------------------------------------
     Section: Testimonial
 ------------------------------------*/
