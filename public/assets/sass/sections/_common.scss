@@ -529,10 +529,20 @@
     .section-about {
         .item {
             h3 {
-                font-size: 21px;
+                font-size: 12px;
             }
             .numbers {
-                font-size: 24px;
+                font-size: 18px;
+            }
+        }
+        .row-custom {
+            margin-left: -6px !important;
+            margin-right: -6px !important;
+            margin-bottom: -12px !important;
+            & > * {
+                padding-left: 6px !important;
+                padding-right: 6px !important;
+                margin-bottom: 12px !important;
             }
         }
     }
