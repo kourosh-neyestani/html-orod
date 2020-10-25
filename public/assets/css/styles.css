@@ -6452,7 +6452,7 @@ form .input-select .select2-container--default .select2-selection--single .selec
 }
 
 .el-slider-product-image .el-swiper-dots {
-  z-index: 99999;
+  z-index: 99;
   position: absolute;
 }
 
@@ -6535,6 +6535,14 @@ form .input-select .select2-container--default .select2-selection--single .selec
   .el-slider .el-slider-prev,
   .el-slider .el-slider-next {
     display: none;
+  }
+  .el-slider-product-image .el-swiper-dots .el-swiper-pagination-image {
+    width: 45px;
+    height: 45px;
+    margin-bottom: 6px;
+  }
+  .el-slider-product-image.el-slider-product-image-2 .el-product-image {
+    width: calc(100% - 60px);
   }
 }
 

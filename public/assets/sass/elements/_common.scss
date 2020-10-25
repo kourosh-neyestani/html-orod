@@ -718,7 +718,7 @@ $el-accordion-size: 84px;
 .el-slider-product-image {
     position: relative;
     .el-swiper-dots {
-        z-index: 99999;
+        z-index: 99;
         position: absolute;
         .el-swiper-pagination-image {
             width: 60px;
@@ -802,6 +802,20 @@ $el-accordion-size: 84px;
         .el-slider-prev,
         .el-slider-next {
             display: none;
+        }
+    }
+    .el-slider-product-image {
+        .el-swiper-dots {
+            .el-swiper-pagination-image {
+                width: 45px;
+                height: 45px;
+                margin-bottom: 6px;
+            }
+        }
+        &.el-slider-product-image-2 {
+            .el-product-image {
+                width: calc(100% - 60px);
+            }
         }
     }
 }
