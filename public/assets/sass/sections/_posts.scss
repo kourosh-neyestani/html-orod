@@ -49,7 +49,8 @@
                 color: #ccc;
             }
             h1,
-            h2 {
+            h2,
+            h3 {
                 color: $base-0;
                 line-height: 1.5;
                 font-size: 21px;
@@ -110,7 +111,8 @@
         .post {
             &.post-side {
                 .post-details {
-                    h2 {
+                    h2,
+                    h3 {
                         font-size: 16px !important;
                     }
                 }
@@ -129,6 +131,20 @@
                 h1,
                 h2 {
                     font-size: 18px !important;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .el-featured-posts {
+        .post {
+            .post-details {
+                padding: 9px;
+                h1,
+                h2 {
+                    font-size: 14px !important;
                 }
             }
         }

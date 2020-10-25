@@ -8719,7 +8719,8 @@ Preloader
 }
 
 .el-featured-posts .post .post-details h1,
-.el-featured-posts .post .post-details h2 {
+.el-featured-posts .post .post-details h2,
+.el-featured-posts .post .post-details h3 {
   color: var(--base-0);
   line-height: 1.5;
   font-size: 21px;
@@ -8779,7 +8780,8 @@ Preloader
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
-  .el-featured-posts .post.post-side .post-details h2 {
+  .el-featured-posts .post.post-side .post-details h2,
+  .el-featured-posts .post.post-side .post-details h3 {
     font-size: 16px !important;
   }
 }
@@ -8791,6 +8793,16 @@ Preloader
   .el-featured-posts .post .post-details h1,
   .el-featured-posts .post .post-details h2 {
     font-size: 18px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .el-featured-posts .post .post-details {
+    padding: 9px;
+  }
+  .el-featured-posts .post .post-details h1,
+  .el-featured-posts .post .post-details h2 {
+    font-size: 14px !important;
   }
 }
 
